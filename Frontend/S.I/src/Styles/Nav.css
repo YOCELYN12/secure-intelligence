@@ -1,29 +1,60 @@
-.navbar{
+
+.navbar {
    display: flex;
    background-color: rgba(40, 54, 70, 1);
    padding: 10px 20px;
    color: rgb(39, 189, 200);
-   height: 13%;
-   width: 100%; /* Asegúrate de que el ancho sea 100% */
-   position: fIxed; /* Fija el navbar en la parte superior */
-   top: 0; /* Alinea el navbar en la parte superior */
-   left: 0; /* Alinea el navbar a la izquierda */
-   
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
 }
 
-
-.logo{
-   display: flex;
-   margin-top: -4%;
-   width: 28%;
-   
+.logo {
+   width: 20%;
 }
 
-.container-search{
+.search-container {
+   padding: 10px;
+   border: 3px solid #ccc;
+   border-radius: 15px;
+   width: 150%;
+}
+
+.container-logo-search {
    display: flex;
+   place-content: center; /* Alinea la barra de búsqueda a la derecha */
+   align-items: center;   
+}
+
+.btn-buscar{
+   display: flex;
+   border-radius: 10px;
+   height: 40px;
+   border-radius: none;
+   position: fixed;
+   left: 52vw;
+}
+
+.icon-buscar{
+   background-color: transparent;
+   border:none;
+}
+
+.account{
+  display: flex;
+  align-items: center;
+  margin-left: 44vw;
+  
+}
+
+.btn-account{
+   display: flex;
+  
    align-items: center;
-   justify-content: space-between;
-   width: 80%;
-   margin-left: 30%;
+   border-radius: 15px;
 }
 
+.icon-account{
+   margin-right: 20px; /* O ajusta aquí el margen */
+}
