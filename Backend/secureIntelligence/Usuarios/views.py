@@ -12,7 +12,7 @@ class RegistroView(APIView):
         username = request.data.get('username')
         password = request.data.get('password')
         
-        if User.objects.filter(username=username).exixts():
+        if User.objects.filter(username=username).exists():
             return Response({'error': 'Usuario ya existe'}, status=status.HTTP_400_BAD_REQUEST)
         
         
