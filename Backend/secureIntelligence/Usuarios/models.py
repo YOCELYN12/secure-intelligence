@@ -12,7 +12,7 @@ class Empleados (models.Model):
     Numero_telefono = models.CharField(max_length=40)
     Fecha_contrado = models.DateTimeField(blank=True)
     Fecha_finalizacion = models.DateTimeField(blank=True)
-    
+
     
 class Administradores (models.Model):
     ID_administrador = models.AutoField(primary_key=True)
