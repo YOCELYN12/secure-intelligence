@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-
  
 # Create your models here. 
 class Departamentos(models.Model):
@@ -13,6 +12,7 @@ class Empleados (models.Model):
     Numero_telefono = models.CharField(max_length=40)
     Fecha_contrado = models.DateTimeField(blank=True)
     Fecha_finalizacion = models.DateTimeField(blank=True)
+    
     
 class Administradores (models.Model):
     ID_administrador = models.AutoField(primary_key=True)
@@ -33,4 +33,7 @@ class Tipo_usuario (models.Model):
 class Usuario(models.Model):
    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
    ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE, null=True, blank=True)
-    
+   ID_servicios = models.ForeignKey('Servicios.Servicios_disponibles', on_delete=models.CASCADE,null=True, blank=True)
+   ID_empleado = models.ForeignKey(Empleados, on_delete=models.CASCADE,null=True, blank=True)
+   
+  
