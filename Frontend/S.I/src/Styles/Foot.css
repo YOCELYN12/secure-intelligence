@@ -1,0 +1,14 @@
+
+
+.footer {
+    background-color: rgba(40, 54, 70, 1);
+    color: white;
+    padding: 20px 0;
+    position: relative; /* Asegura que esté al final del contenido */
+    bottom: 0;
+    width: 100%;
+}
+
+.letras_footer{
+    text-align: center;
+}
