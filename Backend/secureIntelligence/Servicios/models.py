@@ -1,6 +1,6 @@
 from django.db import models
 from Usuarios.models import Usuario
-
+from Usuarios.models import Empleados
 # Create your models here.
 
 class Tipo_servicio (models.Model):
@@ -13,7 +13,7 @@ class Servicios (models.Model):
     ID_servicio = models.AutoField(primary_key=True)
     ID_tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)
     Descripcion = models.TextField()   
-   
+    ID_empleado = models.ForeignKey(Empleados,on_delete=models.CASCADE, null=True, blank=True)
 
 class Suscripciones (models.Model):
     ID_suscripcion = models.AutoField(primary_key=True)

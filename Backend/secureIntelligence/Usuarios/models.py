@@ -2,11 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
  
-# Create your models here.
-class Usuario(models.Model):
-   user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
-    
-    
+# Create your models here. 
 class Departamentos(models.Model):
     ID_departamento = models.AutoField(primary_key=True)
     Departamento_laboral = models.CharField(max_length=250)
@@ -34,4 +30,7 @@ class Tipo_usuario (models.Model):
     ID_administrador = models.ForeignKey(Administradores, on_delete=models.CASCADE)
     Id_cliente = models.ForeignKey(Clientes,on_delete=models.CASCADE)
 
-
+class Usuario(models.Model):
+   user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
+   ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE, null=True, blank=True)
+    
