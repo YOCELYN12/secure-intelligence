@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
  
 # Create your models here.
-
 class Usuario(models.Model):
    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
     
@@ -34,3 +33,5 @@ class Tipo_usuario (models.Model):
     ID_tipo_usuario = models.AutoField(primary_key=True)
     ID_administrador = models.ForeignKey(Administradores, on_delete=models.CASCADE)
     Id_cliente = models.ForeignKey(Clientes,on_delete=models.CASCADE)
+
+
