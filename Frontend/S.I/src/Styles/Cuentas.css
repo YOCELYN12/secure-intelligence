@@ -1,4 +1,60 @@
-.background {
-    background-image: url("../IMG/Fongo\ Cuenta.png");
-    color:aqua;
+.body{
+    background-image: url('../IMG/Fondo_cuenta.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
 }
+
+.cont_login1{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Alinea a la izquierda */
+    align-items: center;
+    background-image: url('ruta/a/tu/imagen.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco opaco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+   /* Espaciado desde el borde izquierdo */
+    position: fixed;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.letras_login {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input_login {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button_login {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button_login:hover {
+    background-color: #45a049;
+}
+
+
