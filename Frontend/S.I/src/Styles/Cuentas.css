@@ -31,6 +31,9 @@
 }
 
 .letras_login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-bottom: 20px;
     text-align: center;
     color: bisque;
@@ -41,7 +44,7 @@
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 18px;
-    min-width: 320px; /* Ancho mínimo */
+    min-width: 310px; /* Ancho mínimo */
     min-height: 36px; /* Alto mínimo */
     width: 100%; /* O puedes quitar esta línea para que sea sólo el mínimo */
 }
