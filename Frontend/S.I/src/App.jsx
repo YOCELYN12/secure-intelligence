@@ -1,21 +1,24 @@
 import './App.css'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
+import Cuentas from './Pages/Cuentas'
 
 
 
 function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/>
 
       <div className="app">
       <main>
-        {/* Aquí va el contenido principal de tu página */}
+         Aquí va el contenido principal de tu página }
       </main>
       </div>
 
-      <Footer />
+      <Footer /> */}
+
+      <Cuentas/>
 
     </>
   )
