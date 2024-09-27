@@ -12,9 +12,18 @@ function Cuentas() {
 
           <form className="login-form">
 
-            <h2 className='letras_login'>Iniciar Sesión</h2>
-            <input className='input_login' type="text" placeholder="Nombre de usuario" required />
-            <input className='input_login' type="password" placeholder="Contraseña" required />
+
+            <div className='div-Login'>
+              <h2 className='letras_login'>Login to your account</h2>
+            </div>
+
+            <div className='cont-input'>
+
+              <input style={{backgroundColor: "transparent"}}     className='input_login' type="text" placeholder="Nombre de usuario" required />
+              <input      className='input_login' type="password" placeholder="Contraseña" required   />
+
+            </div>
+
             <button className='button_login' type="submit">Entrar</button>
 
           </form>
