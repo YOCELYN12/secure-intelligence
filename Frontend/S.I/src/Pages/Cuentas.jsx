@@ -41,13 +41,6 @@ function Cuentas() {
 
       </div>
 
-
-
-
-
-
-
-
     </div>
   )
 }

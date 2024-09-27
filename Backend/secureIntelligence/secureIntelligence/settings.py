@@ -87,8 +87,8 @@ DATABASES = {
         'ENGINE' : 'django.db.backends.mysql',
         'NAME': 'secure_intelligence',
         'USER': 'root',
-        'PASSWORD':'1234',
-        'HOST': 'localhost',
+        'PASSWORD':'root',
+        'HOST': 'mysql',
         'PORT': '3306',
     }
 }
