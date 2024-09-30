@@ -25,7 +25,8 @@ function Navbar() {
 
       <div className='account'>
         <button className='btn-account'>
-          <IoPersonAdd className=' icon-account'/><p>Account</p>
+          <IoPersonAdd className=' icon-account'/>
+          <p >Account</p>
         </button>
       </div>
 

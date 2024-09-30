@@ -17,13 +17,11 @@ function PaginaPrincipal() {
                 <main>
 
                     <div className='fondo'>
-                        <div className='fondo2'>
-
-                            <h1>hsokk</h1>
-                        </div>
-
+                        <div className='fondo2'></div>
                     </div>
 
+                  <p>HOLA PRUEBA</p>
+                  
                 </main>
 
             </div>
