@@ -5,7 +5,6 @@
    padding: 10px 20px;
    color: rgb(39, 189, 200);
    width: 100%;
-   position: fixed;
    top: 0;
    left: 0;
 }
@@ -18,7 +17,7 @@
    padding: 10px;
    border: 3px solid #ccc;
    border-radius: 15px;
-   width: 150%;
+   width: 170%;
 }
 
 .container-logo-search {
@@ -33,7 +32,7 @@
    height: 40px;
    border-radius: none;
    position: fixed;
-   left: 52vw;
+   left: 50vw;
 }
 
 .icon-buscar{
@@ -50,9 +49,9 @@
 
 .btn-account{
    display: flex;
-  
    align-items: center;
    border-radius: 15px;
+   padding: 15px 30px; /* Espaciado interior */
 }
 
 .icon-account{

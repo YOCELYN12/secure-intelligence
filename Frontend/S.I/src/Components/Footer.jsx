@@ -26,15 +26,18 @@ function Footer() {
         <div className='cont2-iconos'>
 
           <HiOutlineMail className='iconos-footer' />
-          <FiTool className='iconos-footer'/>
+          <FiTool className='iconos-footer' />
           <BiMessageDetail className='iconos-footer' />
           <LuLogIn className='iconos-footer' />
 
         </div>
+
       </div>
 
-      <p className='letras_footer'>© 2024 Tu Empresa. Todos los derechos reservados.</p>
 
+      <div className='frase-footer'>
+        <p className='letras_footer'>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+      </div>
 
     </footer>
 

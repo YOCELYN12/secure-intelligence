@@ -2,6 +2,7 @@ import React from 'react'
 import '../Styles/Cuentas.css'
 
 function Cuentas() {
+
   return (
 
     <div className='body'>
@@ -17,12 +18,12 @@ function Cuentas() {
             </div>
 
             <div className='cont-input-login'>
-              
+
               <p className='letras-input'>Nombre</p>
-              <input style={{ backgroundColor: "transparent",border:"3px solid blue" }} className='input_login' type="text"  required />
+              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_login' type="text" required />
 
               <p className='letras-input'>Password</p>
-              <input style={{ backgroundColor: "transparent",border:"3px solid blue" }} className='input_login' type="password" required />
+              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_login' type="password" required />
 
             </div>
 
@@ -48,13 +49,13 @@ function Cuentas() {
 
             <div className='cont-input-registro'>
               <p className='letras-input' >Nombre</p>
-              <input style={{ backgroundColor: "transparent",border:"3px solid blue" }} className='input_registro' type="text"  required />
+              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_registro' type="text" required />
 
               <p className='letras-input'>Password</p>
-              <input style={{ backgroundColor: "transparent",border:"3px solid blue" }} className='input_registro' type="password"  required />
+              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_registro' type="password" required />
 
               <p className='letras-input'>Email</p>
-              <input style={{ backgroundColor: "transparent",border:"3px solid blue" }} className='input_registro' type="text"  required/>
+              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_registro' type="text" required />
             </div>
 
             <p className='letras_footer'>Already have an account? <a href="Login"> </a></p>

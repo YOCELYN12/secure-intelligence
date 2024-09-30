@@ -1,5 +1,6 @@
 import './App.css'
-import Cuentas from './Pages/Cuentas'
+import PaginaPrincipal from './Pages/PaginaPrincipal'
+
 
 
 
@@ -16,7 +17,11 @@ function App() {
 
       <Footer /> */}
 
-      <Cuentas />
+      {/* <Cuentas /> */}
+     
+
+     <PaginaPrincipal/>
+      
 
     </>
   )
