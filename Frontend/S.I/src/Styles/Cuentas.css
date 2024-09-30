@@ -6,7 +6,8 @@
     height: 100vh; 
     margin: 0; 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 .cont_login1{
@@ -16,9 +17,9 @@
     align-items: center;
 }
 
-.login-container {
-    background: rgba(22, 21, 21, 0.911); /* Fondo blanco opaco */
-    padding: 60px;
+.login-container2 {
+    background: rgb(22, 21, 21); /* Fondo blanco opaco */
+    padding: 50px;
     border-radius: 18px;
     position: fixed;
 }
@@ -26,8 +27,16 @@
 .login-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
 }
+
+
+.div-letras-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+} 
 
 .letras_login {
     margin-bottom: 20px;
@@ -35,33 +44,31 @@
     color: bisque;
 }
 
-.div-Login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
-} 
+.letras-input{
+    color: aliceblue;
+}
 
-.cont-input{
+.cont-input-login{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: -5px;
     position: relative;
-    bottom: 7vh;
+    bottom: 5vh;
 }
 
 .input_login{
-    margin-bottom: 10px;
+    color: antiquewhite;
     padding: 2px;
     border-radius: 18px;
     min-width: 310px; /* Ancho mínimo */
     min-height: 36px; /* Alto mínimo */
     width: 100%; /* O puedes quitar esta línea para que sea sólo el mínimo */
-    
 }
 
+
+
 .button_login {
-    padding: 10px;
+    padding: 12px;
     background-color: rgba(21, 112, 239, 1);
     color: white;
     border: none;
@@ -72,6 +79,14 @@
 .button_login:hover {
     background-color: #0c055e;
 }
+
+.login-acceso{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+
 
 
 
@@ -89,40 +104,62 @@
 }
 
 .registro-container{
-    background: rgba(22, 21, 21, 0.911); /* Fondo blanco opaco */
-    padding: 110px;
+    background: rgb(22, 21, 21); /* Fondo blanco opaco */
+    padding: 60px;
     border-radius: 18px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
 }
 
 .registro-form{
     display: flex;
     flex-direction: column;
+    
 }
 
 .letras_registro{
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     text-align: center;
-    color: beige;
+    color: bisque;
+}
+.div-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+} 
+
+.cont-input-registro{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+    bottom: 0vh;
 }
 
 .input_registro{
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 18px;
+    min-width: 310px; /* Ancho mínimo */
+    min-height: 36px; /* Alto mínimo */
+    width: 100%; /* O puedes quitar esta línea para que sea sólo el mínimo */
+    color: aliceblue;
 }
 
 .button_registro{
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: rgba(21, 112, 239, 1);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 18px;
     cursor: pointer;
 }
 
 .button_registro:hover {
-    background-color: #45a049;
+    background-color: #0c055e;
+}
+
+.letras_footer{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+   
 }
