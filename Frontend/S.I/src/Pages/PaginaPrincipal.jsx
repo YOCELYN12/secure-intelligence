@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
 import "../Styles/PaginaPrincipal.css"
+import Cards from '../Components/Cards'
+import CardPublicidad from '../Components/CardPublicidad'
 
 
 function PaginaPrincipal() {
@@ -9,7 +11,7 @@ function PaginaPrincipal() {
     return (
 
         <div>
-            
+
             <Navbar />
 
             <div className="app">
@@ -17,11 +19,15 @@ function PaginaPrincipal() {
                 <main>
 
                     <div className='fondo'>
-                        <div className='fondo2'></div>
+                        <div className='fondo2'>
+                            <CardPublicidad />
+                        </div>
+
                     </div>
 
-                  <p>HOLA PRUEBA</p>
-                  
+
+                    <Cards />
+
                 </main>
 
             </div>
