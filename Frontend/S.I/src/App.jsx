@@ -1,5 +1,6 @@
-import { Modal } from 'bootstrap'
+// import { Modal } from 'bootstrap'
 import './App.css'
+import Cuentas from './Pages/Cuentas'
 // import CardPublicidad from './Components/CardPublicidad'
 // import Cards from './Components/Cards'
 // import PaginaPrincipal from './Pages/PaginaPrincipal'
@@ -20,8 +21,7 @@ function App() {
 
       <Footer /> */}
 
-      {/* <Cuentas /> */}
-
+      <Cuentas/>
 
       {/* <PaginaPrincipal/> */}
 
@@ -29,7 +29,7 @@ function App() {
 
       {/* <CardPublicidad/> */}
 
-      <Modal/>
+      {/* <Modal/> */}
 
     </>
   )
