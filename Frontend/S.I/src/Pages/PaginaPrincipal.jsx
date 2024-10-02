@@ -4,6 +4,7 @@ import Footer from "../Components/Footer"
 import "../Styles/PaginaPrincipal.css"
 import Cards from '../Components/Cards'
 import CardPublicidad from '../Components/CardPublicidad'
+import LetrasPublicidad from '../Components/LetrasPublicidad'
 
 
 function PaginaPrincipal() {
@@ -20,6 +21,7 @@ function PaginaPrincipal() {
 
                     <div className='fondo'>
                         <div className='fondo2'>
+                            <LetrasPublicidad/>
                             <CardPublicidad />
                         </div>
                     </div>
