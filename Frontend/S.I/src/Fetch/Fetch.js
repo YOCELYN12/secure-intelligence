@@ -17,3 +17,16 @@ const Post = async(datos,endpoint) => {
     }
 }
 export{Post}
+
+
+//Get
+const Get = async(endpoint)=>{
+    try {
+        const peticion = await fetch("http://localhost:8000/api/registro"+endpoint)
+        const datos = await peticion.json()
+        return datos
+    } catch (error) {
+        console.log(error)
+
+    }
+}
