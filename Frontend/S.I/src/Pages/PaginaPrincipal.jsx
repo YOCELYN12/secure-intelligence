@@ -22,11 +22,9 @@ function PaginaPrincipal() {
                         <div className='fondo2'>
                             <CardPublicidad />
                         </div>
-
                     </div>
 
-
-                    <Cards />
+                    <Cards /> 
 
                 </main>
 
