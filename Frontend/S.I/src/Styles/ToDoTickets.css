@@ -1,5 +1,39 @@
+body{
+    margin: 0; 
+    height: 100vh; 
+    background-image: url(../IMG/Fondo_cuenta.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.fondo-fondo{
+    margin: 0; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.466);
+}
 .contenedor-tickeds{
-    background-color: aqua;
+    background-color: rgb(255, 253, 253);
     width: 500PX;
     height: 500PX;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cont-letras-tickets{
+    background-color: black;
+    width: 400px;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.letras-tickets{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
 }
