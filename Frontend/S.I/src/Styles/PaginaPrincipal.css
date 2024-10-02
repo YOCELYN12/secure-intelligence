@@ -15,15 +15,14 @@ main {
     background-repeat: no-repeat;  
     width: 210vh;
     height: 100vh;
-    filter: saturate(180%); /* Aumenta la saturación al 150% */
+    filter: saturate(200%); /* Aumenta la saturación al 150% */
     
 }
 
 .fondo2{
-    background-color: rgba(10, 9, 9, 0.321);
+    background-color: rgba(10, 9, 9, 0.696);
     width: 210vh;
     height: 100vh;
-    
 }
 
 .card{

@@ -5,7 +5,7 @@
 
 }
 .contenedor{
-    /* background: linear-gradient(to right, #09060596, #0507743f); */
+    
     background: linear-gradient(to right, rgba(0, 0, 0, 0.232) 0%, rgba(2, 2, 53, 0.473) 50%, rgba(0, 0, 0, 0.078) 100%);
     width:400px ;
     height: 250px;
