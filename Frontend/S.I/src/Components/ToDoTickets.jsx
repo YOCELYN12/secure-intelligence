@@ -3,7 +3,7 @@ import '../Styles/ToDoTickets.css'
 
 function ToDoTickets() {
     return (
-        <body>
+        <body >
 
 
             <div className='fondo-fondo'>
