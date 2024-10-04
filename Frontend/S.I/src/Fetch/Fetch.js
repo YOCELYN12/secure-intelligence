@@ -1,17 +1,15 @@
 //Post
-const Post = async(datos,endpoint) => {
+const Post = async(datos) => {
     try {
-        const respuesta = await fetch("http://localhost:8000/api/registro"+endpoint,{
+        const respuesta = await fetch("http://localhost:8000/api/registro",{
             method:"POST",
-            headers:
-            {
-                "Content-Typer": "aplication/json"
-            },
+            headers: {
+                "Content-type": "application/json"
+              },
             body:JSON.stringify(datos)
         })
-        const data = await respuesta.json()
-        console.log(data)
-
+        const data = await respuesta.json();
+        console.log(data);
     } catch (error) {
         console.log(error)
     }
@@ -20,9 +18,9 @@ export{Post}
 
 
 //Get
-const Get = async(endpoint)=>{
+const Get = async()=>{
     try {
-        const peticion = await fetch("http://localhost:8000/api/registro"+endpoint)
+        const peticion = await fetch("http://localhost:8000/api/registro")
         const datos = await peticion.json()
         return datos
     } catch (error) {
@@ -30,3 +28,5 @@ const Get = async(endpoint)=>{
 
     }
 }
+
+export {Get}

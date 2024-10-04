@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 import "../Styles/Login.css"
 import { useNavigate } from 'react-router-dom'
-import {Get} from '../Fetch/Fetch'
+import {Get} from "../Fetch/Fetch"
 
 
 function Login() {
-  const navegar = useNavigate()
+  
 
-  conts [intName, setIntName] = useState("")
+  const[intName, setIntName ] = useState("")
   const[intPassword, setIntPassword] = useState("")
 
   const navigate = useNavigate()
 
   const validarUser = async(e) => {
+    
     try {
       e.preventDefault()
       const data = await Get("users")
@@ -20,9 +21,8 @@ function Login() {
       const validarUsuarios = data.find(datos => datos.Name === intName && datos.Password === intPassword)
       if (validarUsuarios){
         navigate("/PaginaAdmin")
-      } else if (intName.trim() === "" || intPassword.trim() === ""){
-        alert("ksjskskksks")
       }else(alert("hbhfebfhefbef"))
+
     } catch (error) {
       console.log("error")
     }
@@ -55,7 +55,7 @@ function Login() {
 
             <p className='login-acceso'>Already have an account? <link rel="stylesheet" href="Login" /></p>
 
-            <button className='button_login' type="submit">Entrar</button>
+            <button className='button_login' type="submit" onClick={validarUser}>Entrar</button>
 
           </form>
 

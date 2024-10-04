@@ -7,14 +7,10 @@ body{
     background-position: center; 
 }
 
-.fondo-fondo{
-    margin: 0; 
-    height: 100vh; 
-    background-color: rgba(0, 0, 0, 0.466);
-}
+
 .contenedor-tickeds{
-    background-color: rgb(255, 253, 253);
-    width: 500PX;
+    background-color: rgba(0, 0, 0, 0.642);
+    width: 1300PX;
     height: 500PX;
     border-radius: 30px;
     margin-left: 40px;
@@ -25,7 +21,7 @@ body{
 }
 
 .cont-letras-tickets{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 400px;
     height: 40px;
     border-radius: 30px;
@@ -35,5 +31,5 @@ body{
 .letras-tickets{
     display: flex;
     justify-content: center;
-    color: aliceblue;
+    color: rgb(4, 4, 4);
 }

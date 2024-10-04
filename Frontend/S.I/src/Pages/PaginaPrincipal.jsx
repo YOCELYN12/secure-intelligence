@@ -5,6 +5,7 @@ import "../Styles/PaginaPrincipal.css"
 import Cards from '../Components/Cards'
 import CardPublicidad from '../Components/CardPublicidad'
 import LetrasPublicidad from '../Components/LetrasPublicidad'
+import CardFundadoras from '../Components/CardFundadoras'
 
 
 function PaginaPrincipal() {
@@ -20,10 +21,13 @@ function PaginaPrincipal() {
                 <main>
 
                     <div className='fondo'>
+
                         <div className='fondo2'>
                             <LetrasPublicidad/>
                             <CardPublicidad />
+                            <CardFundadoras/>
                         </div>
+                        
                     </div>
 
                     <Cards /> 

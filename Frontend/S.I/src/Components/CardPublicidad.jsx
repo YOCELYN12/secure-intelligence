@@ -4,13 +4,14 @@ import { FaCheck, FaLeaf } from "react-icons/fa6";
 
 function CardPublicidad() {
     return (
-        <div style={{display:'flex', justifyContent:'center', marginTop:"-200px"}}>
+        <div style={{display:'flex', justifyContent:'center', marginTop:"-300px"}}>
 
-            <div style={{ width: "18rem", backgroundColor: 'rgba(1, 1, 1, 0.4)', marginTop:'300px'  }}>
+            <div style={{ width: "18rem", backgroundColor: 'rgba(1, 1, 1, 0.4)', marginTop:'300px', padding:"50px"}}>
                 <div className='div-precios'>
                     <h1>$39</h1>
                     <h6>/month</h6>
                 </div>
+
 
 
                 <h3 className='letras'>Basic License</h3>

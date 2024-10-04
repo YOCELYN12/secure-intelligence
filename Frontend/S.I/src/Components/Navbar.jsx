@@ -9,7 +9,7 @@ function Navbar() {
     <nav className='navbar'>
 
       <div>
-        <img className='logo' src="https://i.imgur.com/mVC3h38.png" alt="mmmm" />
+        <img className='logo' src="https://i.imgur.com/OzhReRY.png" alt="mmmm" />
       </div>
 
       <div className='container-logo-search'>

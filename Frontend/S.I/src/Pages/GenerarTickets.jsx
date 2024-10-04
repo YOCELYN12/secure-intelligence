@@ -4,9 +4,8 @@ import '../Styles/GenerarTickets.css'
 function GenerarTickets() {
     return (
         <body>
-
             <div>
-
+              
             </div>
         </body>
     )

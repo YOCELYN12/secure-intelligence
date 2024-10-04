@@ -13,7 +13,7 @@ main {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;  
-    width: 210vh;
+    width: 200vh;
     height: 100vh;
     filter: saturate(200%); /* Aumenta la saturación al 150% */
     
@@ -21,7 +21,7 @@ main {
 
 .fondo2{
     background-color: rgba(10, 9, 9, 0.696);
-    width: 210vh;
+    width: 200vh;
     height: 100vh;
 }
 
