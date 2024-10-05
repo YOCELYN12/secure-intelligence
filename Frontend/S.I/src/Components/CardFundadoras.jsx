@@ -5,7 +5,7 @@ function CardFundadoras() {
     return (
 
         <div className='prueba'>
-            <div className="card" style={{ width: "18rem", display: "flex", alignContent: "flex-end" }}>
+            <div className="card" style={{ width: "18rem", display: "flex", alignContent: "flex-end",}}>
                 <div className="card-body">
 
                     <p className="card-text">

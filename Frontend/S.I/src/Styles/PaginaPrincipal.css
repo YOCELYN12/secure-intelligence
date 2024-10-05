@@ -16,7 +16,6 @@ main {
     width: 200vh;
     height: 100vh;
     filter: saturate(200%); /* Aumenta la saturación al 150% */
-    
 }
 
 .fondo2{
@@ -29,4 +28,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.bton{
+    display: flex;
+    margin-top: -350px;
+    width: 300px;
+    border-radius:180px;
+    background: linear-gradient(to right, rgba(0, 0, 1, 0.926) 10%, rgb(4, 4, 60) 100%, rgba(0, 0, 0, 0.128) 100%)
+
+}
+
+.letras-nosotros{
+   color: rgb(255, 254, 254);
+   font-size: large;
+   margin-left: 100px;
 }

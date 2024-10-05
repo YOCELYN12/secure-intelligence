@@ -1,8 +1,10 @@
 import React from 'react'
+import '../Styles/Cards.css'
+
 
 function Cards() {
     return (
-        <div style={{display:'flex', justifyContent:'center'}}>
+        <div style={{marginLeft: '320px'}}>
             <div className="card" style={{ width: "18rem", }}>
 
             
@@ -14,7 +16,8 @@ function Cards() {
                     <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
 
-               
+
+
             </div>
         </div>
     )
