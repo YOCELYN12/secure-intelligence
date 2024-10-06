@@ -7,8 +7,8 @@ import CardPublicidad from '../Components/CardPublicidad'
 import LetrasPublicidad from '../Components/LetrasPublicidad'
 import CardFundadoras from '../Components/CardFundadoras'
 import Modal from '../Components/Modal'
-
 import { useState } from 'react'
+import CardsOfertas from '../Components/CardsOfertas'
 
 
 function PaginaPrincipal() {
@@ -46,6 +46,8 @@ function PaginaPrincipal() {
                 </div>
 
                 <Modal />
+
+                <CardsOfertas/>
             </div>
 
             <Footer />
