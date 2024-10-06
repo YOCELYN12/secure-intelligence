@@ -5,7 +5,7 @@ import '../Styles/CardsOfertas.css'
 function CardsOfertas() {
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: "-300px", marginLeft:'730px'}}>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: "-1200px", marginLeft:'880px'}}>
 
                 <div style={{ width: "18rem", backgroundColor: 'rgba(1, 1, 1, 0.4)', marginTop: '300px', padding:'20px', width:'300px', height:'430px', backgroundColor:'white'}}>
                     <div className='precios'>

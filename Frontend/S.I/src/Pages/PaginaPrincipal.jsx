@@ -9,6 +9,8 @@ import CardFundadoras from '../Components/CardFundadoras'
 import Modal from '../Components/Modal'
 import { useState } from 'react'
 import CardsOfertas from '../Components/CardsOfertas'
+import CardServicios2 from '../Components/CardServicios2'
+import CardServicios3 from '../Components/CardServicios3'
 
 
 function PaginaPrincipal() {
@@ -43,12 +45,20 @@ function PaginaPrincipal() {
 
                     <Modal show={showModal} onClose={handleCloseModal} />
 
+                    <CardServicios2 />
+                    <CardServicios3/>
+
+                    <CardsOfertas />
+
                 </div>
 
                 <Modal />
 
-                <CardsOfertas/>
+
+
             </div>
+
+
 
             <Footer />
         </div>

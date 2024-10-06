@@ -1,11 +1,10 @@
 import React from 'react'
-import '../Styles/Cards.css'
 
-
-function Cards() {
-    return (
-        <div style={{marginLeft: '580px'}}>
-            <div className="card" style={{ width: "18rem",backgroundColor: 'white', border:'none' }}>
+function CardServicios2() {
+  return (
+    <div>
+      <div style={{marginTop:'80px', marginLeft:'90px'}}>
+            <div className="card"style={{ width: "18rem",backgroundColor: 'white', border:'none' }}>
 
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
@@ -16,7 +15,8 @@ function Cards() {
 
             </div>
         </div>
-    )
+    </div>
+  )
 }
 
-export default Cards
+export default CardServicios2
