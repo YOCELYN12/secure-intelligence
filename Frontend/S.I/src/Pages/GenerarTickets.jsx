@@ -81,8 +81,9 @@ function GenerarTickets() {
 
       </div>
 
-
-      <Footer className="footer" />
+      <div className='footeer'>
+        <Footer/>
+      </div>
 
 
     </body>
