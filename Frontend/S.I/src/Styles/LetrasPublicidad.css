@@ -1,0 +1,22 @@
+.cont1{
+    transform: rotate(20deg); /* Rota 180 grados */    
+    margin-left: 80px;
+    margin-right: 160ic;
+
+}
+.contenedor{
+    
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.232) 0%, rgba(2, 2, 53, 0.473) 50%, rgba(0, 0, 0, 0.078) 100%);
+    width:400px ;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}   
+
+.letras-publicidad{
+    transform: rotate(-20deg); /* Rota 180 grados */
+    color: azure;
+}
+

@@ -1,0 +1,88 @@
+.img-fondos{
+    background-image: url(https://i.imgur.com/m6FTePk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1512px;
+    height:400px;
+}
+
+.cont-palabras{
+    width: 600px;
+    height: 250px;
+    background-color: white;
+    margin-left: 490px;
+    position: relative;
+    top: 200px;
+    border-radius: 80px;
+    
+}
+
+
+.h1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.h6{
+    display: flex;
+    justify-content: center; 
+}
+
+.letras-quienesSomos{
+    position: relative;
+    top: 80px;
+}
+
+.img-grupo-trabajo{
+    margin-top: 80px;
+    margin-left: 50px;
+    max-width: 700px;
+}
+
+
+
+
+.palabras-quienesSomos {
+    width: 500px;             
+    margin: 0 auto;          
+    padding: 20px;           
+    position: relative;       
+    right: 0;                
+    font-size: 20px;
+    text-align:center;
+    line-height: 50px;
+}
+
+.palabras-quienesSomos {
+    position: absolute;       
+    right: 9%;                 
+    top: 110%;                 
+    transform: translateY(-50%); 
+}
+
+.img-clarlas{
+    max-width: 700px;
+    margin-left: 850px;
+    margin-top: 180px;
+}
+
+
+.letras-clarlas{
+    width: 500px;             
+    margin: 0 auto;          
+    padding: 20px;           
+    position: relative;       
+    right: 0;                
+    font-size: 20px;
+    text-align:center;
+    line-height: 50px;
+}
+
+.letras-clarlas{
+    position: absolute;       
+    left: -600px;              
+    top: 135%;                 
+    transform: translateY(50%); 
+}

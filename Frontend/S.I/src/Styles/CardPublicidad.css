@@ -1,0 +1,29 @@
+.div-precios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.letras{
+    color: rgb(235, 191, 14); 
+}
+
+
+.iconos{
+    display: flex;
+    margin:15px;
+}
+.texto{
+    margin-left: 20px;
+    color: white;
+}
+
+.color-iconos{
+    color:rgb(235, 191, 14) ;
+}
+
+.mover-card{
+    display: flex;
+    
+}

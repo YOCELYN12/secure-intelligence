@@ -9,7 +9,7 @@ function Navbar() {
     <nav className='navbar'>
 
       <div>
-        <img className='logo' src="https://i.imgur.com/mVC3h38.png" alt="mmmm" />
+        <img className='logo' src="https://i.imgur.com/OzhReRY.png" alt="mmmm" />
       </div>
 
       <div className='container-logo-search'>
@@ -18,14 +18,16 @@ function Navbar() {
           <input className="search-container" type="text" placeholder="Buscar..." />
         </div>
 
-        <div className='btn-buscar'>
-          <button className='icon-buscar'><FaMagnifyingGlass /> </button>
+
+        <div className='btn-buscar' >
+          <button className='icon-buscar'><FaMagnifyingGlass  /> </button>
         </div>
       </div>
 
       <div className='account'>
         <button className='btn-account'>
-          <IoPersonAdd className=' icon-account'/><p>Account</p>
+          <IoPersonAdd className=' icon-account' />
+          <p >Account</p>
         </button>
       </div>
 

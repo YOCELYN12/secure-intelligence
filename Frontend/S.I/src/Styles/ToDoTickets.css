@@ -1,0 +1,78 @@
+.btn-crear-ticket{
+   position: relative;
+   left: 1300px;
+   top: 30px;
+   width: 180px;
+   height: 50px;
+   background-color: red;
+   color: aliceblue;
+}
+
+
+.cont-tickets{
+    width: 85%;
+    height: 1200px;
+    position: relative;
+    top: 120px;
+    left: 8%; 
+}
+
+.cont-nuevos{
+    width: 25%;
+    height: 50%;
+    background-color: rgba(128, 229, 229, 0.337);
+    position: relative;
+    left: 7%;
+    top: 10%;
+}
+
+.cont-cerrados{
+    width: 25%;
+    height: 50%;
+    background-color: rgba(128, 229, 229, 0.337);
+    position: relative;
+    left: 40%;
+    top: -40%;
+}
+
+
+.cont-espera{
+    width: 25%;
+    height: 50%;
+    background-color: rgba(128, 229, 229, 0.337);
+    position: relative;
+    left: 73%;
+    top: -90%;
+}
+
+
+
+.search-container-tickets {
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    width: 20%;
+}
+ 
+ 
+.container-logo{
+   position: relative;
+   left: 65%;  
+   top: 84px;
+}
+
+ 
+.btn-buscar-tickets{
+    display: flex;
+    border-radius: 10px;
+    height: 50px;
+    border-radius: none;
+    position: absolute;
+    left: 16%;
+    top: 0%;
+}
+ 
+.icon-buscar-tickets{
+    background-color: transparent;
+    border:none;
+}

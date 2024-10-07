@@ -1,21 +1,38 @@
+// import { Modal } from 'bootstrap'
 import './App.css'
-import Footer from './Components/Footer'
-import Navbar from './Components/Navbar'
+import ToDoTickets from './Components/ToDoTickets'
+import Cuentas from './Pages/Cuentas'
+// import CardPublicidad from './Components/CardPublicidad'
+// import Cards from './Components/Cards'
+// import PaginaPrincipal from './Pages/PaginaPrincipal'
+
 
 
 
 function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/>
 
       <div className="app">
       <main>
-        {/* Aquí va el contenido principal de tu página */}
+         Aquí va el contenido principal de tu página }
       </main>
       </div>
 
-      <Footer />
+      <Footer /> */}
+
+      <Cuentas/>
+
+      {/* <PaginaPrincipal/> */}
+
+      {/* <Cards /> */}
+
+      {/* <CardPublicidad/> */}
+
+      {/* <Modal/> */}
+
+      
 
     </>
   )

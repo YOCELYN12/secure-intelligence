@@ -1,0 +1,18 @@
+/* Modal.css */
+.modal {
+    position: absolute;
+    bottom: 100vh;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 1050; /* Asegúrate de que el z-index sea lo suficientemente alto */
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show {
+    transform: translateY(100vh);
+}
+
+.modal.hide {
+    transform: translateY(100%);
+}

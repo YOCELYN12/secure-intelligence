@@ -1,0 +1,24 @@
+.letras{
+    color: rgb(235, 191, 14); 
+}
+
+.iconos{
+    display: flex;
+    margin:15px;
+}
+.texto{
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.color-iconos{
+    color:rgb(235, 191, 14) ;
+}
+
+.mover-card{
+    display: flex;
+}
+
+.precios{
+    display: flex;
+}

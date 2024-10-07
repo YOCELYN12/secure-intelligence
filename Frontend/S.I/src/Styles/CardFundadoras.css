@@ -1,0 +1,38 @@
+.card{
+   background-color: rgba(0, 0, 0, 0.296);
+}
+
+.prueba{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -700px;
+}
+
+.letras-fundadora{
+    color: aliceblue;
+    display: flex;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+
+.img-Yennifer{
+    width: 50px; 
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 180px;
+}
+
+.letras-Yennifer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    color: aliceblue;
+}
+
+.pentester{
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-right: 30px;
+}

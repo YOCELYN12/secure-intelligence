@@ -1,14 +1,55 @@
-
-
 .footer {
     background-color: rgba(40, 54, 70, 1);
     color: white;
-    padding: 20px 0;
-    position: relative; /* Asegura que esté al final del contenido */
-    bottom: 0;
+    padding: 30px 0;
     width: 100%;
+    position: relative;
+    bottom: -130vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
 }
 
-.letras_footer{
-    text-align: center;
+
+.cont_footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  
 }
+
+.cont_centrar_footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.cont-icon{
+   display: flex;
+   justify-content: center;
+   
+}
+
+
+.cont2-iconos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+   
+}
+
+.iconos-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.frase-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
