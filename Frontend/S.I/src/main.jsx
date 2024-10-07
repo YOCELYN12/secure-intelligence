@@ -9,6 +9,7 @@ import Cuentas from './Pages/Cuentas.jsx'
 import PaginaAdmin from './Pages/PaginaAdmin.jsx'
 import PaginaPrincipal from './Pages/PaginaPrincipal.jsx'
 import GenerarTickets from './Pages/GenerarTickets.jsx';
+import QuienesSomos from './Pages/QuienesSomos.jsx';
 
 
 const router = createBrowserRouter([ 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path:"/GenerarTickets",
     element: <GenerarTickets/>
+  },
+  {
+    path:"/QuienesSomos",
+    element: <QuienesSomos/>
   }
 
 ])
