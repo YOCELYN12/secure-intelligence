@@ -23,12 +23,6 @@
     margin-bottom: 40px;
 }
 
-.letras_footer{
-    display: flex;
-    justify-content: center;
-    color: aliceblue;
-}
-
 
 .cont-icon{
    display: flex;
@@ -47,9 +41,13 @@
     justify-content: space-evenly;
 }
 
+
 .frase-footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 50px;
 }
+
+
+

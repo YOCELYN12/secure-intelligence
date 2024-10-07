@@ -36,7 +36,7 @@ function Footer() {
 
 
       <div className='frase-footer'>
-        <p className='letras_footer'>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+        <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
       </div>
 
     </footer>
