@@ -54,9 +54,9 @@ function PaginaPrincipal() {
 
                 </div>
 
-                <div>
-                    <Modal />
-                </div>
+
+                <Modal />
+
 
             </div>
 

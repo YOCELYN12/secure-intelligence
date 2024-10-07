@@ -4,7 +4,7 @@ import { FaLeaf } from 'react-icons/fa6'
 function CardServicios4() {
   return (
     <div>
-      <div style={{ marginTop: '-370px', marginLeft: '950px'}}>
+      <div style={{ marginTop: '-40%', marginLeft: '950px'}}>
         <div className="card" style={{ width: "18rem", backgroundColor: 'white', border: 'none' }}>
 
           <div className="card-body">
@@ -19,5 +19,6 @@ function CardServicios4() {
     </div>
   )
 }
+
 
 export default CardServicios4

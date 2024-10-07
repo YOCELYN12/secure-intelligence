@@ -4,7 +4,7 @@ import '../Styles/Cards.css'
 
 function Cards() {
     return (
-        <div style={{marginLeft: '580px'}}>
+        <div style={{marginLeft: '580px', marginTop:'5%'}}>
             <div className="card" style={{ width: "18rem",backgroundColor: 'white', border:'none' }}>
 
                 <div className="card-body">
@@ -18,5 +18,6 @@ function Cards() {
         </div>
     )
 }
+
 
 export default Cards

@@ -16,7 +16,7 @@ function Modal({ show, onClose }) {
                         />
                     </div>
                     <div className="modal-body">
-                        <p>Modal body text goes here.</p>
+                        <p>En Secure Intelligence, combinamos experiencia, innovación y pasión por la ciberseguridad. Nuestro equipo de expertos está dedicado a proteger tu información y garantizar la continuidad de tu negocio. Ofrecemos soluciones personalizadas y soporte 24/7, adaptándonos a tus necesidades específicas. Con nosotros, obtienes no solo protección, sino también tranquilidad. ¡Confía en Secure Intelligence y fortalece la seguridad de tu empresa!</p>
                     </div>
                     <div className="modal-footer">
                         <button
