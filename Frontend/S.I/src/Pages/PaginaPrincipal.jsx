@@ -35,9 +35,9 @@ function PaginaPrincipal() {
                 <div className='fondo'>
 
                     <div className='fondo2'>
-                        <LetrasPublicidad/>
-                        <CardPublicidad/>
-                        <CardFundadoras/>
+                        <LetrasPublicidad />
+                        <CardPublicidad />
+                        <CardFundadoras />
                     </div>
 
                     <Cards />
@@ -46,11 +46,11 @@ function PaginaPrincipal() {
 
                     <Modal show={showModal} onClose={handleCloseModal} />
 
-                    <CardServicios2/>
-                    <CardServicios3/>
-                    <CardServicios4/>
+                    <CardServicios2 />
+                    <CardServicios3 />
+                    <CardServicios4 />
 
-                    <CardsOfertas/>
+                    <CardsOfertas />
 
                 </div>
 
@@ -58,7 +58,10 @@ function PaginaPrincipal() {
 
             </div>
 
-            <Footer  style/>
+
+            <div className='foter'>
+                <Footer />
+            </div>
         </div>
 
     )

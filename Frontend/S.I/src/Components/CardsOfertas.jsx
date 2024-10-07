@@ -7,7 +7,7 @@ function CardsOfertas() {
         <div>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: "-1200px", marginLeft:'990px'}}>
 
-                <div style={{ width: "18rem", backgroundColor: 'rgba(1, 1, 1, 0.4)', marginTop: '300px', padding:'20px', width:'300px', height:'430px', backgroundColor:'white'}}>
+                <div style={{ width: "18rem", backgroundColor: 'rgba(1, 1, 1, 0.4)', marginTop: '180px', padding:'20px', width:'300px', height:'430px', backgroundColor:'white'}}>
                     <div className='precios'>
                         <h1>$39</h1>
                         <h6>/month</h6>
