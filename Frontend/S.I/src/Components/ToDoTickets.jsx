@@ -26,7 +26,7 @@ function ToDoTickets() {
                     <div className='btn-buscar-tickets' >
                         <button className='icon-buscar-tickets'><FaMagnifyingGlass /> </button>
                     </div>
-                    
+
                 </div>
 
                 <button className='btn-crear-ticket' >Crear Ticket</button>
@@ -46,9 +46,6 @@ function ToDoTickets() {
                     <div className='cont-espera'>
 
                     </div>
-
-
-
 
                 </div>
             </div>
