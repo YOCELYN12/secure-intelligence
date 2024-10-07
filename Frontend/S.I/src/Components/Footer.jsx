@@ -13,10 +13,10 @@ function Footer() {
       <div className='cont_centrar_footer' >
         <div className='cont_footer'>
 
-          <a className='letras_footer' href="">Servicios</a>
-          <a className='letras_footer' href="">Soporte</a>
-          <a className='letras_footer' href="">Company</a>
-          <a className='letras_footer' href="">Join Us</a>
+          <a className='letras_footer' href="/">Servicios</a>
+          <a className='letras_footer' href="/GenerarTickets">Soporte</a>
+          <a className='letras_footer' href="/QuienesSomos">Quienes somos</a>
+          <a className='letras_footer' href="/Cuentas">Centro de cuentas</a>
 
         </div>
       </div>
