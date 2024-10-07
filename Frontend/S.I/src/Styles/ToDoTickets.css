@@ -1,7 +1,6 @@
-body{
+.body{
     margin: 0; 
     height: 100vh; 
-    background-image: url(../IMG/Fondo_cuenta.png);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 

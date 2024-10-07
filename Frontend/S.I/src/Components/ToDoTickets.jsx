@@ -5,11 +5,10 @@ function ToDoTickets() {
     return (
         <body >
 
-
             <div className='fondo-fondo'>
                 <div className='contenedor-tickeds'>
                     <div className='cont-letras-tickets'>
-                          <h3 className='letras-tickets'>Tickest</h3>
+                        <h3 className='letras-tickets'>Tickest</h3>
                     </div>
 
                 </div>

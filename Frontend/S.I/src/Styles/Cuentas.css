@@ -1,0 +1,11 @@
+.bodys{
+    background-image: url('../IMG/Fondo_cuenta.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
+    display: flex;
+    justify-content: space-around;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}

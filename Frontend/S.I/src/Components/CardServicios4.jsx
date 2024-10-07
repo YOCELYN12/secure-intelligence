@@ -3,7 +3,7 @@ import React from 'react'
 function CardServicios4() {
   return (
     <div>
-      <div style={{marginTop:'10px', marginLeft:'200px'}}>
+      <div style={{marginTop:'-370px', marginLeft:'900px'}}>
             <div className="card"style={{ width: "18rem",backgroundColor: 'white', border:'none' }}>
 
                 <div className="card-body">

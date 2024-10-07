@@ -5,15 +5,13 @@ import '../Styles/CardsOfertas.css'
 function CardsOfertas() {
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: "-1200px", marginLeft:'880px'}}>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: "-1200px", marginLeft:'990px'}}>
 
                 <div style={{ width: "18rem", backgroundColor: 'rgba(1, 1, 1, 0.4)', marginTop: '300px', padding:'20px', width:'300px', height:'430px', backgroundColor:'white'}}>
                     <div className='precios'>
                         <h1>$39</h1>
                         <h6>/month</h6>
                     </div>
-
-
 
                     <h3 className='letras'>Basic License</h3>
 
@@ -23,6 +21,7 @@ function CardsOfertas() {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                         </p>
+                        
                     </div>
 
                     <hr style={{ color: 'white', border: '2px solid' }} />

@@ -1,17 +1,18 @@
 import React from 'react'
 import Login from '../Components/Login'
 import Registro from '../Components/Registro'
+import '../Styles/Cuentas.css'
 
 function Cuentas() {
 
 
   return (
 
-    <div className='body'>
+    <div className='bodys'>
 
-     <Login/>
+      <Login />
 
-    <Registro/>
+      <Registro />
 
     </div>
   )

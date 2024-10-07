@@ -1,0 +1,37 @@
+.img{
+    background-image: url(../IMG/FondoPaginaTickets.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 1522px;
+    height: 400px; 
+}
+
+.div-contenedor{
+    width: 1150px;
+    height: 300px;
+    background-color: white;
+    margin-left: 180px;
+    position: relative;
+    top:130px;
+}
+
+.img-animado{
+    width: 400px;
+}
+
+.texto-apartado{
+    font-size: 30px;
+    position: relative;
+    top: -180px;
+    left: 520px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.letras-bienvenido{
+    margin-top: 300px;
+    margin-left: 600px;
+}
