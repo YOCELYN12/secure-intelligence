@@ -18,14 +18,15 @@ function Navbar() {
           <input className="search-container" type="text" placeholder="Buscar..." />
         </div>
 
-        <div className='btn-buscar'>
-          <button className='icon-buscar'><FaMagnifyingGlass /> </button>
+
+        <div className='btn-buscar' >
+          <button className='icon-buscar'><FaMagnifyingGlass  /> </button>
         </div>
       </div>
 
       <div className='account'>
         <button className='btn-account'>
-          <IoPersonAdd className=' icon-account'/>
+          <IoPersonAdd className=' icon-account' />
           <p >Account</p>
         </button>
       </div>

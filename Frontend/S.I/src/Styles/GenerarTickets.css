@@ -4,16 +4,16 @@
     background-position: center; 
     background-repeat: no-repeat; 
     width: 1522px;
-    height: 400px; 
+    height: 600px; 
 }
 
 .div-contenedor{
     width: 1150px;
-    height: 300px;
+    height: 400px;
     background-color: white;
     margin-left: 180px;
     position: relative;
-    top:130px;
+    top:200px;
 }
 
 .img-animado{
@@ -32,6 +32,105 @@
 }
 
 .letras-bienvenido{
-    margin-top: 300px;
-    margin-left: 600px;
+    margin-top: 200px;
+    margin-left: 500px;
+}
+
+
+.int-nombre{
+    width: 600px;
+}
+
+.cont-nombre{
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.int-apellido{
+    width: 600px;
+}
+
+.cont-apellido{
+    margin-left: 800px;
+    margin-top: -70px;
+}
+
+
+.int-correo{
+    width: 600px;
+}
+
+.cont-correo{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.select-servicio{
+    width: 600px;
+}
+
+.cont-tipo-servicio{
+    margin-left: 800px;
+    margin-top: -70px;
+}
+
+
+.int-numero-telefono{
+    width: 600px;
+}
+
+.cont-telefono{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+
+.int-empresa{
+    width: 600px;
+}
+
+
+.cont-empresa{
+    margin-left: 800px;
+    margin-top: -70px;
+}
+
+.int-descripcion{
+  width: 1320px;
+  height: 100px;
+}
+
+.cont-descripcion{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+
+.footer{
+    position: relative;
+    top: 200px;
+}
+
+
+.cont-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+
+.btn-cancelar{
+  width: 300px;
+  height: 50px;
+  background-color: rgb(93, 93, 96);
+  color: aliceblue;
+  border: none;
+}
+
+.btn-enviar{
+    width: 300px;
+    height: 50px;
+    background-color: darkblue;
+    color: aliceblue;
+    border: none;
 }
