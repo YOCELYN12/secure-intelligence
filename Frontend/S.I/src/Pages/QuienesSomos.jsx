@@ -28,9 +28,6 @@ function QuienesSomos() {
             <img  className='img-clarlas' src="https://i.imgur.com/5SXZoYY.jpg" alt="" />
             <p className='letras-clarlas' >Además de nuestras capacidades de desarrollo, ofrecemos una gama de servicios educativos, incluyendo cursos de hacking ético y ciberseguridad, donde capacitamos a individuos y empresas en las mejores prácticas para protegerse en el entorno digital. Creemos que el conocimiento es la mejor defensa, y estamos comprometidos a formar a la próxima generación de profesionales en tecnología.</p>
 
-
-
-
             <Footer />
 
         </div>

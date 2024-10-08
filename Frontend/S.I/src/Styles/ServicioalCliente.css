@@ -1,0 +1,88 @@
+.img-servicio{
+    position: relative;
+    left: 30%;
+    min-width: 50%;
+}
+
+.letras-cliente{
+    display: flex;
+    justify-content: center;
+}
+
+.conte-nombre{
+  margin-left: 10%;
+  margin-top: 6%;
+}
+
+
+.inp-nombre{
+   width: 40%;
+}
+
+.conte-area{
+   margin-left: 60%;
+   margin-top: -5%;
+}
+
+.inp-area{
+   width: 80%;
+}
+
+.conte-queja{
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.inp-queja{
+    width: 40%;
+}
+
+.conte-select{
+    margin-left: 60%;
+    margin-top: -4.8%;
+}
+
+
+
+.select-siono{
+  width: 80%;
+}
+
+.calificanos{
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.inp-calificanos{
+   width: 92%;
+   height: 10vw;
+}
+
+
+.fotter{
+    margin-top: -60%;
+}
+ 
+
+
+.conte-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.bton-cancelar{
+    width: 300px;
+  height: 50px;
+  background-color: rgb(93, 93, 96);
+  color: aliceblue;
+  border: none;
+}
+
+
+.bton-enviar{
+    width: 300px;
+    height: 50px;
+    background-color: darkblue;
+    color: aliceblue;
+    border: none;
+}

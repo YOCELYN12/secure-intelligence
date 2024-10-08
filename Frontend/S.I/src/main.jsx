@@ -1,7 +1,5 @@
 import ReactDOM from 'react-dom/client';
 import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -10,6 +8,9 @@ import PaginaAdmin from './Pages/PaginaAdmin.jsx'
 import PaginaPrincipal from './Pages/PaginaPrincipal.jsx'
 import GenerarTickets from './Pages/GenerarTickets.jsx';
 import QuienesSomos from './Pages/QuienesSomos.jsx';
+import ServicioalCliente from './Pages/ServicioalCliente.jsx';
+
+
 
 
 const router = createBrowserRouter([ 
@@ -34,9 +35,10 @@ const router = createBrowserRouter([
     element: <QuienesSomos/>
   },
   {
-    path:"/ServicioalCliente",
-    element: <ServicioalCliente/>
+    path:"ServicioalCliente",
+    element:<ServicioalCliente/>
   }
+
 
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
