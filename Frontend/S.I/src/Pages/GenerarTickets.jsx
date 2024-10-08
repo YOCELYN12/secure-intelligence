@@ -1,9 +1,10 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import '../Styles/GenerarTickets.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Post } from '../Fetch/Fetch'
+
 
 function GenerarTickets() {
 
@@ -14,37 +15,28 @@ function GenerarTickets() {
   const [intTelefono, setIntTeleno] = useState("")
   const [intEmpresa, setIntEmpresa] = useState("")
   const [intDescripcion, setIntDescripcion] = useState("")
+  const [id, setId] = useState()
   
 
   const enviarTickets = async (e) => {
     e.preventDefault()
-    let datos ={
-      nombre:nombre,
-      Apellido:Apellido,
-      Corre:Correo,
-      Tipo_de_servicio:Tipo_de_servicio,
-      Numero_de_telefono: Numero_de_telefono,
-      Empresa:Empresa,
-      Descripcion:Descripcion
+    let datos = {
+      id:id,
+      Nombre:intNombre,
+      Apellido:intApellido,
+      Corre:intCorreo,
+      Tipo_de_servicio:intServicio,
+      Numero_de_telefono:intTelefono,
+      Empresa:intEmpresa,
+      Descripcion:intDescripcion
     }
 
-    await Post(datos, "productos")
+    await Post(datos,"tickets")
   }
 
+ 
   return (
    
-
-
-
-
-
-
-
-
-
-
-
-
 
     <body>
 
@@ -58,7 +50,6 @@ function GenerarTickets() {
         </div>
 
       </div>
-
 
       <div>
         <h1 className='letras-bienvenido'>Como podemos ayudarte?</h1>
