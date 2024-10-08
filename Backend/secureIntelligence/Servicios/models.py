@@ -20,7 +20,6 @@ class Suscripciones (models.Model):
     ID_usuario = models.ForeignKey('Usuarios.Usuario',on_delete=models.CASCADE)
     ID_servicio = models.ForeignKey(Servicios_disponibles,on_delete=models.CASCADE)
     
-   
 
 class Factura (models.Model):
     ID_factura = models.AutoField(primary_key=True)

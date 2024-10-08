@@ -13,13 +13,12 @@ function CardsOfertas() {
                         <h6>/month</h6>
                     </div>
 
-                    <h3 className='letras'>Basic License</h3>
+                    <h3 className='letras'>Licencia basica</h3>
 
                     <div className="card-body">
 
                         <p className="card-text" style={{ color: 'black',  }}>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Adquiere mantenimiento de todas tus paginas web y seguridad contra ataques 
                         </p>
                         
                     </div>
@@ -27,11 +26,15 @@ function CardsOfertas() {
                     <hr style={{ color: 'white', border: '2px solid' }} />
 
                     <div className='iconos'>
-                        <FaCheck className='color-iconos' /> <p className='texto'>hpla</p>
+                        <FaCheck className='color-iconos' /> <p className='texto'>Mantenimiento</p>
                     </div>
 
                     <div className='iconos'>
-                        <FaCheck className='color-iconos' /> <p className='texto'>hpla</p>
+                        <FaCheck className='color-iconos' /> <p className='texto'>Seguridad</p>
+                    </div>
+                    
+                    <div className='iconos'>
+                        <FaCheck className='color-iconos' /> <p className='texto'>Confiabilidad</p>
                     </div>
 
                     <div className="card-body">

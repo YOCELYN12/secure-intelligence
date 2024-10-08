@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
  
 # Create your models here. 
 class Departamentos(models.Model):
@@ -31,8 +31,8 @@ class Tipo_usuario (models.Model):
     Id_cliente = models.ForeignKey(Clientes,on_delete=models.CASCADE)
 
 class Usuario(models.Model):
-   user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
-   ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE, null=True, blank=True)
+   user = models.AutoField(primary_key=True)
+#    ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE, null=True, blank=True)
    ID_servicios = models.ForeignKey('Servicios.Servicios_disponibles', on_delete=models.CASCADE,null=True, blank=True)
    ID_empleado = models.ForeignKey(Empleados, on_delete=models.CASCADE,null=True, blank=True)
    

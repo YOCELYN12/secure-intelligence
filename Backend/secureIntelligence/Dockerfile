@@ -10,4 +10,4 @@ RUN curl -o ./wait-for-it.sh https://raw.githubusercontent.com/vishnubob/wait-fo
 
 RUN chmod +x ./wait-for-it.sh
 COPY . .
-EXPOSE 8000
+EXPOSE 8000 
