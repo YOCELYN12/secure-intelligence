@@ -2,9 +2,21 @@ import React from 'react'
 import '../Styles/Nav.css'
 import { IoPersonAdd } from "react-icons/io5";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 
 function Navbar() {
+
+  const navegar = useNavigate()
+
+
+  const irpaginacuentas = async(e) => {
+    e.preventDefault(
+      navegar("/Cuentas")
+    )
+  }
+
+
   return (
     <nav className='navbar'>
 
@@ -25,8 +37,8 @@ function Navbar() {
       </div>
 
       <div className='account'>
-        <button className='btn-account'>
-          <IoPersonAdd className=' icon-account' />
+        <button className='btn-account'  onClick={irpaginacuentas} >
+          <IoPersonAdd  className=' icon-account' />
           <p >Account</p>
         </button>
       </div>

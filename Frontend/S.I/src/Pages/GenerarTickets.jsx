@@ -3,7 +3,8 @@ import { useState } from 'react'
 import '../Styles/GenerarTickets.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { Post } from '../Fetch/Fetch'
+import { PostDbJson } from '../Fetch/Fetch'
+
 
 
 function GenerarTickets() {
@@ -31,7 +32,7 @@ function GenerarTickets() {
       Descripcion:intDescripcion
     }
 
-    await Post(datos,"tickets")
+    await PostDbJson(datos,"tickets")
   }
 
  
