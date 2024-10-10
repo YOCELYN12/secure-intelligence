@@ -20,24 +20,40 @@ function Registro() {
       email: intEmail
     }
     // console.log(datos);
-    const peticion = await Post(datos,'registro')
 
-    if (peticion.success){
+
+
+    const validarEspacios = intName.trim() === "" || intPassword.trim() === "" || intEmail.trim() === "";
+
+
+
+    if (validarEspacios) {
+      Swal.fire({
+        title: "Incorrect",
+        text: "Por favor ingrese los datos solicitados",
+        icon: "error"
+      })
+      return;
+    }
+
+
+    const peticion = await Post(datos, 'registro')
+
+    if (peticion.success) {
       Swal.fire({
         title: "Good job!",
         text: "You clicked the button!",
         icon: "success"
       });
       navegar("/")
-      
-    }else if(peticion.error){
+
+    } else if (peticion.error) {
       Swal.fire({
         title: "Incorrect",
         text: "Datos ingresados incorrectos",
         icon: "error"
       });
     }
-
 
     // console.log(peticion);
     // navegar("/PaginaAdmin")
