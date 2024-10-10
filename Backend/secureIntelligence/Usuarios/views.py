@@ -32,6 +32,14 @@ class RegistroView(APIView):
     def post(self,request):
       username = request.data.get('username')
       password = request.data.get("password")
+      
+      
+      Usuario = authenticate(username=username, password=password)
+      
+      if Usuario.objects.filter(username=username, password=password):
+          return Response({'success': 'Usuario autenticado'}, status=status.HTTP_200_OK)
+      else:
+       return Response({'error': 'Credenciales incorrectas'}, status=status.HTTP_401_UNAUTHORIZED)
             
     
     
