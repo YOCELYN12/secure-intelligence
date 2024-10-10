@@ -1,9 +1,9 @@
 
-
+const API_URL = "http://localhost:8000/api/"
 //Post
-const Post = async(datos) => {
+const Post = async(datos,endpoint) => {
     try {
-        const respuesta = await fetch("http://localhost:8000/api/registro",{
+        const respuesta = await fetch(`${API_URL}${endpoint}`,{
             method:"POST",
             headers: {
                 "Content-type": "application/json"
@@ -11,6 +11,12 @@ const Post = async(datos) => {
             body:JSON.stringify(datos)
         })
         const data = await respuesta.json();
+
+        if (!respuesta.ok) {
+            console.log (data.error)
+        } else{
+            console.log(data.success)
+        }
         console.log(data);
     } catch (error) {
         console.log(error)
@@ -41,15 +47,15 @@ export{PostDbJson}
 
 
 //Get
-const Get = async()=>{
-    try {
-        const peticion = await fetch("http://localhost:8000/api/registro")
-        const datos = await peticion.json()
-        return datos
-    } catch (error) {
-        console.log(error)
+// const Get = async()=>{
+//     try {
+//         const peticion = await fetch("http://localhost:8000/api/registro")
+//         const datos = await peticion.json()
+//         return datos
+//     } catch (error) {
+//         console.log(error)
 
-    }
-}
+//     }
+// }
 
-export {Get}
+// export {Get}

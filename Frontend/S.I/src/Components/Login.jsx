@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../Styles/Login.css"
 import { useNavigate } from 'react-router-dom'
-import {Get} from "../Fetch/Fetch"
+import {Post} from "../Fetch/Fetch"
 
 
 function Login() {
@@ -16,15 +16,23 @@ function Login() {
     
     try {
       e.preventDefault()
-      const data = await Get("users")
+      
+      const usuario = {
+        username: intName,
+        password: intPassword
+      }
 
-      const validarUsuarios = data.find(datos => datos.Name === intName && datos.Password === intPassword)
-      if (validarUsuarios){
-        navigate("/PaginaAdmin")
-      }else(alert("hbhfebfhefbef"))
+      const respuestaPost = await Post(usuario,'login')
+      if (!respuestaPost.success){
+        
+      }
+
+      // if (validarUsuarios){
+      //   navigate("/PaginaAdmin")
+      // }else(alert("hbhfebfhefbef"))
 
     } catch (error) {
-      console.log("error")
+      console.log(error)
     }
   }
 
