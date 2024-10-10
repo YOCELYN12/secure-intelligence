@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import "../Styles/Login.css"
 import { useNavigate } from 'react-router-dom'
 import {Post} from "../Fetch/Fetch"
+import Swal from 'sweetalert2'
 
 
 function Login() {
-  
-
   const[intName, setIntName ] = useState("")
   const[intPassword, setIntPassword] = useState("")
 
@@ -16,17 +15,24 @@ function Login() {
     
     try {
       e.preventDefault()
-      
       const usuario = {
         username: intName,
         password: intPassword
       }
-
+      
       const respuestaPost = await Post(usuario,'login')
-      if (!respuestaPost.success){
-        
+      
+      
+      if (respuestaPost.success){
+        Swal.fire({
+          title: "Good job!",
+          text: "You clicked the button!",
+          icon: "success"
+        });
+        navigate("/")
       }
 
+      console.log("tatata")
       // if (validarUsuarios){
       //   navigate("/PaginaAdmin")
       // }else(alert("hbhfebfhefbef"))

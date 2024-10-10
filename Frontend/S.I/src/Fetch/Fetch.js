@@ -18,6 +18,8 @@ const Post = async(datos,endpoint) => {
             console.log(data.success)
         }
         console.log(data);
+        return data 
+        
     } catch (error) {
         console.log(error)
     }

@@ -6,8 +6,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework import status
 from .serializers import PostSerializer
 from .models import Usuario
-from django.contrib.auth.hashers import check_password
-import re
+# from django.contrib.auth.hashers import check_password
+# import re
 
 # Create your views here.
 class RegistroView(APIView):
@@ -19,10 +19,10 @@ class RegistroView(APIView):
         email = request.data.get('email')
         password = request.data.get('password')
     
-        contra_regex = r"(?=^.{10,}$)(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z\d])"
+        # contra_regex = r"(?=^.{10,}$)(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z\d])"
         
-        if not re.match(contra_regex,password):
-            return Response({'error': 'Contrasenia no cumple con la vara esa'}, status=status.HTTP_400_BAD_REQUEST)
+        # if not re.match(contra_regex,password):
+        #     return Response({'error': 'Contrasenia no cumple con la vara esa'}, status=status.HTTP_400_BAD_REQUEST)
         
         if Usuario.objects.filter(username=username).exists():
             return Response({'error': 'Usuario ya existe'}, status=status.HTTP_400_BAD_REQUEST)

@@ -19,7 +19,7 @@ function Registro() {
       email: intEmail
     }
     console.log(datos);
-    const peticion = await Post(datos)
+    const peticion = await Post(datos,'registro')
     console.log(peticion);
     navegar("/PaginaAdmin")
   }
