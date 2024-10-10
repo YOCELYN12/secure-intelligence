@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../Styles/Registro.css"
 import { useNavigate } from 'react-router-dom'
 import { Post } from '../Fetch/Fetch'
+import Swal from 'sweetalert2'
 
 
 function Registro() {
@@ -18,10 +19,28 @@ function Registro() {
       password: intPassword,
       email: intEmail
     }
-    console.log(datos);
+    // console.log(datos);
     const peticion = await Post(datos,'registro')
-    console.log(peticion);
-    navegar("/PaginaAdmin")
+
+    if (peticion.success){
+      Swal.fire({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success"
+      });
+      navegar("/")
+      
+    }else if(peticion.error){
+      Swal.fire({
+        title: "Incorrect",
+        text: "Datos ingresados incorrectos",
+        icon: "error"
+      });
+    }
+
+
+    // console.log(peticion);
+    // navegar("/PaginaAdmin")
   }
 
 

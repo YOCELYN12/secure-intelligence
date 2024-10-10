@@ -29,13 +29,18 @@ function Login() {
           text: "You clicked the button!",
           icon: "success"
         });
+        
         navigate("/")
+      }else if(respuestaPost.error){
+        Swal.fire({
+          title: "Incorrect",
+          text: "Datos ingresados incorrectos",
+          icon: "error"
+        });
       }
 
       console.log("tatata")
-      // if (validarUsuarios){
-      //   navigate("/PaginaAdmin")
-      // }else(alert("hbhfebfhefbef"))
+     
 
     } catch (error) {
       console.log(error)
@@ -60,10 +65,10 @@ function Login() {
             <div className='cont-input-login'>
 
               <p className='letras-input'>Nombre</p>
-              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_login' type="text" value={intName} onChange={(e) => setIntName(e.target.value)} required />
+              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_login' type="text" value={intName} onChange={(e) => setIntName(e.target.value)}/>
 
               <p className='letras-input'>Password</p>
-              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_login' type="password" value={intPassword} onChange={(e) => setIntPassword(e.target.value)}required />
+              <input style={{ backgroundColor: "transparent", border: "3px solid blue" }} className='input_login' type="password" value={intPassword} onChange={(e) => setIntPassword(e.target.value)}/>
 
             </div>
 
