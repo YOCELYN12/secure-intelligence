@@ -9,9 +9,10 @@ from .models import Usuario
 # from django.contrib.auth.hashers import check_password
 # import re
 
+
 # Create your views here.
 class RegistroView(APIView):
-    queryset = Usuario.objects.all()
+    queryset = Usuario.objects. all()
     serializer_class = PostSerializer 
     
     def post (self,request):

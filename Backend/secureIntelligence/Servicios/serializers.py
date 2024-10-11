@@ -1,10 +1,9 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Usuario
+from .models import Tipo_servicio
 
-
-class PostSerializer(ModelSerializer):
+class ListarCrearSerializer(ModelSerializer):
     class Meta:
-        model = Usuario
+        model = Tipo_servicio
         fields = '__all__'
         
         

@@ -5,3 +5,4 @@ from .router import router_post
 urlpatterns = [
     path('post/', include(router_post.urls))
 ]
+
