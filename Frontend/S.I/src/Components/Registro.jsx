@@ -28,6 +28,7 @@ function Registro() {
 
 
     if (validarEspacios) {
+      // Swal.fire("Texto del mensaje");
       Swal.fire({
         title: "Incorrect",
         text: "Por favor ingrese los datos solicitados",

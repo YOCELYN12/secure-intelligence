@@ -19,6 +19,21 @@ function Login() {
         username: intName,
         password: intPassword
       }
+
+
+      const validarInputs = intName.trim() === "" || intPassword.trim() === "";
+
+
+
+      if (validarInputs) {
+        // Swal.fire("Texto del mensaje");
+        Swal.fire({
+          title: "Incorrect",
+          text: "Por favor ingrese los datos solicitados",
+          icon: "error"
+        })
+        return;
+      }
       
       const respuestaPost = await Post(usuario,'login')
       
@@ -29,7 +44,7 @@ function Login() {
           text: "You clicked the button!",
           icon: "success"
         });
-        
+
         navigate("/")
       }else if(respuestaPost.error){
         Swal.fire({

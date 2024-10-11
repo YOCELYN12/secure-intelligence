@@ -19,10 +19,7 @@ class RegistroView(APIView):
         email = request.data.get('email')
         password = request.data.get('password')
         
-        # username = request.data.get('username').strip()
-        # email = request.data.get('email').strip()
-        # password = request.data.get('password').strip()
-        
+    
         # contra_regex = r"(?=^.{10,}$)(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z\d])"
         
         # if not re.match(contra_regex,password):
@@ -30,9 +27,6 @@ class RegistroView(APIView):
         
         if Usuario.objects.filter(username=username).exists():
             return Response({'error': 'Usuario ya existe'}, status=status.HTTP_400_BAD_REQUEST)
-      
-        # if username == ' ' and password == ' ' and email == ' ':
-        #     return Response({'error': 'Por favor ingrese los datos solicitados'}, status=status.HTTP_204_NO_CONTENT)
     
         nuevo_usuario = Usuario.objects.create(username=username, email=email ,password=password)
         return Response ({'success': 'Usuario creado'}, status=status.HTTP_201_CREATED)
