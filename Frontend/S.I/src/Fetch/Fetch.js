@@ -1,7 +1,7 @@
 
-const API_URL = "http://localhost:8000/api/"
+const API_URL = "http://localhost:8000/api"
 
-const API_URL_DB_JSON = "http://localhost:8000/api/"
+// const API_URL_DB_JSON = "http://localhost:8000/api/"
 //Post
 const Post = async(datos,endpoint) => {
     try {

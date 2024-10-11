@@ -20,29 +20,57 @@
 .cont-nuevos{
     width: 25%;
     height: 50%;
-    background-color: rgba(128, 229, 229, 0.337);
+    background-image: url("https://i.imgur.com/6IUM1J0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     left: 7%;
     top: 10%;
 }
 
+
+.dev-img-nuevos{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
 .cont-cerrados{
     width: 25%;
     height: 50%;
-    background-color: rgba(128, 229, 229, 0.337);
+    background-image: url("https://i.imgur.com/6IUM1J0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     left: 40%;
     top: -40%;
+}
+
+.dev-img-cerrados{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
 }
 
 
 .cont-espera{
     width: 25%;
     height: 50%;
-    background-color: rgba(128, 229, 229, 0.337);
+    background-image: url("https://i.imgur.com/6IUM1J0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     left: 73%;
     top: -90%;
+}
+
+.dev-img-espera{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
 }
 
 
@@ -75,4 +103,75 @@
 .icon-buscar-tickets{
     background-color: transparent;
     border:none;
+}
+
+
+.cont-tipo-servicio{
+    width: 130%;
+    height: 50%;
+    background-image: url("https://i.imgur.com/6IUM1J0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -50%;
+    right: 80%;
+}
+
+.dev-img-servicio{
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    right: 80%;
+    background-color: rgba(0, 0, 0, 0.818);
+}
+
+.cont-nombre{
+  position: relative;
+  left: 7%;
+  top: 12%;
+}
+
+.int-nombre{
+   width: 30%;
+   height: 40px;
+}
+
+
+
+
+.letras-servicios{
+    color: white;
+}
+
+.cont-area{
+    position: relative;
+    top: -2%;
+    left: 55%;
+}
+
+.int-area{
+    width: 35%;
+    height: 40px;
+}
+
+
+.cont-descripcion{
+  position: relative;
+  left: 7%;
+  top: 5%;
+}
+
+.int-descripcion-servicios{
+    width: 82%;
+    height: 140px;
+}
+
+
+.btn-servicios{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    justify-content: space-evenly;
 }
