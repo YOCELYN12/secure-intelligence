@@ -9,10 +9,12 @@ import { Get } from '../Fetch/Fetch'
 
 
 function GenerarTickets() {
+
   const [intNombre, setIntNombre] = useState("")
   const [intApellido, setIntApellido] = useState("")
   const [intCorreo, setIntCorreo] = useState("")
   const [intTipoServicio, setIntTipoServicio] = useState([])
+  const [intServicioSelecionado, setIntServicioSeleccionado] = useState("") // Servicio seleccionado
   const [intTelefono, setIntTeleno] = useState("")
   const [intEmpresa, setIntEmpresa] = useState("")
   const [intDescripcion, setIntDescripcion] = useState("")
@@ -36,13 +38,13 @@ function GenerarTickets() {
   const enviarTickets = async (e) => {
     e.preventDefault()
     let datos = {
-      id: id,
       Nombre: intNombre,
       Apellido: intApellido,
       Correo: intCorreo,
       Numero_de_telefono: intTelefono,
       Empresa: intEmpresa,
-      Descripcion: intDescripcion
+      Descripcion: intDescripcion,
+      Servicio: intServicioSelecionado // Guardar el servicio seleccionado
     }
 
 
@@ -102,10 +104,13 @@ function GenerarTickets() {
       <div className='cont-tipo-servicio' >
         <p>Tipo de servicio</p>
 
-        <select className='select-servicio' id="servicios"  value={intTipoServicio} onChange={(e) => setIntTipoServicio(e.target.value)}>
+        <select className='select-servicio' id="servicios"  value={intServicioSelecionado} onChange={(e) => setIntServicioSeleccionado(e.target.value)}> { /*Actualizamos solo el valor seleccionado*/}
           <option value="" >Seleccione una opción</option>
-       
-
+          {intTipoServicio.map((tipo) => (
+            <option key={tipo.id} value={tipo.id}>  {/* Aquí asignamos el id como value */}
+              {tipo.Nombre}
+            </option>
+          ))}
         </select>
 
       </div>
