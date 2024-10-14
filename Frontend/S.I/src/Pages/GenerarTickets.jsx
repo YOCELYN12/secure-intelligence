@@ -41,6 +41,7 @@ function GenerarTickets() {
       Nombre: intNombre,
       Apellido: intApellido,
       Correo: intCorreo,
+      ServicioSeleccionado:intServicioSelecionado,
       Numero_de_telefono: intTelefono,
       Empresa: intEmpresa,
       Descripcion: intDescripcion,
