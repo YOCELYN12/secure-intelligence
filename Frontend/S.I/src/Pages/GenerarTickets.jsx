@@ -21,7 +21,7 @@ function GenerarTickets() {
 
 
 
-  useEffect(() => {
+  useEffect(() => { 
     const obtenerDatos = async () => {
       const getDatos = await Get("/post/")
       setIntTipoServicio(getDatos)
@@ -41,7 +41,7 @@ function GenerarTickets() {
       Nombre: intNombre,
       Apellido: intApellido,
       Correo: intCorreo,
-      ServicioSeleccionado:intServicioSelecionado,
+      ServicioSeleccionado:intServicioSelecionado, //Muestra el servicio seleccionado
       Numero_de_telefono: intTelefono,
       Empresa: intEmpresa,
       Descripcion: intDescripcion,

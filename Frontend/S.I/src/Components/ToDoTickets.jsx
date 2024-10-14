@@ -12,9 +12,6 @@ function ToDoTickets() {
     const [intNombre, setIntNombre] = useState("")
     const [intArea, setIntArea] = useState("")
     const [intDescripcion, setIntDescripcion] = useState("")
-   
-     
-    // const [mostrat, setMostrar] = useState(false)
     
     const enviarServicio = async(e) => {
        e.preventDefault()
