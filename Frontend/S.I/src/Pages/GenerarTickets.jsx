@@ -4,11 +4,11 @@ import '../Styles/GenerarTickets.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { PostDbJson } from '../Fetch/Fetch'
+import ToDoTickets  from '../Components/ToDoTickets'
 
 
 
 function GenerarTickets() {
-
   const [intNombre, setIntNombre] = useState("")
   const [intApellido, setIntApellido] = useState("")
   const [intCorreo, setIntCorreo] = useState("")
@@ -16,17 +16,20 @@ function GenerarTickets() {
   const [intTelefono, setIntTeleno] = useState("")
   const [intEmpresa, setIntEmpresa] = useState("")
   const [intDescripcion, setIntDescripcion] = useState("")
-  const [id, setId] = useState()
+  
+  // const [id, setId] = useState()
   
 
   const enviarTickets = async (e) => {
     e.preventDefault()
+
+   
+
     let datos = {
       id:id,
       Nombre:intNombre,
       Apellido:intApellido,
-      Corre:intCorreo,
-      Tipo_de_servicio:intServicio,
+      Correo:intCorreo, 
       Numero_de_telefono:intTelefono,
       Empresa:intEmpresa,
       Descripcion:intDescripcion

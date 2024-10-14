@@ -12,17 +12,21 @@ function ToDoTickets() {
     const [intNombre, setIntNombre] = useState("")
     const [intArea, setIntArea] = useState("")
     const [intDescripcion, setIntDescripcion] = useState("")
-
+   
+     
+    // const [mostrat, setMostrar] = useState(false)
     
     const enviarServicio = async(e) => {
        e.preventDefault()
        let datos = {
-        nombre: intNombre,
-        area: intArea,
-        descripcion: intDescripcion
+        Nombre: intNombre,
+        Area: intArea,
+        Descripcion_servicio: intDescripcion
        }
        await Post (datos, "post")
     }
+
+    
 
 
     return (
@@ -54,6 +58,7 @@ function ToDoTickets() {
 
                     <div className='cont-nuevos'>
                         <div className='dev-img-nuevos'>
+                            
 
                         </div>
 
@@ -77,9 +82,9 @@ function ToDoTickets() {
 
 
 
-                    <div className='cont-tipo-servicio'>
+                    <div className='cont-tipo-servicios'>
                         <div className='dev-img-servicio'>
-                            <div className='cont-nombre'>
+                            <div className='cont-nombre-tipo-servicio'>
                                 <p className='letras-servicios'>Nombre</p>
                                 <input className='int-nombre' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
                             </div>
