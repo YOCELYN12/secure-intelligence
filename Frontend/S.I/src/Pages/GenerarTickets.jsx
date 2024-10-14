@@ -104,11 +104,7 @@ function GenerarTickets() {
 
         <select className='select-servicio' id="servicios"  value={intTipoServicio} onChange={(e) => setIntTipoServicio(e.target.value)}>
           <option value="" >Seleccione una opción</option>
-          {intTipoServicio.map((tipo) => (
-            <option key={tipo.id}>
-              {tipo.Nombre}
-            </option>
-          ))}
+       
 
         </select>
 
