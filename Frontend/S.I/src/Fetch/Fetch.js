@@ -51,7 +51,7 @@ export{PostDbJson}
 
 
 // Get
-const Get = async()=>{
+const Get = async(endpoint)=>{
     try {
         const peticion = await fetch(`${API_URL}${endpoint}`)
         const datos = await peticion.json()

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../Styles/GenerarTickets.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
@@ -16,12 +16,21 @@ function GenerarTickets() {
   const [intTelefono, setIntTeleno] = useState("")
   const [intEmpresa, setIntEmpresa] = useState("")
   const [intDescripcion, setIntDescripcion] = useState("")
-   
-  
- 
 
 
-  // const [id, setId] = useState()
+
+  useEffect(() => {
+    const obtenerDatos = async () => {
+      const getDatos = await Get("/post/")
+      setIntTipoServicio(getDatos)
+      console.log(getDatos);
+      
+    }
+    obtenerDatos()
+  }, [])
+
+
+
 
 
   const enviarTickets = async (e) => {
@@ -38,7 +47,7 @@ function GenerarTickets() {
 
 
     await PostDbJson(datos, "tickets")
-  
+
   }
 
   // const Servicios = async() => {
@@ -93,12 +102,14 @@ function GenerarTickets() {
       <div className='cont-tipo-servicio' >
         <p>Tipo de servicio</p>
 
-        <select className='select-servicio' id="servicios" onClick={Servicios} value={intTipoServicio} onChange={(e) => setIntTipoServicio(e.target.value)}>
+        <select className='select-servicio' id="servicios"  value={intTipoServicio} onChange={(e) => setIntTipoServicio(e.target.value)}>
           <option value="" >Seleccione una opción</option>
-          {/* <option value="opcion1">Desarrollo web</option>
-          <option value="opcion2">Desarrollo de software</option>
-          <option value="opcion3">Hacking</option>
-          <option value="opcion3">Mantenimiento</option> */}
+          {intTipoServicio.map((tipo) => (
+            <option key={tipo.id}>
+              {tipo.Nombre}
+            </option>
+          ))}
+
         </select>
 
       </div>
