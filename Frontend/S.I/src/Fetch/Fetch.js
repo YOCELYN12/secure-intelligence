@@ -50,16 +50,16 @@ const PostDbJson = async(datos,endpoint) => {
 export{PostDbJson}
 
 
-//Get
-// const Get = async()=>{
-//     try {
-//         const peticion = await fetch("http://localhost:8000/api/registro")
-//         const datos = await peticion.json()
-//         return datos
-//     } catch (error) {
-//         console.log(error)
+// Get
+const Get = async()=>{
+    try {
+        const peticion = await fetch(`${API_URL}${endpoint}`)
+        const datos = await peticion.json()
+        return datos
+    } catch (error) {
+        console.log(error)
 
-//     }
-// }
+    }
+}
 
-// export {Get}
+export {Get}
