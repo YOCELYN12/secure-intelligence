@@ -1,7 +1,7 @@
 
 const API_URL = "http://localhost:8000/api"
 
-// const API_URL_DB_JSON = "http://localhost:8000/api/"
+const API_URL_DB_JSON = "http://localhost:2929/"
 //Post
 const Post = async(datos,endpoint) => {
     try {
@@ -53,7 +53,7 @@ export{PostDbJson}
 // Get
 const Get = async(endpoint)=>{
     try {
-        const peticion = await fetch("http://localhost:2929/"+endpoint)
+        const peticion = await fetch(`${API_URL}${endpoint}`)
         const datos = await peticion.json()
         return datos
     } catch (error) {
@@ -63,3 +63,16 @@ const Get = async(endpoint)=>{
 }
 
 export {Get}
+
+const GetJSON = async(endpoint)=>{
+    try {
+        const peticion = await fetch(`${API_URL_DB_JSON}${endpoint}`)
+        const datos = await peticion.json()
+        return datos
+    } catch (error) {
+        console.log(error)
+
+    }
+}
+
+export {GetJSON}

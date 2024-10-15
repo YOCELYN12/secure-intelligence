@@ -3,10 +3,11 @@ import '../Styles/ToDoTickets.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { Post } from '../Fetch/Fetch';
-import ListaTickets from './ListaTickets';
+import { GetJSON, Post } from '../Fetch/Fetch';
+// import ListaTickets from './ListaTickets';
 import GenerarTickets from '../Pages/GenerarTickets';
 import { BiTrafficCone } from 'react-icons/bi';
+import ListaTickets from './ListaTickets';
 
 
 function ToDoTickets() {
@@ -29,12 +30,13 @@ function ToDoTickets() {
 
     useEffect (() => {
         const obtenerTicket = async() => {
-            const getServicios = await Get("Tickets")
+            const getServicios = await GetJSON("tickets")
             setTick(getServicios)
+            console.log(tick);
+            
         }
         obtenerTicket()
     }, [])
-
 
 
 
@@ -58,14 +60,15 @@ function ToDoTickets() {
                 </div>
 
                 <button className='btn-crear-ticket' >Crear Ticket</button>
-
-                <GenerarTickets />
-
-                <button onClick={obtener} >Actualizar</button>
+              
+                
                 <div className='cont-tickets' >
 
                     <div className='cont-nuevos'>
                         <div className='dev-img-nuevos'>
+                            <div className= >
+
+                            </div>
 
 
                         </div>
@@ -116,7 +119,7 @@ function ToDoTickets() {
                         </div>
 
                     </div>
-
+            <ListaTickets ticketsAPI={tick}/>
                 </div>
             </div>
 

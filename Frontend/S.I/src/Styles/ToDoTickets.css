@@ -107,7 +107,7 @@
 
 
 .cont-tipo-servicios{
-    width: 130%;
+    width: 110%;
     height: 50%;
     background-image: url("https://i.imgur.com/6IUM1J0.jpg");
     background-repeat: no-repeat;
@@ -115,7 +115,7 @@
     background-position: center;
     position: relative;
     top: -50%;
-    right: 80%;
+    right: 5%;
 }
 
 .dev-img-servicio{
@@ -128,7 +128,7 @@
 
 .cont-nombre-tipo-servicio{
   position: relative;
-  left: 7%;
+  left: 6%;
   top: 12%;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .int-descripcion-servicios{
-    width: 82%;
+    width: 90%;
     height: 140px;
 }
 

@@ -12,9 +12,7 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
           <p>Nombre: {Nombre} </p>
           <p>Apellido: {Apellido} </p>
           <p>Correo: {Correo}</p>
-          <select id="">
-            <option value="">Servicio Seleccionado : {ServicioSeleccionado}</option>
-          </select>
+            <p value="">Servicio Seleccionado : {ServicioSeleccionado}</p>
           <p>Numero de telefono: {Numero_de_telefono}</p>
           <p>Empresa: {Empresa}</p>
           <p>Descripcion: {Descripcion}</p>
