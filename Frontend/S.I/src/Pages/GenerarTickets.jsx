@@ -48,17 +48,9 @@ function GenerarTickets() {
       Servicio: intServicioSelecionado // Guardar el servicio seleccionado
     }
 
-
     await PostDbJson(datos, "tickets")
 
   }
-
-  // const Servicios = async() => {
-  //   let datos = {
-  //     Nombre: intTipoServicio, //Esto viene de la Api, es el nombre del tipo de servicio.
-  //   }
-  //   await Get("tipo_servicio")
-  // }
 
 
   return (

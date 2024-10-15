@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import '../Styles/ToDoTickets.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { Post } from '../Fetch/Fetch';
+import ListaTickets from './ListaTickets';
+import GenerarTickets from '../Pages/GenerarTickets';
+import { BiTrafficCone } from 'react-icons/bi';
 
 
 function ToDoTickets() {
@@ -12,29 +15,34 @@ function ToDoTickets() {
     const [intNombre, setIntNombre] = useState("")
     const [intArea, setIntArea] = useState("")
     const [intDescripcion, setIntDescripcion] = useState("")
-    
-    const enviarServicio = async(e) => {
-       e.preventDefault()
-       let datos = {
-        Nombre: intNombre,
-        Area: intArea,
-        Descripcion_servicio: intDescripcion
-       }
-       await Post (datos, "post")
+    const [tick, setTick] = useState([])
+
+    const enviarServicio = async (e) => {
+        e.preventDefault()
+        let datos = {
+            Nombre: intNombre,
+            Area: intArea,
+            Descripcion_servicio: intDescripcion
+        }
+        await Post(datos, "post")
     }
 
-    
+    useEffect (() => {
+        const obtenerTicket = async() => {
+            const getServicios = await Get("Tickets")
+            setTick(getServicios)
+        }
+        obtenerTicket()
+    }, [])
+
+
 
 
     return (
-        <body >
 
+        <div>
             <div>
-
-
                 <Navbar />
-
-
 
                 <div className='container-logo'>
 
@@ -51,11 +59,14 @@ function ToDoTickets() {
 
                 <button className='btn-crear-ticket' >Crear Ticket</button>
 
+                <GenerarTickets />
+
+                <button onClick={obtener} >Actualizar</button>
                 <div className='cont-tickets' >
 
                     <div className='cont-nuevos'>
                         <div className='dev-img-nuevos'>
-                            
+
 
                         </div>
 
@@ -88,13 +99,13 @@ function ToDoTickets() {
 
                             <div className='cont-area'>
                                 <p className='letras-servicios'>Area</p>
-                                <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea (e.target.value)} />
+                                <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
                             </div>
 
 
                             <div className='cont-descripcion'>
                                 <p className='letras-servicios'>Descripcion del servicio</p>
-                                <input className='int-descripcion-servicios'   type="text"  value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
+                                <input className='int-descripcion-servicios' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
                             </div>
 
                             <div className='btn-servicios'>
@@ -110,7 +121,8 @@ function ToDoTickets() {
             </div>
 
             <Footer />
-        </body>
+        </div>
+
     )
 }
 

@@ -53,7 +53,7 @@ export{PostDbJson}
 // Get
 const Get = async(endpoint)=>{
     try {
-        const peticion = await fetch(`${API_URL}${endpoint}`)
+        const peticion = await fetch("http://localhost:2929/"+endpoint)
         const datos = await peticion.json()
         return datos
     } catch (error) {
