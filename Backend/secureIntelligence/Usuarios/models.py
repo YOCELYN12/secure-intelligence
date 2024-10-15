@@ -40,4 +40,3 @@ class Usuario(models.Model):
    SuperUsuario = models.BooleanField(default= False)
 #    ID_empleado = models.ForeignKey(Empleados, on_delete=models.CASCADE,null=True, blank=True)
    
-  

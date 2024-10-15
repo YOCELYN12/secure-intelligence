@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import '../Styles/ToDoTickets.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -28,12 +28,11 @@ function ToDoTickets() {
         await Post(datos, "post")
     }
 
-    useEffect (() => {
-        const obtenerTicket = async() => {
+    useEffect(() => {
+        const obtenerTicket = async () => {
             const getServicios = await GetJSON("tickets")
             setTick(getServicios)
             console.log(tick);
-            
         }
         obtenerTicket()
     }, [])
@@ -60,34 +59,24 @@ function ToDoTickets() {
                 </div>
 
                 <button className='btn-crear-ticket' >Crear Ticket</button>
-              
-                
+
+
                 <div className='cont-tickets' >
 
                     <div className='cont-nuevos'>
-                        <div className='dev-img-nuevos'>
-                            <div className= >
-
-                            </div>
-
-
-                        </div>
+                        <ListaTickets ticketsAPI={tick} />
 
                     </div>
 
 
                     <div className='cont-cerrados'>
-                        <div className='dev-img-cerrados'>
-
-                        </div>
+                        
 
                     </div>
 
 
                     <div className='cont-espera'>
-                        <div className='dev-img-espera'>
-
-                        </div>
+                       
 
                     </div>
 
@@ -119,7 +108,7 @@ function ToDoTickets() {
                         </div>
 
                     </div>
-            <ListaTickets ticketsAPI={tick}/>
+
                 </div>
             </div>
 

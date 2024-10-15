@@ -38,7 +38,7 @@ function Registro() {
     }
 
 
-    const peticion = await Post(datos, 'registro')
+    const peticion = await Post(datos, '/registro')
 
     if (peticion.success) {
       Swal.fire({
