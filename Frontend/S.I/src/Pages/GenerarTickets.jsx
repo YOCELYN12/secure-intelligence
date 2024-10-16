@@ -18,7 +18,7 @@ function GenerarTickets() {
   const [intTelefono, setIntTeleno] = useState("")
   const [intEmpresa, setIntEmpresa] = useState("")
   const [intDescripcion, setIntDescripcion] = useState("") 
-
+  
 
 
 
@@ -49,7 +49,7 @@ function GenerarTickets() {
       Servicio: intServicioSelecionado // Guardar el servicio seleccionado
     }
 
-    await Post(datos, "post") //se encarga de enviar los datos a la API para crear un nuevo ticket
+    await Post(datos,"post") //se encarga de enviar los datos a la API para crear un nuevo ticket
 
   }
 

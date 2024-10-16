@@ -5,6 +5,7 @@ from .serializers import ListarCrearSerializer
 from .models import Tipo_servicio
 from rest_framework import generics
 from .models import Tickets
+from .serializers import TicketsSerializer
 # from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
@@ -15,12 +16,11 @@ class ServicioView(generics.ListCreateAPIView):
     
     
     
-class TicketsView(APIView):
-    queryset = Tickets.objects.all()
-    serializer_class = 
-    
-    def PostTickets(self,request):
-        Nombre = request.data.get("Nombre")
+class TicketsView(generics.ListCreateAPIView):
+    queryset = Tickets.objects.values('Nombre', 'Apellido', 'Correo', 'Numero_de_telefono', 'Empresa', 'Descripcion')
+    serializer_class = TicketsSerializer
+        
+        
     
     
     
