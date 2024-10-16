@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react'
 import '../Styles/GenerarTickets.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { PostDbJson } from '../Fetch/Fetch'
 import { Get } from '../Fetch/Fetch'
+import { Post } from '../Fetch/Fetch'
 
 
 
@@ -13,18 +13,19 @@ function GenerarTickets() {
   const [intNombre, setIntNombre] = useState("")
   const [intApellido, setIntApellido] = useState("")
   const [intCorreo, setIntCorreo] = useState("")
-  const [intTipoServicio, setIntTipoServicio] = useState([])
-  const [intServicioSelecionado, setIntServicioSeleccionado] = useState("") // Servicio seleccionado
+  const [intTipoServicio, setIntTipoServicio] = useState([]) //constante con la lista de tipos de servicios obtenidos de la base de datos 
+  const [intServicioSelecionado, setIntServicioSeleccionado] = useState("")  //almacena la opcion que el usuario requiera
   const [intTelefono, setIntTeleno] = useState("")
   const [intEmpresa, setIntEmpresa] = useState("")
-  const [intDescripcion, setIntDescripcion] = useState("")
+  const [intDescripcion, setIntDescripcion] = useState("") 
+
 
 
 
   useEffect(() => { 
     const obtenerDatos = async () => {
-      const getDatos = await Get("/post/")
-      setIntTipoServicio(getDatos)
+      const getDatos = await Get("/post/") //llama a la API para obtener los tipos de servicios de la base de datos
+      setIntTipoServicio(getDatos) //actualiza el estado con los datos de los servicios obtenidos
       console.log(getDatos);
       
     }
@@ -48,7 +49,7 @@ function GenerarTickets() {
       Servicio: intServicioSelecionado // Guardar el servicio seleccionado
     }
 
-    await PostDbJson(datos, "tickets")
+    await Post(datos, "post") //se encarga de enviar los datos a la API para crear un nuevo ticket
 
   }
 

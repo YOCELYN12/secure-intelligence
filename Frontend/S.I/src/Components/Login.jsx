@@ -6,7 +6,7 @@ import Swal from 'sweetalert2'
 
 
 function Login() {
-  const[intName, setIntName ] = useState("")
+  const[intName, setIntName] = useState("")
   const[intPassword, setIntPassword] = useState("")
 
   const navigate = useNavigate()
