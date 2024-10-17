@@ -5,30 +5,32 @@
     padding: 5px;
     width: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
-
+    border-radius: 30px;
+    margin-bottom: 7%;
+    margin-left: 20px;
+    margin-top: 15px;
 }
+
 
 .cont-Hijo-ticket{
    display: flex;
    justify-content: space-evenly;
+ 
+   
 }
 
 .cont-ticket{
     display: flex;
-    
     justify-content: space-evenly;
 }
 
 .cont-ticket-datos{
    display: flex;
-  
    justify-content: space-evenly;
 }
 
 .cont-ticket-descripcion{
     display: flex;
-   
     justify-content: space-evenly;
 }
 

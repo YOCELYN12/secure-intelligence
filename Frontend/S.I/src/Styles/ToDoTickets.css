@@ -78,15 +78,16 @@
 
 
 .cont-tipo-servicios{
-    width: 110%;
-    height: 50%;
+    width: 90%;
+    height: 100%;
     background-image: url("https://i.imgur.com/6IUM1J0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
     top: 150%;
-    right: 5%;
+    left: 5%;
+   
 }
 
 .dev-img-servicio{
@@ -99,7 +100,7 @@
 
 .cont-nombre-tipo-servicio{
   position: absolute;
-  left: 6%;
+  left: 5%;
   top: 12%;
 }
 
@@ -114,34 +115,36 @@
 
 .cont-area{
     position: absolute;
-    top: -2%;
+    top: 12%;
     left: 55%;
 }
 
 .int-area{
-    width: 35%;
+    width: 300%;
     height: 40px;
 }
 
 
-.cont-descripcion-servicios{
-  position: absolute;
-  left: 7%;
-  top: 5%;
-}
 
+.cont-descripcion{
+    position: absolute;
+    left:-1%;
+    top: 30%;
+    width: 99%;
+}
 .int-descripcion-servicios{
-    width: 90%;
+    width: 93%;
     height: 140px;
 }
 
 
 .btn-servicios{
     position: relative;
-    top: 20%;
+    top: 80%;
     left: 5%;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 
@@ -165,4 +168,9 @@
     position: absolute;
     top: 50px;
     left: 4%;
+}
+
+.foo{
+    position: relative;
+    top: 200px;
 }

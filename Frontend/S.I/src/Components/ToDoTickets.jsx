@@ -3,7 +3,7 @@ import '../Styles/ToDoTickets.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { Get } from '../Fetch/Fetch';
+import { Get, Post} from '../Fetch/Fetch';
 // import ListaTickets from './ListaTickets';
 // import GenerarTickets from '../Pages/GenerarTickets';
 import { BiTrafficCone } from 'react-icons/bi';
@@ -23,7 +23,7 @@ function ToDoTickets() {
             Area: intArea,
             Descripcion_servicio: intDescripcion
         }
-        await Post(datos, "post")
+        await Post(datos, "/post/")
     }
 
     useEffect(() => {
@@ -68,7 +68,7 @@ function ToDoTickets() {
                 <div className='cont-tickets' >
 
                     <div className='cont-nuevos'>
-                        
+
                         <ListaTickets ticketsAPI={tick} />
 
                     </div>
@@ -115,7 +115,12 @@ function ToDoTickets() {
                 </div>
             </div>
 
-            <Footer />
+            <div className='foo'>
+
+                <Footer />
+
+            </div>
+
         </div>
 
     )

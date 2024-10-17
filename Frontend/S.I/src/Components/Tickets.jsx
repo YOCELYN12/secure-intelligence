@@ -21,12 +21,12 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
 
         <div className='cont-ticket-datos'>
           <p>Correo: {Correo}</p>
-          <p value="">Servicio Seleccionado : {ServicioSeleccionado}</p>
+          <p value="">Servicio: {ServicioSeleccionado}</p>
 
         </div>
 
         <div className='cont-ticket'>
-          <p>Numero de telefono: {Numero_de_telefono}</p>
+          <p>Telefono: {Numero_de_telefono}</p>
           <p>Empresa: {Empresa}</p>
         </div>
 
