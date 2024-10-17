@@ -5,7 +5,7 @@ const ListaTickets = ({ticketsAPI}) => {
     return (
         <div>
             {ticketsAPI.map((tick) => (
-                <Tickets
+                <Tickets 
                     key={tick.id}
                     Nombre={tick.Nombre}
                     Apellido={tick.Apellido}

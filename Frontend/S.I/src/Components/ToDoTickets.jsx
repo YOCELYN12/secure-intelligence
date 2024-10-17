@@ -68,6 +68,7 @@ function ToDoTickets() {
                 <div className='cont-tickets' >
 
                     <div className='cont-nuevos'>
+                        
                         <ListaTickets ticketsAPI={tick} />
 
                     </div>
@@ -85,6 +86,7 @@ function ToDoTickets() {
                     </div>
 
                 </div>
+
                 <div className='cont-tipo-servicios'>
                     <div className='dev-img-servicio'>
                         <div className='cont-nombre-tipo-servicio'>

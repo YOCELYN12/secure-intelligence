@@ -1,7 +1,7 @@
 .btn-crear-ticket{
-   position: relative;
-   left: 1300px;
-   top: -80px;
+   position: absolute;
+   left: 86%;
+   top: 37px;
    width: 180px;
    height: 50px;
    background-color: red;
@@ -10,76 +10,53 @@
 
 
 .cont-tickets{
+    background-color: rgb(207, 235, 247);
     position: relative;
-    top: 120px;
-    left: 18%; 
-    border: 2px solid #000; /* El borde alrededor del contenedor */
+    top: 180px;
+    left: 18%;
+    border: 1px solid rgb(207, 235, 247); /* El borde alrededor del contenedor */
     width: auto; /* El ancho se ajusta automáticamente */
     height: auto; /* La altura crece conforme a los tickets añadidos */
     max-width: 80%; /* Opcional: Limitar el ancho si es necesario */
     box-sizing: border-box; /* Incluye el padding dentro del borde */
-    overflow-x: hidden;
 }
 
 .cont-nuevos{
+    border: 1px solid black;
     width: auto;
+    min-width: 100%;
     height: auto;
-    max-width: 500px;
+    min-height: 100%;
     position: relative;
-    left: 7%;
-    top: 10%;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-
-.dev-img-nuevos{
-    width: auto;
-    height: auto;
-    max-width: 500px;
-    background-color: rgba(0, 0, 0, 0.897);
+.ticket-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.cont-cerrados{
-    width: 25%;
-    height: 50%;
-    position: relative;
-    left: 40%;
-    top: -40%;
-}
-
-.dev-img-cerrados{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.897);
-}
-
-
-.cont-espera{
-    width: 25%;
-    height: 50%;
-    position: relative;
-    left: 73%;
-    top: -90%;
-}
-
-.dev-img-espera{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.897);
-}
-
 
 
 .search-container-tickets {
-    padding: 10px;
     border: 3px solid #ccc;
     border-radius: 15px;
-    width: 20%;
+    width: 150%;
+    position: relative;
+    top: 70px;
+    padding: 10px;
 }
  
  
 .container-logo{
-   position: relative;
-   left: 65%;  
+   position: absolute;
+   left: 60%;  
    top: -30px;
 }
 
@@ -89,9 +66,9 @@
     border-radius: 10px;
     height: 50px;
     border-radius: none;
-    position: absolute;
-    left: 16%;
-    top:0%;
+    position: relative;
+    left: 120%;
+    top:20px;
 }
  
 .icon-buscar-tickets{
@@ -107,8 +84,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-    top: 550px;
+    position: absolute;
+    top: 150%;
     right: 5%;
 }
 
@@ -121,7 +98,7 @@
 }
 
 .cont-nombre-tipo-servicio{
-  position: relative;
+  position: absolute;
   left: 6%;
   top: 12%;
 }
@@ -136,7 +113,7 @@
 }
 
 .cont-area{
-    position: relative;
+    position: absolute;
     top: -2%;
     left: 55%;
 }
@@ -148,7 +125,7 @@
 
 
 .cont-descripcion-servicios{
-  position: relative;
+  position: absolute;
   left: 7%;
   top: 5%;
 }
@@ -178,14 +155,14 @@
 
 .barra{
     /* border: 2px solid #000; El borde alrededor del contenedor */
-    position: relative;
+    position: absolute;
     top: 80px;
     width: 100%;
     border: 1px solid  rgb(0, 0, 0);
 }
 
 .h3{
-    position: relative;
+    position: absolute;
     top: 50px;
     left: 4%;
 }
