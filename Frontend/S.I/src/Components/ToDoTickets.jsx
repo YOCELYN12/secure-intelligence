@@ -3,7 +3,7 @@ import '../Styles/ToDoTickets.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { GetJSON, Post } from '../Fetch/Fetch';
+import { Get } from '../Fetch/Fetch';
 // import ListaTickets from './ListaTickets';
 // import GenerarTickets from '../Pages/GenerarTickets';
 import { BiTrafficCone } from 'react-icons/bi';
@@ -11,8 +11,6 @@ import ListaTickets from './ListaTickets';
 
 
 function ToDoTickets() {
-
-
     const [intNombre, setIntNombre] = useState("")
     const [intArea, setIntArea] = useState("")
     const [intDescripcion, setIntDescripcion] = useState("")
@@ -30,8 +28,8 @@ function ToDoTickets() {
 
     useEffect(() => {
         const obtenerTicket = async () => {
-            const getServicios = await GetJSON("tickets")
-            setTick(getServicios)
+            const GetServicios = await Get("/postTicket")
+            setTick(GetServicios)
             console.log(tick);
         }
         obtenerTicket()

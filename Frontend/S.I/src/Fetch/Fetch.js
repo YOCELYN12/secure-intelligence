@@ -64,15 +64,15 @@ const Get = async(endpoint)=>{
 
 export {Get}
 
-const GetJSON = async(endpoint)=>{
-    try {
-        const peticion = await fetch(`${API_URL_DB_JSON}${endpoint}`)
-        const datos = await peticion.json()
-        return datos
-    } catch (error) {
-        console.log(error)
+// const GetJSON = async(endpoint)=>{
+//     try {
+//         const peticion = await fetch(`${API_URL_DB_JSON}${endpoint}`)
+//         const datos = await peticion.json()
+//         return datos
+//     } catch (error) {
+//         console.log(error)
 
-    }
-}
+//     }
+// }
 
-export {GetJSON}
+// export {GetJSON}
