@@ -41,22 +41,28 @@ function ToDoTickets() {
 
         <div>
             <div>
-                <Navbar />
 
-                <div className='container-logo'>
+                <div>
+                    <h3 className='h3'>Tickets</h3>
+                    <hr className='barra' />
 
-                    <div className='cont-barra'>
-                        <input className="search-container-tickets" type="text" placeholder="Buscar ticket..." />
+                    <div className='container-logo'>
+
+                        <div>
+                            <input className="search-container-tickets" type="text" placeholder="Buscar ticket..." />
+                        </div>
+
+
+                        <div className='btn-buscar-tickets'>
+                            <button className='icon-buscar-tickets'><FaMagnifyingGlass /> </button>
+                        </div>
+
                     </div>
 
-
-                    <div className='btn-buscar-tickets' >
-                        <button className='icon-buscar-tickets'><FaMagnifyingGlass /> </button>
-                    </div>
-
+                    <button className='btn-crear-ticket' >Crear Ticket</button>
                 </div>
 
-                <button className='btn-crear-ticket' >Crear Ticket</button>
+
 
 
                 <div className='cont-tickets' >
@@ -68,41 +74,38 @@ function ToDoTickets() {
 
 
                     <div className='cont-cerrados'>
-                        
+
 
                     </div>
 
 
                     <div className='cont-espera'>
-                       
+
 
                     </div>
 
+                </div>
+                <div className='cont-tipo-servicios'>
+                    <div className='dev-img-servicio'>
+                        <div className='cont-nombre-tipo-servicio'>
+                            <p className='letras-servicios'>Nombre</p>
+                            <input className='int-nombre' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
+                        </div>
+
+                        <div className='cont-area'>
+                            <p className='letras-servicios'>Area</p>
+                            <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
+                        </div>
 
 
-                    <div className='cont-tipo-servicios'>
-                        <div className='dev-img-servicio'>
-                            <div className='cont-nombre-tipo-servicio'>
-                                <p className='letras-servicios'>Nombre</p>
-                                <input className='int-nombre' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
-                            </div>
+                        <div className='cont-descripcion'>
+                            <p className='letras-servicios'>Descripcion del servicio</p>
+                            <input className='int-descripcion-servicios' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
+                        </div>
 
-                            <div className='cont-area'>
-                                <p className='letras-servicios'>Area</p>
-                                <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
-                            </div>
-
-
-                            <div className='cont-descripcion'>
-                                <p className='letras-servicios'>Descripcion del servicio</p>
-                                <input className='int-descripcion-servicios' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
-                            </div>
-
-                            <div className='btn-servicios'>
-                                <button onClick={enviarServicio} className='btn-enviar'>Enviar</button>
-                                <button className='btn-cancelar'>Cancelar</button>
-                            </div>
-
+                        <div className='btn-servicios'>
+                            <button onClick={enviarServicio} className='btn-enviar'>Enviar</button>
+                            <button className='btn-cancelar'>Cancelar</button>
                         </div>
 
                     </div>

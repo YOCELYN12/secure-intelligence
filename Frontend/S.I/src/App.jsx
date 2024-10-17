@@ -1,7 +1,7 @@
 // import { Modal } from 'bootstrap'
 import './App.css'
-import ToDoTickets from './Components/ToDoTickets'
-import Cuentas from './Pages/Cuentas'
+// import ToDoTickets from './Components/ToDoTickets'
+// import Cuentas from './Pages/Cuentas'
 // import CardPublicidad from './Components/CardPublicidad'
 // import Cards from './Components/Cards'
 // import PaginaPrincipal from './Pages/PaginaPrincipal'
@@ -22,7 +22,7 @@ function App() {
 
       <Footer /> */}
 
-      <Cuentas/>
+      {/* <Cuentas/> */}
 
       {/* <PaginaPrincipal/> */}
 

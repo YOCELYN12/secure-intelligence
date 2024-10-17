@@ -4,10 +4,13 @@ import ToDoTickets from '../Components/ToDoTickets'
 
 
 
+
 function PaginaAdmin() {
   return (
     <div>
-     <ToDoTickets/>
+      
+      <ToDoTickets/>
+     
     </div>
   )
 }

@@ -3,7 +3,7 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 1522px;
+    width: 1513px;
     height: 600px; 
 }
 
@@ -11,9 +11,11 @@
     width: 1150px;
     height: 400px;
     background-color: white;
-    margin-left: 180px;
-    position: relative;
-    top:200px;
+    margin-left: 10px;
+    position: absolute;
+    top:45%;
+    left: 10%;
+   
 }
 
 .img-animado{
@@ -22,9 +24,9 @@
 
 .texto-apartado{
     font-size: 30px;
-    position: relative;
-    top: -180px;
-    left: 520px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
     text-transform: uppercase;
     color: black;
     letter-spacing: 10px;
@@ -104,6 +106,8 @@
     margin-top: 60px;
     margin-left: 80px;
 }
+
+
 
 
 .footeer{

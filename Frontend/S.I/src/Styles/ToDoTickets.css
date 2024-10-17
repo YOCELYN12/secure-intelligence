@@ -1,7 +1,7 @@
 .btn-crear-ticket{
    position: relative;
    left: 1300px;
-   top: 30px;
+   top: -80px;
    width: 180px;
    height: 50px;
    background-color: red;
@@ -10,25 +10,21 @@
 
 
 .cont-tickets{
-    width: 85%;
-    height: 1200px;
     position: relative;
     top: 120px;
-    left: 8%; 
+    left: 18%; 
     border: 2px solid #000; /* El borde alrededor del contenedor */
-    padding: 20px;
-    margin: 20px;
     width: auto; /* El ancho se ajusta automáticamente */
     height: auto; /* La altura crece conforme a los tickets añadidos */
-    max-width: 100%; /* Opcional: Limitar el ancho si es necesario */
+    max-width: 80%; /* Opcional: Limitar el ancho si es necesario */
     box-sizing: border-box; /* Incluye el padding dentro del borde */
+    overflow-x: hidden;
 }
 
 .cont-nuevos{
     width: auto;
     height: auto;
     max-width: 500px;
-   
     position: relative;
     left: 7%;
     top: 10%;
@@ -45,7 +41,6 @@
 .cont-cerrados{
     width: 25%;
     height: 50%;
- 
     position: relative;
     left: 40%;
     top: -40%;
@@ -85,7 +80,7 @@
 .container-logo{
    position: relative;
    left: 65%;  
-   top: 84px;
+   top: -30px;
 }
 
  
@@ -96,7 +91,7 @@
     border-radius: none;
     position: absolute;
     left: 16%;
-    top: 0%;
+    top:0%;
 }
  
 .icon-buscar-tickets{
@@ -181,3 +176,16 @@
     background-color: white; 
 }
 
+.barra{
+    /* border: 2px solid #000; El borde alrededor del contenedor */
+    position: relative;
+    top: 80px;
+    width: 100%;
+    border: 1px solid  rgb(0, 0, 0);
+}
+
+.h3{
+    position: relative;
+    top: 50px;
+    left: 4%;
+}
