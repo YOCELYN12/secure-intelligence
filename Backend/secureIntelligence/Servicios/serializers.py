@@ -10,6 +10,6 @@ class ListarCrearSerializer(ModelSerializer):
 class TicketsSerializer(ModelSerializer):
     class Meta:
         model = Tickets 
-        fields = ['Nombre', 'Apellido', 'Correo', 'Numero_de_telefono', 'Empresa', 'Descripcion']
+        fields = '__all__'
         
         

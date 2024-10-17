@@ -27,7 +27,6 @@ function GenerarTickets() {
       const getDatos = await Get("/post/") //llama a la API para obtener los tipos de servicios de la base de datos
       setIntTipoServicio(getDatos) //actualiza el estado con los datos de los servicios obtenidos
       console.log(getDatos);
-      
     }
     obtenerDatos()
   }, [])

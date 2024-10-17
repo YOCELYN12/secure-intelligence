@@ -17,7 +17,7 @@ class ServicioView(generics.ListCreateAPIView):
     
     
 class TicketsView(generics.ListCreateAPIView):
-    queryset = Tickets.objects.values('Nombre', 'Apellido', 'Correo', 'Numero_de_telefono', 'Empresa', 'Descripcion')
+    queryset = Tickets.objects.all()
     serializer_class = TicketsSerializer
         
         

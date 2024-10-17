@@ -7,6 +7,10 @@ class Tipo_servicio (models.Model):
     Area = models.CharField(max_length=255)
     Nombre = models.CharField(max_length=50)
     Descripcion_servicio = models.TextField()
+    
+    def __str__(self):
+        return self.Nombre
+    
   
 class Servicios_disponibles (models.Model):
     ID_servicio = models.AutoField(primary_key=True)
