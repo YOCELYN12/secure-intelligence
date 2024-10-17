@@ -33,7 +33,7 @@ class Tickets  (models.Model):
     Nombre = models.CharField(max_length=255)
     Apellido = models.CharField(max_length=255)
     Correo = models.CharField(max_length=255)
-    ID_Tipo_servicio = models.ForeignKey(Tipo_servicio, on_delete=models.CASCADE, null=True, blank=True)    
+    ID_Tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE, null=True, blank=True)    
     Numero_de_telefono = models.CharField(max_length=255)
     Empresa = models.CharField(max_length=255)
     Descripcion = models.CharField(max_length=255)  

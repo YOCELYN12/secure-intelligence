@@ -13,5 +13,5 @@ urlpatterns = [
     path('api/registro', RegistroView.as_view()),
     path('api/login', LoginView.as_view()),
     path('api/',include("Servicios.urls")),
-    # path('api/tipo_servicio', GetView.as_view())
+    
 ]

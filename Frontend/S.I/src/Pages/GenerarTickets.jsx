@@ -49,7 +49,7 @@ function GenerarTickets() {
       Servicio: intServicioSelecionado // Guardar el servicio seleccionado
     }
 
-    await Post(datos,"post") //se encarga de enviar los datos a la API para crear un nuevo ticket
+    await Post(datos,"/postTicket") //se encarga de enviar los datos a la API para crear un nuevo ticket
 
   }
 
