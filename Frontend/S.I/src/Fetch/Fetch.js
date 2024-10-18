@@ -41,3 +41,27 @@ const Get = async(endpoint)=>{
 export {Get}
 
 
+
+
+
+//Delete 
+const Delete = async(ID_Ticket,endpoint) => {
+   try {
+        const eliminar = await fetch (`${API_URL}${endpoint}${ID_Ticket}`, {
+            method:"DELETE",
+        }) 
+        const salida = await eliminar.json()
+
+        if(eliminar.ok){
+            alert("Se elimino exitosamente")
+        }else{
+            console.log("error")
+        }
+        console.log(salida)
+    
+   } catch (error) {
+     console.log("error")
+   }
+}
+
+export {Delete}
