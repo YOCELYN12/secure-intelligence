@@ -1,12 +1,25 @@
-import React from 'react'
-import Tickets from './Tickets'
-import { Delete } from '../Fetch/Fetch'
+import React, { useState } from 'react';
+import Tickets from './Tickets';
+import { Delete } from '../Fetch/Fetch';
+import ModalEditarTicket from './ModalTicket';
+const ListaTickets = ({ ticketsAPI }) => {
+    
+    const [modalVisible, setModalVisible] = useState(false);
+    const [ticketSeleccionado, setTicketSeleccionado] = useState(null);
 
+    const DeleteTickets = async (id) => {
+        await Delete(id, "/DeleteTicket/");
+    };
 
-const ListaTickets = ({ticketsAPI}) => {
-    const DeleteTickets = async(id) => {
-        await Delete(id, "/DeleteTicket/")
-    }
+    const abrirModal = (ticket) => {
+        setTicketSeleccionado(ticket);
+        setModalVisible(true);
+    };
+
+    const cerrarModal = () => {
+        setModalVisible(false);
+        setTicketSeleccionado(null);
+    };
 
     return (
         <div>
@@ -20,19 +33,15 @@ const ListaTickets = ({ticketsAPI}) => {
                     Numero_de_telefono={tick.Numero_de_telefono}
                     Empresa={tick.Empresa}
                     Descripcion={tick.Descripcion}
-
-                    Eliminar={() => {
-                        DeleteTickets(tick.ID_Tickets)
-                    }}
-
-                    editarTicket={()=> editarBTN(tick.ID_Tickets)}
-                    
-
+                    Eliminar={() => DeleteTickets(tick.ID_Tickets)}
+                    onEdit={() => abrirModal(tick)}
                 />
             ))}
-
+            {modalVisible && (
+                <ModalEditarTicket ticket={ticketSeleccionado} onClose={cerrarModal} />
+            )}
         </div>
-    )
-}
+    );
+};
 
-export default ListaTickets
+export default ListaTickets;

@@ -40,7 +40,32 @@ const Get = async(endpoint)=>{
 
 export {Get}
 
+const Patch = async (endpoint,obj,ID_Ticket) => {
+    try {
+        const respuesta = await fetch(`${API_URL}${endpoint}${ID_Ticket}`,{
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        });
 
+        const data = await respuesta.json();
+        console.log(respuesta);
+        if (!respuesta.ok) {
+            console.error(`Error ${respuesta.status}: ${data.error || 'Ocurrió un error inesperado.'}`);
+        } else {
+            console.log(data.success);
+        }
+
+        console.log(data);
+        return { data, respuesta }; 
+    } catch (error) {
+        console.error('Error de conexión:', error);
+    }
+}
+
+export {Patch}
 
 
 

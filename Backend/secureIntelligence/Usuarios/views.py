@@ -6,6 +6,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework import status
 from .serializers import PostSerializer
 from .models import Usuario
+from rest_framework_simplejwt.tokens import RefreshToken
 # from django.contrib.auth.hashers import check_password
 # import re
 
@@ -44,8 +45,10 @@ class LoginView(APIView):
         
         usuario = Usuario.objects.filter(username=username).first()
         
+        refresh = RefreshToken.for_user(usuario)
+        
         if usuario and usuario.password==password:
-            return Response({'success': 'Usuario autenticado'}, status=status.HTTP_200_OK)
-        else:
+            return Response({'success': 'Usuario autenticado','super':{usuario.SuperUsuario},'token':str(refresh.access_token)}, status=status.HTTP_200_OK)
+        else:   
             return Response({'error': 'Credenciales inválidas'}, status=status.HTTP_401_UNAUTHORIZED)
         
