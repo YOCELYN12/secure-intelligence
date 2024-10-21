@@ -1,12 +1,12 @@
 .cont1_registro{
     height: 100vh;
     display: flex;
-    justify-content:center ; /* Alinea a la izquierda */
+    justify-content:center ; 
     align-items: center;
 }
 
 .registro-container{
-    background: rgb(22, 21, 21); /* Fondo blanco opaco */
+    background: rgb(22, 21, 21); 
     padding: 60px;
     border-radius: 18px;
     position: fixed;
@@ -40,9 +40,9 @@
 
 .input_registro{
     border-radius: 18px;
-    min-width: 310px; /* Ancho mínimo */
-    min-height: 36px; /* Alto mínimo */
-    width: 100%; /* O puedes quitar esta línea para que sea sólo el mínimo */
+    min-width: 310px; 
+    min-height: 36px; 
+    width: 100%; 
     color: aliceblue;
 }
 

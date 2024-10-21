@@ -13,11 +13,11 @@
     position: relative;
     top: 180px;
     left: 18%;
-    border: 1px solid rgb(207, 235, 247); /* El borde alrededor del contenedor */
-    width: auto; /* El ancho se ajusta automáticamente */
-    height: auto; /* La altura crece conforme a los tickets añadidos */
-    max-width: 80%; /* Opcional: Limitar el ancho si es necesario */
-    box-sizing: border-box; /* Incluye el padding dentro del borde */
+    border: 1px solid rgb(207, 235, 247); 
+    width: auto; 
+    height: auto; 
+    max-width: 80%; 
+    box-sizing: border-box; 
 }
 
 .cont-nuevos{
@@ -152,7 +152,7 @@
 }
 
 .barra{
-    /* border: 2px solid #000; El borde alrededor del contenedor */
+   
     position: absolute;
     top: 80px;
     width: 100%;

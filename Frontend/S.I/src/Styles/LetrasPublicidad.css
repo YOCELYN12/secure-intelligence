@@ -1,5 +1,5 @@
 .cont1{
-    transform: rotate(20deg); /* Rota 180 grados */    
+    transform: rotate(20deg);    
     margin-left: 80px;
     margin-right: 160ic;
 
@@ -16,7 +16,7 @@
 }   
 
 .letras-publicidad{
-    transform: rotate(-20deg); /* Rota 180 grados */
+    transform: rotate(-20deg); 
     color: azure;
 }
 

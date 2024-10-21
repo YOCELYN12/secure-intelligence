@@ -23,7 +23,7 @@
 
 .container-logo-search {
    display: flex;
-   place-content: center; /* Alinea la barra de búsqueda a la derecha */
+   place-content: center; 
    align-items: center;   
    
 }
@@ -53,11 +53,11 @@
    display: flex;
    align-items: center;
    border-radius: 15px;
-   padding: 8px 20px; /* Espaciado interior */
+   padding: 8px 20px; 
 }
 
 .icon-account{
-   margin-right: 20px; /* O ajusta aquí el margen */
+   margin-right: 20px; 
 }
 
 .letras-account{

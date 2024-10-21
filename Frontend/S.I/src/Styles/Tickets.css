@@ -40,7 +40,7 @@
     justify-content: space-evenly;
 }
 
-/* Estilos para el contenedor del modal */
+
 .modal {
     display: flex;
     justify-content: center;
@@ -51,10 +51,10 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
-/* Estilos para el contenido del modal */
+
 .modal-content {
     background-color: #fefefe;
     border-radius: 10px;
@@ -64,7 +64,7 @@
     position: relative;
 }
 
-/* Estilo para el botón de cerrar (la "X") */
+
 .close {
     position: absolute;
     top: 10px;
