@@ -14,9 +14,9 @@
     margin-left: 490px;
     position: relative;
     top: 200px;
-    border-radius: 80px;
-    
+    border-radius: 80px; 
 }
+
 
 
 .h1{
@@ -88,28 +88,48 @@
 }
 
 
-
+/* 
 .cont-mapa{
     width: 81%;
     height: 570px;
     border: 2px solid black;
     position: relative;
-    top: 80px;
+    top: 100px;
     left: 10%;
     background-image: url("https://i.imgur.com/m6FTePk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 .mapa{
     position: relative;
-    top: 20%;
+    top: 200px;
     margin-left: 5%;
 }
 
+
+.Ubicacion{
+    width: 500px;             
+    margin: 0 auto;          
+    padding: 20px;           
+    position: relative;       
+    right: 0;                
+    font-size: 20px;
+    text-align:center;
+    line-height: 50px;
+}
+
+.Ubicacion{
+    position: absolute;       
+    left: 60%;              
+    top: 250%;                
+    transform: translateY(50%); 
+}
+
+
 .cont-footer{
-    margin-top: -50%;
+    margin-top: -40%;
 }
 
 

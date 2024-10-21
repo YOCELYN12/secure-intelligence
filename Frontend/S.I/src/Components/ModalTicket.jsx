@@ -14,7 +14,7 @@ const ModalEditarTicket = ({ ticket, onClose }) => {
         };
         const response = await Patch('/UpdateTicket/', updatedTicket,ticket.ID_Tickets);
         console.log(response);
-        onClose(); // Cerrar el modal después de editar
+        onClose(); 
     };
 
     return (

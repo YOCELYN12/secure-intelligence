@@ -22,6 +22,7 @@ function Registro() {
     // console.log(datos);
 
 
+    
 
     const validarEspacios = intName.trim() === "" || intPassword.trim() === "" || intEmail.trim() === "";
 

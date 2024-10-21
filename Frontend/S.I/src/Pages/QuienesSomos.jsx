@@ -29,23 +29,27 @@ function QuienesSomos() {
             <p className='letras-clarlas' >Además de nuestras capacidades de desarrollo, ofrecemos una gama de servicios educativos, incluyendo cursos de hacking ético y ciberseguridad, donde capacitamos a individuos y empresas en las mejores prácticas para protegerse en el entorno digital. Creemos que el conocimiento es la mejor defensa, y estamos comprometidos a formar a la próxima generación de profesionales en tecnología.</p>
 
 
-            <div className='cont-mapa'>
-                <div className='capa-cont'>
-                    <div className='mapa' >
-                        <iframe
-                            width="40%"
-                            height={400}
-                            frameBorder={0}
-                            scrolling="no"
-                            marginHeight={0}
-                            marginWidth={0}
-                            src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Paus%20it+(Secure%20intelligence)&t=k&z=17&ie=UTF8&iwloc=B&output=embed"
-                        >
-                            &lt;a href="https://www.gps.ie/car-satnav-gps/"&gt;GPS car tracker&lt;/a&gt;
-                        </iframe>
-                    </div>
-                </div>
+            <div className='mapa' >
+                <iframe
+                    width="50%"
+                    height={500}
+                    frameBorder={0}
+                    scrolling="no"
+                    marginHeight={0}
+                    marginWidth={0}
+                    src="https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Paus%20it+(Secure%20intelligence)&t=k&z=17&ie=UTF8&iwloc=B&output=embed"
+                >
+                    &lt;a href="https://www.gps.ie/car-satnav-gps/"&gt;GPS car tracker&lt;/a&gt;
+                </iframe>
             </div>
+
+            <p className='Ubicacion '> Encuentranos en: <br /> Pozos Santa Ana, escuela republica de Francia, 200 metros este <br />
+            Nuestro horario: <br />Lunes - Viernes de 9am - 5pm </p>
+
+
+
+            
+
 
             <div className='cont-footer'>
 

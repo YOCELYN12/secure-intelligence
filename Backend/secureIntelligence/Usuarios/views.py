@@ -48,7 +48,7 @@ class LoginView(APIView):
         refresh = RefreshToken.for_user(usuario)
         
         if usuario and usuario.password==password:
-            
+            return Response({'success': 'Usuario autenticado','super':{usuario.SuperUsuario},'token':str(refresh.access_token)}, status=status.HTTP_200_OK)
         else:   
             return Response({'error': 'Credenciales inválidas'}, status=status.HTTP_401_UNAUTHORIZED)
         
