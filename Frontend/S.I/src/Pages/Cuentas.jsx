@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Login from '../Components/Login'
 import Registro from '../Components/Registro'
 import '../Styles/Cuentas.css'
@@ -7,24 +7,27 @@ import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Cuentas() {
+  const [LoginyRegistro , setLoginORegistro ] = useState(false);
+
+  const LoginORegistro = () => {
+    setLoginORegistro (!LoginyRegistro);
+  }
+
 
 
   return (
 
     <div className='bodys'>
- 
-  
-
-
-
 
       <Login />
-      <div className='capa1'>
+      <Registro />
+
+      <div   className={`capa1 ${LoginyRegistro ? 'active' : ' ' }`}> 
         <div className='capa2'>
           <h1 className='h1'> Welcome <br /> Start your journey <br /> now with our <br /> management <br /> system</h1>
           <div className='btn-capas'>
             <div className='btn1'>
-              <button style={{ border: "none", background: "transparent" }} ><MdKeyboardDoubleArrowLeft /></button>
+              <button style={{ border: "none", background: "transparent" }} onClick={LoginORegistro} ><MdKeyboardDoubleArrowLeft /></button>
             </div>
 
             <div className='btn2' >
@@ -35,11 +38,17 @@ function Cuentas() {
         </div>
       </div>
 
-
-      <Registro />
+      
 
     </div>
   )
 }
 
 export default Cuentas
+
+
+
+
+
+
+

@@ -7,6 +7,8 @@
     margin: 0; 
     display: flex;
     justify-content: space-around;
+    position: relative;
+    overflow: hidden; 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
@@ -71,3 +73,9 @@
 
 
 
+
+.capa1.active{
+   background-color:black;
+   left: 50%;
+  
+}
