@@ -35,7 +35,7 @@ function Login() {
         return;
       }
       
-      const respuestaPost = await Post(usuario,'login')
+      const respuestaPost = await Post(usuario,'/login')
       
       
       if (respuestaPost.success){

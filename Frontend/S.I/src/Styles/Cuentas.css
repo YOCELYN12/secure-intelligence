@@ -72,10 +72,11 @@
 }
 
 
-
-
 .capa1.active{
    background-color:black;
    left: 50%;
-  
+}
+
+.capa1.actives{
+    left:0%;
 }
