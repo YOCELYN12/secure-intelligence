@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import '../Styles/ToDoTickets.css'
-import Navbar from './Navbar'
 import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { Get, Post} from '../Fetch/Fetch';
-// import ListaTickets from './ListaTickets';
-// import GenerarTickets from '../Pages/GenerarTickets';
-import { BiTrafficCone } from 'react-icons/bi';
 import ListaTickets from './ListaTickets';
 
 

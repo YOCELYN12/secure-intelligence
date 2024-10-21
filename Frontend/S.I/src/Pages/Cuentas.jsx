@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Login from '../Components/Login'
 import Registro from '../Components/Registro'
 import '../Styles/Cuentas.css'
-import CapaLoginyRegistro from '../Components/CapaLoginyRegistro'
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 

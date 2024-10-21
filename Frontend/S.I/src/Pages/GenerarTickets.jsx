@@ -119,7 +119,7 @@ function GenerarTickets() {
         <input className='int-empresa' type="text" value={intEmpresa} onChange={(e) => setIntEmpresa(e.target.value)} />
       </div>
 
-      <div className='cont-descripcion'>
+      <div className='conte-descripcion'>
         <p>Decripcion</p>
         <input className='int-descripcion' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
       </div>

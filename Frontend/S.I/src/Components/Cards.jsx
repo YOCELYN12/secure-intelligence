@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/Cards.css'
+
 
 
 function Cards() {
