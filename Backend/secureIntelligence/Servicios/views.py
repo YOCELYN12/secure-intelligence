@@ -31,14 +31,14 @@ class UpdateTicket(UpdateAPIView):
     serializer_class = TicketsSerializer
     lookup_field = 'ID_Tickets'
 
-class BarraBusquedaView(generics.ListCreateAPIView):
-    serializer_class = ListarCrearSerializer
+# class BarraBusquedaView(generics.ListCreateAPIView):
+#     serializer_class = ListarCrearSerializer
     
-    def get_queryset(self):
-        nombre = self.kwargs.get('nombre', None)
-        if nombre:
-            return Tipo_servicio.objects.filter(Nombre__iexact=nombre)
-        return Tipo_servicio.objects.all()
+#     def get_queryset(self):
+#         nombre = self.kwargs.get('nombre', None)
+#         if nombre:
+#             return Tipo_servicio.objects.filter(Nombre__iexact=nombre)
+#         return Tipo_servicio.objects.all()
 
 
     

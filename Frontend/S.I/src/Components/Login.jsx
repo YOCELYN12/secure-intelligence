@@ -40,7 +40,9 @@ function Login() {
       
       console.log(respuestaPost.super);
       console.log(respuestaPost.token);
-    // nombre valor tiempo en Expirar
+      
+
+    traerCookie("cookie", respuestaPost,1)// nombre valor tiempo en Expirar
       
       if (respuestaPost.success){
         Swal.fire({
