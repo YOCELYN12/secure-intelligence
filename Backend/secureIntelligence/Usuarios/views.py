@@ -11,44 +11,44 @@ from rest_framework_simplejwt.tokens import RefreshToken
 # import re
 
 
-# Create your views here.
-class RegistroView(APIView):
-    queryset = Usuario.objects. all()
-    serializer_class = PostSerializer 
+# # Create your views here.
+# class RegistroView(APIView):
+#     queryset = Usuario.objects. all()
+#     serializer_class = PostSerializer 
     
-    def post (self,request):
-        username = request.data.get('username')
-        email = request.data.get('email')
-        password = request.data.get('password')
+#     def post (self,request):
+#         username = request.data.get('username')
+#         email = request.data.get('email')
+#         password = request.data.get('password')
         
     
-        # contra_regex = r"(?=^.{10,}$)(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z\d])"
+#         # contra_regex = r"(?=^.{10,}$)(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z\d])"
         
-        # if not re.match(contra_regex,password):
-        #     return Response({'error': 'Contrasenia no cumple con la vara esa'}, status=status.HTTP_400_BAD_REQUEST)
+#         # if not re.match(contra_regex,password):
+#         #     return Response({'error': 'Contrasenia no cumple con la vara esa'}, status=status.HTTP_400_BAD_REQUEST)
         
-        if Usuario.objects.filter(username=username).exists():
-            return Response({'error': 'Usuario ya existe'}, status=status.HTTP_400_BAD_REQUEST)
+#         if Usuario.objects.filter(username=username).exists():
+#             return Response({'error': 'Usuario ya existe'}, status=status.HTTP_400_BAD_REQUEST)
     
-        nuevo_usuario = Usuario.objects.create(username=username, email=email ,password=password)
-        return Response ({'success': 'Usuario creado'}, status=status.HTTP_201_CREATED)
+#         nuevo_usuario = Usuario.objects.create(username=username, email=email ,password=password)
+#         return Response ({'success': 'Usuario creado'}, status=status.HTTP_201_CREATED)
     
       
             
     
     
 
-class LoginView(APIView):
-    def post(self, request):
-        username = request.data.get('username')
-        password = request.data.get('password')
+# class LoginView(APIView):
+#     def post(self, request):
+#         username = request.data.get('username')
+#         password = request.data.get('password')
         
-        usuario = Usuario.objects.filter(username=username).first()
+#         usuario = Usuario.objects.filter(username=username).first()
         
-        refresh = RefreshToken.for_user(usuario)
+#         refresh = RefreshToken.for_user(usuario)
         
-        if usuario and usuario.password==password:
-            return Response({'success': 'Usuario autenticado','super':{usuario.SuperUsuario},'token':str(refresh.access_token)}, status=status.HTTP_200_OK)
-        else:   
-            return Response({'error': 'Credenciales inválidas'}, status=status.HTTP_401_UNAUTHORIZED)
+#         if usuario and usuario.password==password:
+#             return Response({'success': 'Usuario autenticado','super':{usuario.SuperUsuario},'token':str(refresh.access_token)}, status=status.HTTP_200_OK)
+#         else:   
+#             return Response({'error': 'Credenciales inválidas'}, status=status.HTTP_401_UNAUTHORIZED)
         

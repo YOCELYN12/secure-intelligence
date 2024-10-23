@@ -25,12 +25,9 @@ function PaginaPrincipal() {
     return (
 
         <div>
-
             <Navbar />
 
             <div className="app">
-
-
 
                 <div className='fondo'>
 
@@ -54,12 +51,9 @@ function PaginaPrincipal() {
 
                 </div>
 
-
                 <Modal />
 
-
             </div>
-
 
             <div className='foter'>
                 <Footer />

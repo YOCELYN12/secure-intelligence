@@ -13,7 +13,7 @@ main {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;  
-    width: 200vh;
+    width: 201.4vh;
     height: 100vh;
     filter: saturate(200%); 
 }

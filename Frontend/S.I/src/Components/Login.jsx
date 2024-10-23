@@ -3,6 +3,7 @@ import "../Styles/Login.css"
 import { useNavigate } from 'react-router-dom'
 import {Post} from "../Fetch/Fetch"
 import Swal from 'sweetalert2'
+import { crearCookie } from '../Fetch/cookie'
 
 
 function Login() {
@@ -37,6 +38,9 @@ function Login() {
       
       const respuestaPost = await Post(usuario,'/login')
       
+      console.log(respuestaPost.super);
+      console.log(respuestaPost.token);
+    // nombre valor tiempo en Expirar
       
       if (respuestaPost.success){
         Swal.fire({

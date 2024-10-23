@@ -98,19 +98,15 @@
 }
 
 .int-descripcion{
-  width: 88%;
+  width: 700%;
   height: 18vh;
 }
 
 .conte-descripcion{
     position: absolute;
-    top: 195%;
+    top: 190%;
     left: 5.5%;
 }
-
-
-
-
 
 .footeer{
     margin-top: -820px;

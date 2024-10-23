@@ -19,7 +19,7 @@ function Registro() {
       password: intPassword,
       email: intEmail
     }
-    // console.log(datos);
+    console.log(datos);
 
 
     
@@ -40,8 +40,9 @@ function Registro() {
 
 
     const peticion = await Post(datos, '/registro')
-
-    if (peticion.success) {
+    console.log(peticion);
+    
+    if (peticion) {
       Swal.fire({
         title: "Good job!",
         text: "You clicked the button!",

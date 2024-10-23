@@ -4,6 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FiTool } from "react-icons/fi";
 import { BiMessageDetail } from "react-icons/bi";
 import { LuLogIn } from "react-icons/lu";
+import { RiCustomerServiceFill } from "react-icons/ri";
 
 function Footer() {
   return (
@@ -17,19 +18,19 @@ function Footer() {
           <a className='letras_footer' href="/GenerarTickets">Soporte</a>
           <a className='letras_footer' href="/QuienesSomos">Quienes somos</a>
           <a className='letras_footer' href="/Cuentas">Centro de cuentas</a>
+          <a className='letras_footer' href="/Cuentas">Servicio al cliente</a>
 
-        </div>
+        </div> 
       </div>
-
-
 
       <div className='cont-icon'>
         <div className='cont2-iconos'>
 
-          <HiOutlineMail className='iconos-footer' />
-          <FiTool className='iconos-footer' />
+          <HiOutlineMail  className='iconos-footer' />
+          <FiTool  className='iconos-footer' />
           <BiMessageDetail className='iconos-footer' />
           <LuLogIn className='iconos-footer' />
+          <RiCustomerServiceFill className='iconos-footer'/>
 
         </div>
 

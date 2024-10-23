@@ -9,38 +9,41 @@
 }
 
 
-.cont_footer{
-  display: flex;
-  justify-content: space-evenly;
-  width: 50%;
-  
-}
+
 
 .cont_centrar_footer{ 
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 
 .cont-icon{
    display: flex;
    justify-content: center;
-   
 }
 
+.cont_footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    
+}
 
 .cont2-iconos{
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
-   
+    width: 52%;
+    position: relative;
+    left: -3%;
+    margin-bottom: 0%;
 }
 
 .iconos-footer{
     display: flex;
     justify-content: space-evenly;
+    background-color: transparent;
+    border: none;
 }
 
 

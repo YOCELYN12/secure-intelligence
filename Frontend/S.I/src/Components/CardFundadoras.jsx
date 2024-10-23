@@ -9,13 +9,13 @@ function CardFundadoras() {
                 <div className="card-body">
 
                     <p className="card-text">
-                       <img className='img-Yennifer' src="https://i.imgur.com/oCdabP3.jpg" alt="" />
+                       <img className='img-Yennifer' src="https://i.imgur.com/pCmAIAW.jpg" alt="" />
                        <p className='letras-Yennifer'>Yennifer Rivera</p>
                        <p className='pentester'>Pentester</p>
                     </p>
 
                 </div>
-                <img src="https://i.imgur.com/BZf71n4.jpg" className="card-img-top" alt="..." />
+                <img src="https://i.imgur.com/C5OvLuO.jpg" className="card-img-top" alt="..." />
 
                 <div className="Card">
 

@@ -16,8 +16,6 @@ class ServicioView(generics.ListCreateAPIView):
     serializer_class = ListarCrearSerializer
     # permission_classes = [IsAuthenticated]
     
-    
-    
 class TicketsView(generics.ListCreateAPIView):
     queryset = Tickets.objects.all()
     serializer_class = TicketsSerializer
@@ -32,7 +30,17 @@ class UpdateTicket(UpdateAPIView):
     queryset = Tickets.objects.all()
     serializer_class = TicketsSerializer
     lookup_field = 'ID_Tickets'
+
+class BarraBusquedaView(generics.ListCreateAPIView):
+    serializer_class = ListarCrearSerializer
     
+    def get_queryset(self):
+        nombre = self.kwargs.get('nombre', None)
+        if nombre:
+            return Tipo_servicio.objects.filter(Nombre__iexact=nombre)
+        return Tipo_servicio.objects.all()
+
+
     
     
 
