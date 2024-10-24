@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../Styles/ToDoTickets.css'
 import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { Get, Post} from '../Fetch/Fetch';
+import { Get, Post } from '../Fetch/Fetch';
 import ListaTickets from './ListaTickets';
 import { BiMenuAltRight } from "react-icons/bi";
 
@@ -13,7 +13,7 @@ function ToDoTickets() {
     const [intArea, setIntArea] = useState("")
     const [intDescripcion, setIntDescripcion] = useState("")
     const [tick, setTick] = useState([])
-    const [menu, setmenu] = useState(false)
+
 
     const enviarServicio = async (e) => {
         e.preventDefault()
@@ -34,29 +34,18 @@ function ToDoTickets() {
         obtenerTicket()
     }, [])
 
-    const MenuTickets = () => {
-        
-      setmenu(!menu);
-    }
 
- 
+
 
     return (
 
         <div>
             <div>
                 <div>
-                    
 
-                    <button className='menu-tickets' onClick={MenuTickets} ><BiMenuAltRight /></button>
-                    {menu && (
-                        <div>
-                         <a className='dropdown-menu ' href="">Holaa</a>
-                         <a className='dropdown-menu ' href="">Holaa</a>
-                         <a className='dropdown-menu ' href="">Holaa</a>
-                        </div>
-                        
-                    )}
+
+                    <button className='menu-tickets' ><BiMenuAltRight /></button>
+
                     <h3 className='h3'>Tickets</h3>
                     <hr className='barra' />
 
@@ -80,6 +69,7 @@ function ToDoTickets() {
 
 
                 <div className='cont-tickets' >
+                  
 
                     <div className='cont-nuevos'>
 

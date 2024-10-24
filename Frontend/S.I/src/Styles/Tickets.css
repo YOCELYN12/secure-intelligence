@@ -1,42 +1,40 @@
 .cont-Padre-ticket{
     background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 10px;
     padding: 5px;
-    width: auto;
+    width: 100;
+    height: 40%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
     margin-bottom: 7%;
     margin-left: 20px;
     margin-top: 15px;
 }
 
+.name-ticket{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .cont-Hijo-ticket{
-   display: flex;
-   justify-content: space-evenly;
- 
-   
+    display: flex;
+    
 }
 
 .cont-ticket{
     display: flex;
-    justify-content: space-evenly;
+   
 }
 
-.cont-ticket-datos{
-   display: flex;
-   justify-content: space-evenly;
-}
+
 
 .cont-ticket-descripcion{
     display: flex;
-    justify-content: space-evenly;
+    
 }
 
 .btn-tickets{
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
 }
 
@@ -71,4 +69,11 @@
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: row; /* Elementos en fila */
+    gap: 70px;
+    
 }
