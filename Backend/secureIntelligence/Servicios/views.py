@@ -1,4 +1,6 @@
 # from django.shortcuts import render
+from django.shortcuts import redirect, render
+from flask import Response
 from rest_framework.views import APIView
 # from rest_framework.response import Response
 from .serializers import ListarCrearSerializer
@@ -8,13 +10,16 @@ from .models import Tickets
 from .serializers import TicketsSerializer
 from rest_framework.generics import DestroyAPIView
 from rest_framework.generics import UpdateAPIView
-# from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated
+
+
 
 # Create your views here.
 class ServicioView(generics.ListCreateAPIView):
     queryset = Tipo_servicio.objects.all()
     serializer_class = ListarCrearSerializer
     # permission_classes = [IsAuthenticated]
+
     
 class TicketsView(generics.ListCreateAPIView):
     queryset = Tickets.objects.all()
@@ -25,20 +30,22 @@ class DeleteTicket(DestroyAPIView):
     serializer_class = TicketsSerializer
     lookup_field = 'ID_Tickets'
     
+  
+       
     
 class UpdateTicket(UpdateAPIView):
     queryset = Tickets.objects.all()
     serializer_class = TicketsSerializer
     lookup_field = 'ID_Tickets'
 
-# class BarraBusquedaView(generics.ListCreateAPIView):
-#     serializer_class = ListarCrearSerializer
+class BarraBusquedaView(generics.ListCreateAPIView):
+    serializer_class = ListarCrearSerializer
     
-#     def get_queryset(self):
-#         nombre = self.kwargs.get('nombre', None)
-#         if nombre:
-#             return Tipo_servicio.objects.filter(Nombre__iexact=nombre)
-#         return Tipo_servicio.objects.all()
+    def get_queryset(self):
+        nombre = self.kwargs.get('nombre', None)
+        if nombre:
+            return Tipo_servicio.objects.filter(Nombre__iexact=nombre)
+        return Tipo_servicio.objects.all()
 
 
     

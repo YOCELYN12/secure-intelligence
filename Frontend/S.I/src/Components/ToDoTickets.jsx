@@ -4,6 +4,8 @@ import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { Get, Post} from '../Fetch/Fetch';
 import ListaTickets from './ListaTickets';
+import { IoMenu } from "react-icons/io5";
+
 
 
 function ToDoTickets() {
@@ -39,8 +41,10 @@ function ToDoTickets() {
 
         <div>
             <div>
-
                 <div>
+
+                    <button ><IoMenu/></button>
+
                     <h3 className='h3'>Tickets</h3>
                     <hr className='barra' />
 
@@ -104,7 +108,7 @@ function ToDoTickets() {
                         </div>
 
                         <div className='btn-servicios'>
-                            <button onClick={enviarServicio} className='btn-enviar'>Enviar</button>
+                            <button style={{cursor:"pointer",zIndex:"100"}} onClick={enviarServicio} className='btn-enviar'>Enviar</button>
                             <button className='btn-cancelar'>Cancelar</button>
                         </div>
 

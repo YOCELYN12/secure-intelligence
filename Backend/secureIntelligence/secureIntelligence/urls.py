@@ -13,7 +13,6 @@ urlpatterns = [
     path('api/registro', RegistroView.as_view()), 
     path('api/login', LoginView.as_view()),
     path('api/',include("Servicios.urls")),
-    # path('api/Registro',RegistroView.as_view()),
-    # path('api/sdas',RegistroView.as_view(),name='aa'),
+   
 ]
 

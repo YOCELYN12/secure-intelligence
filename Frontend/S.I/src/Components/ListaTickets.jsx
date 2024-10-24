@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Tickets from './Tickets';
 import { Delete } from '../Fetch/Fetch';
 import ModalEditarTicket from './ModalTicket';
+
 const ListaTickets = ({ ticketsAPI }) => {
     
     const [modalVisible, setModalVisible] = useState(false);

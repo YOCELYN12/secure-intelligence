@@ -42,7 +42,7 @@ function Login() {
       console.log(respuestaPost.token);
       
 
-    traerCookie("cookie", respuestaPost,1)// nombre valor tiempo en Expirar
+      crearCookie("cookie", respuestaPost.token,1)// nombre valor tiempo en Expirar
       
       if (respuestaPost.success){
         Swal.fire({

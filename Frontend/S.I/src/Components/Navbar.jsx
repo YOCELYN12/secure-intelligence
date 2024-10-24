@@ -3,6 +3,7 @@ import '../Styles/Nav.css'
 import { IoPersonAdd } from "react-icons/io5";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
+import { IoMenu } from "react-icons/io5";
 
 
 function Navbar() {
@@ -10,7 +11,7 @@ function Navbar() {
   const navegar = useNavigate()
 
 
-  const irpaginacuentas = async(e) => {
+  const irpaginacuentas = async (e) => {
     e.preventDefault(
       navegar("/Cuentas")
     )
@@ -20,9 +21,20 @@ function Navbar() {
   return (
     <nav className='navbar'>
 
+
+
       <div>
         <img className='logo' src="https://i.imgur.com/OzhReRY.png" alt="mmmm" />
       </div>
+
+      <div >
+        <a  className='menu-Nav' href="/">Servicios</a>
+        <a   className='menu-Nav'href="/GenerarTickets">Soporte</a>
+        <a  className='menu-Nav' href="/QuienesSomos">Quienes somos</a>
+        <a  className='menu-Nav' href="/Cuentas">Centro de cuentas</a>
+        <a  className='menu-Nav' href="/Cuentas">Servicio al cliente</a>
+      </div>
+
 
       <div className='container-logo-search'>
 
@@ -32,18 +44,20 @@ function Navbar() {
 
 
         <div className='btn-buscar' >
-          <button className='icon-buscar'><FaMagnifyingGlass  /> </button>
+          <button className='icon-buscar'><FaMagnifyingGlass /> </button>
         </div>
       </div>
 
       <div className='account'>
-        <button className='btn-account'  onClick={irpaginacuentas} >
-          <IoPersonAdd  className=' icon-account' />
+        <button className='btn-account' onClick={irpaginacuentas} >
+          <IoPersonAdd className=' icon-account' />
           <p >Account</p>
         </button>
       </div>
 
-      
+
+
+
 
     </nav>
   )

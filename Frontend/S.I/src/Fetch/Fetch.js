@@ -1,12 +1,18 @@
+import { traerCookie } from "./cookie";
+
 const API_URL = "http://localhost:8000/api"
+
 //Post
+const token = traerCookie('token')
 const Post = async(datos,endpoint) => {
     try {
         const respuesta = await fetch(`${API_URL}${endpoint}`,{
             method:"POST",
             headers: {
                 "Content-type": "application/json"
+                // 'Authorization': `Bearer ${token}`
             },
+
             body:JSON.stringify(datos)
         })
         const data = await respuesta.json();

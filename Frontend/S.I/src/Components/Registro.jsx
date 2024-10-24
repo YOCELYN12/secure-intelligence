@@ -29,7 +29,6 @@ function Registro() {
 
 
     if (validarEspacios) {
-      // Swal.fire("Texto del mensaje");
       Swal.fire({
         title: "Incorrect",
         text: "Por favor ingrese los datos solicitados",
@@ -57,9 +56,6 @@ function Registro() {
         icon: "error"
       });
     }
-
-    // console.log(peticion);
-    // navegar("/PaginaAdmin")
   }
 
 
