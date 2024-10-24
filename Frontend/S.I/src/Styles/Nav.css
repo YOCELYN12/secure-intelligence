@@ -9,17 +9,14 @@
    left: 0;
 }
 
-
-
-/* @media (max-width:768px){
-   .search-container{
-      grid-template-columns: repeat(4,1fr);
-   }
-} */
-
 .logo {
    width: 20%;
    
+}
+
+.container-logo-search {
+   position: absolute;
+   left: 20%;  
 }
 
 .search-container {
@@ -27,13 +24,6 @@
    border: 3px solid #ccc;
    border-radius: 15px;
    width: 140%;
-}
-
-.container-logo-search {
-   display: flex;
-   place-content: center; 
-   align-items: center;   
-   
 }
 
 .btn-buscar{
@@ -77,10 +67,8 @@
 .menu-Nav{
    position: relative;
    right: 30%;
-   display: flex;
-   justify-content: space-evenly;
+   margin-right: ;
 }
-
 
 
 

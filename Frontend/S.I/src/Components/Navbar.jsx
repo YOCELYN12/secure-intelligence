@@ -27,13 +27,13 @@ function Navbar() {
         <img className='logo' src="https://i.imgur.com/OzhReRY.png" alt="mmmm" />
       </div>
 
-      <div >
-        <a  className='menu-Nav' href="/">Servicios</a>
-        <a   className='menu-Nav'href="/GenerarTickets">Soporte</a>
+     
+        {/* <a  className='menu-Nav' href="/">Servicios</a>
+        <a  className='menu-Nav'href="/GenerarTickets">Soporte</a>
         <a  className='menu-Nav' href="/QuienesSomos">Quienes somos</a>
         <a  className='menu-Nav' href="/Cuentas">Centro de cuentas</a>
         <a  className='menu-Nav' href="/Cuentas">Servicio al cliente</a>
-      </div>
+      */}
 
 
       <div className='container-logo-search'>
