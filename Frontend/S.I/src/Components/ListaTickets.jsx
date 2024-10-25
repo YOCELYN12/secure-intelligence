@@ -30,7 +30,7 @@ const ListaTickets = ({ ticketsAPI }) => {
                     Nombre={tick.Nombre}
                     Apellido={tick.Apellido}
                     Correo={tick.Correo}
-                    ServicioSeleccionado={tick.Tipo_de_servicio}
+                    ServicioSeleccionado={tick.Nombre}
                     Numero_de_telefono={tick.Numero_de_telefono}
                     Empresa={tick.Empresa}
                     Descripcion={tick.Descripcion}

@@ -73,7 +73,7 @@ function ToDoTickets() {
                 <div>
                     <button onClick={abrirModal}  className='menu'><h6 style={{ fontSize: "120%" }}> ▪️ Agregar servicios</h6>
                         
-                           <ModalServicios isOpen={isModalOpen} onClose={cerrarModal} />
+                        <ModalServicios isOpen={isModalOpen} onClose={cerrarModal} />
                         
 
                     </button>

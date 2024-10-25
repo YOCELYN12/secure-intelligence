@@ -27,16 +27,16 @@ class Clientes (models.Model):
 
 class Tipo_usuario (models.Model):
     ID_tipo_usuario = models.AutoField(primary_key=True)
-    ID_administrador = models.ForeignKey(Administradores, on_delete=models.CASCADE,null=True, blank=True)
-    Id_cliente = models.ForeignKey(Clientes,on_delete=models.CASCADE,null=True, blank=True)
+    ID_administrador = models.ForeignKey(Administradores, on_delete=models.CASCADE)
+    Id_cliente = models.ForeignKey(Clientes,on_delete=models.CASCADE)
 
 class Usuario(models.Model):
    id = models.AutoField(primary_key=True)
    username = models.CharField(max_length=255)
    password = models.CharField(max_length=255)
    email = models.EmailField(max_length=255)
-   ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE, null=True, blank=True)
-   ID_servicios = models.ForeignKey('Servicios.Servicios_disponibles', on_delete=models.CASCADE,null=True, blank=True)
+   ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE)
+   ID_servicios = models.ForeignKey('Servicios.Servicios_disponibles', on_delete=models.CASCADE)
    SuperUsuario = models.BooleanField(default= False)
-#    ID_empleado = models.ForeignKey(Empleados, on_delete=models.CASCADE,null=True, blank=True)
+
    

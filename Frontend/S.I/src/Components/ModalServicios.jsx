@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../Styles/ModalServicios.css'
+import {Post } from '../Fetch/Fetch';
 
 function ModalServicios({ isOpen, onClose }) {
 
@@ -10,6 +11,7 @@ function ModalServicios({ isOpen, onClose }) {
 
     
     const enviarServicio = async (e) => {
+       
         e.preventDefault()
         let datos = {
             Nombre: intNombre,
@@ -26,6 +28,8 @@ function ModalServicios({ isOpen, onClose }) {
         <div className='modal-overlay' onClick={onClose}>
             <div className='cont-tipo-servicios' onClick={e => e.stopPropagation()}>
                 <div>
+
+                    <h5 className='h5'>Agregar nuevos servicios</h5>
 
                     <div className='cont-nombre-tipo-servicio'>
                         <p className='letras-servicios'>Nombre</p>
