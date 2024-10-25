@@ -5,25 +5,23 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { Get, Post } from '../Fetch/Fetch';
 import ListaTickets from './ListaTickets';
 import { BiMenuAltRight } from "react-icons/bi";
+import ModalServicios from './ModalServicios';
+
 
 
 
 function ToDoTickets() {
-    const [intNombre, setIntNombre] = useState("")
-    const [intArea, setIntArea] = useState("")
-    const [intDescripcion, setIntDescripcion] = useState("")
+   
     const [tick, setTick] = useState([])
+    const [open, setOpen] = useState(false);
+    const [abrirServicio, setAbrirServicio] = useState(false)
 
-
-    const enviarServicio = async (e) => {
-        e.preventDefault()
-        let datos = {
-            Nombre: intNombre,
-            Area: intArea,
-            Descripcion_servicio: intDescripcion
-        }
-        await Post(datos, "/post/")
+    const AgregarServicio = () => {
+        setAbrirServicio (prev => !prev)
     }
+
+
+
 
     useEffect(() => {
         const obtenerTicket = async () => {
@@ -44,8 +42,14 @@ function ToDoTickets() {
                 <div>
                     <button className='menu-tickets' ><BiMenuAltRight /></button>
 
-                    <h3 className='h3'>Tickets</h3>
-                    <hr className='barra' />
+
+
+                    <div className='prueba-barra'>
+
+                        <hr className='barra' />
+                        <h3 className='h3'>Tickets</h3>
+
+                    </div>
 
                     <div className='container-logo'>
 
@@ -64,12 +68,21 @@ function ToDoTickets() {
                 </div>
 
 
-                <div className='menu-tickets'>
-                    <button> <h6>Agregar servicios</h6></button>
+                <div>
+                    <button onClick={AgregarServicio} className='menu'><h6 style={{ fontSize: "120%" }}> ▪️ Agregar servicios</h6>
+                        {abrirServicio && (
+                           <ModalServicios/>
+                        )}
+
+                    </button>
 
 
+
+                    <a className='menu-pagina' href=""> ▪️   Pagina Pricipal</a>
 
                 </div>
+
+                <hr className='linea-servicios' />
 
 
                 <div className='cont-tickets' >
@@ -83,36 +96,14 @@ function ToDoTickets() {
 
                 </div>
 
-               
 
 
-                {/* <div className='cont-tipo-servicios'>
-                    <div className='dev-img-servicio'>
-                        <div className='cont-nombre-tipo-servicio'>
-                            <p className='letras-servicios'>Nombre</p>
-                            <input className='int-nombre' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
-                        </div>
 
-                        <div className='cont-area'>
-                            <p className='letras-servicios'>Area</p>
-                            <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
-                        </div>
-
-
-                        <div className='cont-descripcion'>
-                            <p className='letras-servicios'>Descripcion del servicio</p>
-                            <input className='int-descripcion-servicios' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
-                        </div>
-
-                        <div className='btn-servicios'>
-                            <button style={{cursor:"pointer",zIndex:"100"}} onClick={enviarServicio} className='btn-enviar'>Enviar</button>
-                            <button className='btn-cancelar'>Cancelar</button>
-                        </div>
-
-                    </div>
-
-                </div> */}
+                {/* */}
             </div>
+
+
+            
 
             <div className='foo'>
 
