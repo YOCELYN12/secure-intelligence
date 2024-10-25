@@ -64,29 +64,29 @@ function ToDoTickets() {
                 </div>
 
 
-                    <div className='cont-tickets' >
-
-                        <div className='cont-nuevos'>
-
-                            <ListaTickets ticketsAPI={tick} />
-
-                        </div>
+                <div className='menu-tickets'>
+                    <button> <h6>Agregar servicios</h6></button>
 
 
-                        <div className='cont-cerrados'>
+
+                </div>
 
 
-                        </div>
+                <div className='cont-tickets' >
 
+                    <div className='cont-nuevos'>
 
-                        <div className='cont-espera'>
-
-
-                        </div>
+                        <ListaTickets ticketsAPI={tick} />
 
                     </div>
 
-                    {/* <div className='cont-tipo-servicios'>
+
+                </div>
+
+               
+
+
+                {/* <div className='cont-tipo-servicios'>
                     <div className='dev-img-servicio'>
                         <div className='cont-nombre-tipo-servicio'>
                             <p className='letras-servicios'>Nombre</p>
@@ -112,17 +112,17 @@ function ToDoTickets() {
                     </div>
 
                 </div> */}
-                </div>
+            </div>
 
-                <div className='foo'>
+            <div className='foo'>
 
-                    <Footer />
-
-                </div>
+                <Footer />
 
             </div>
 
-            )
+        </div>
+
+    )
 }
 
-            export default ToDoTickets
+export default ToDoTickets

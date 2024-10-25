@@ -8,9 +8,13 @@
    color: aliceblue;
 }
 
+.menu-tickets{
+    
+}
+
 
 .cont-tickets{
-    background-color: rgb(240, 241, 242);
+    background-color: rgba(234, 234, 234, 0.505);
     position: relative;
     top: 180px;
     left: 30%;
@@ -208,6 +212,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     z-index: 10;
 }
+
 
 
 
