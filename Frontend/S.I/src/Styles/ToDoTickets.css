@@ -8,18 +8,19 @@
    color: aliceblue;
 }
 
+
 .cont-tickets{
     background-color: rgb(240, 241, 242);
     position: relative;
     top: 180px;
-    left: 18%;
+    left: 30%;
     width: auto; 
     height: auto; 
-    max-width: 80%; 
+    max-width: 68%; 
     box-sizing: border-box; 
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-.
+
 
 .cont-nuevos{
     width: auto;
@@ -33,6 +34,23 @@
     gap: 20px;
     
 }
+
+.cont-opciones{
+    width: 65%;
+    height: 50px;
+    background-color: rgb(240, 241, 242);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row; /* Elementos en fila */
+    gap: 70px;
+    position: absolute;
+    top: 120px;
+    left: 20%; 
+}
+
+
 
 .ticket-card {
     background-color: #f0f0f0;

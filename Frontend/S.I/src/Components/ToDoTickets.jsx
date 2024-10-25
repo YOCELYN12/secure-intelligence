@@ -42,8 +42,6 @@ function ToDoTickets() {
         <div>
             <div>
                 <div>
-
-
                     <button className='menu-tickets' ><BiMenuAltRight /></button>
 
                     <h3 className='h3'>Tickets</h3>
@@ -66,32 +64,29 @@ function ToDoTickets() {
                 </div>
 
 
+                    <div className='cont-tickets' >
+
+                        <div className='cont-nuevos'>
+
+                            <ListaTickets ticketsAPI={tick} />
+
+                        </div>
 
 
-                <div className='cont-tickets' >
-                  
+                        <div className='cont-cerrados'>
 
-                    <div className='cont-nuevos'>
 
-                        <ListaTickets ticketsAPI={tick} />
+                        </div>
+
+
+                        <div className='cont-espera'>
+
+
+                        </div>
 
                     </div>
 
-
-                    <div className='cont-cerrados'>
-
-
-                    </div>
-
-
-                    <div className='cont-espera'>
-
-
-                    </div>
-
-                </div>
-
-                {/* <div className='cont-tipo-servicios'>
+                    {/* <div className='cont-tipo-servicios'>
                     <div className='dev-img-servicio'>
                         <div className='cont-nombre-tipo-servicio'>
                             <p className='letras-servicios'>Nombre</p>
@@ -117,17 +112,17 @@ function ToDoTickets() {
                     </div>
 
                 </div> */}
+                </div>
+
+                <div className='foo'>
+
+                    <Footer />
+
+                </div>
+
             </div>
 
-            <div className='foo'>
-
-                <Footer />
-
-            </div>
-
-        </div>
-
-    )
+            )
 }
 
-export default ToDoTickets
+            export default ToDoTickets
