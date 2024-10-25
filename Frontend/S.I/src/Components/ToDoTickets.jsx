@@ -15,11 +15,15 @@ function ToDoTickets() {
     const [tick, setTick] = useState([])
     const [open, setOpen] = useState(false);
     const [abrirServicio, setAbrirServicio] = useState(false)
+    const [isModalOpen,setIsModalOpen ] = useState(false)
 
-    const AgregarServicio = () => {
-        setAbrirServicio (prev => !prev)
-    }
+    const abrirModal = () => {
+        setIsModalOpen(true);
+    };
 
+    const cerrarModal = () => {
+        setIsModalOpen(false);
+    };
 
 
 
@@ -41,8 +45,6 @@ function ToDoTickets() {
             <div>
                 <div>
                     <button className='menu-tickets' ><BiMenuAltRight /></button>
-
-
 
                     <div className='prueba-barra'>
 
@@ -69,10 +71,10 @@ function ToDoTickets() {
 
 
                 <div>
-                    <button onClick={AgregarServicio} className='menu'><h6 style={{ fontSize: "120%" }}> ▪️ Agregar servicios</h6>
-                        {abrirServicio && (
-                           <ModalServicios/>
-                        )}
+                    <button onClick={abrirModal}  className='menu'><h6 style={{ fontSize: "120%" }}> ▪️ Agregar servicios</h6>
+                        
+                           <ModalServicios isOpen={isModalOpen} onClose={cerrarModal} />
+                        
 
                     </button>
 

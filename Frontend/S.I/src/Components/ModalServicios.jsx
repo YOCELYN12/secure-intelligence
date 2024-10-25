@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../Styles/ModalServicios.css'
 
-function ModalServicios() {
+function ModalServicios({ isOpen, onClose }) {
 
     const [intNombre, setIntNombre] = useState("")
     const [intArea, setIntArea] = useState("")
@@ -17,17 +17,19 @@ function ModalServicios() {
             Descripcion_servicio: intDescripcion
         }
         await Post(datos, "/post/")
+         
     }
 
-    return (
-        <div>
-            <div className='cont-tipo-servicios'>
+    if (!isOpen) return null;
 
-                <div className='dev-img-servicio'>
+    return (
+        <div className='modal-overlay' onClick={onClose}>
+            <div className='cont-tipo-servicios' onClick={e => e.stopPropagation()}>
+                <div>
 
                     <div className='cont-nombre-tipo-servicio'>
                         <p className='letras-servicios'>Nombre</p>
-                        <input className='int-nombre' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
+                        <input className='int-nombre-servicio' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
                     </div>
 
                     <div className='cont-area'>
@@ -41,8 +43,8 @@ function ModalServicios() {
                     </div>
 
                     <div className='btn-servicios'>
-                        <button style={{ cursor: "pointer", zIndex: "100" }} onClick={enviarServicio} className='btn-enviar'>Enviar</button>
-                        <button className='btn-cancelar'>Cancelar</button>
+                        <button style={{ cursor: "pointer", zIndex: "100" }} onClick={enviarServicio} className='btn-enviar-tipo-servicio'>Enviar</button>
+                        <button className='btn-cancelar-tipo-servicio' onClick={onClose}>Cancelar</button>
                     </div>
 
                 </div>
