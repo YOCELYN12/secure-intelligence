@@ -2,7 +2,7 @@ from django.urls import path
 # from . import views
 # from .router import router_post
 
-from .views import BarraBusquedaView, DeleteTicket, ServicioView, TicketsView, UpdateTicket
+from .views import  DeleteTicket, ServicioView, TicketsView, UpdateTicket
 urlpatterns = [
     path('post/',ServicioView.as_view(),name="Servicios"),
     path('postTicket',TicketsView.as_view(), name="Tickets"),

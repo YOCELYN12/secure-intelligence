@@ -21,6 +21,7 @@ const ListaTickets = ({ ticketsAPI }) => {
         setModalVisible(false);
         setTicketSeleccionado(null);
     };
+    
 
     return (
         <div>
@@ -30,7 +31,7 @@ const ListaTickets = ({ ticketsAPI }) => {
                     Nombre={tick.Nombre}
                     Apellido={tick.Apellido}
                     Correo={tick.Correo}
-                    ServicioSeleccionado={tick.Nombre}
+                    ServicioSeleccionado={tick.ID_tipo_servicio}
                     Numero_de_telefono={tick.Numero_de_telefono}
                     Empresa={tick.Empresa}
                     Descripcion={tick.Descripcion}

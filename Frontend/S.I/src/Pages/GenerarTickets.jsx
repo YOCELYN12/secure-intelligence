@@ -15,18 +15,21 @@ function GenerarTickets() {
   const [intCorreo, setIntCorreo] = useState("")
   const [intTipoServicio, setIntTipoServicio] = useState([]) //constante con la lista de tipos de servicios obtenidos de la base de datos 
   const [intServicioSelecionado, setIntServicioSeleccionado] = useState("")  //almacena la opcion que el usuario requiera
-  const [intTelefono, setIntTeleno] = useState("")
+  const [intTelefono, setIntTelefono] = useState("")
   const [intEmpresa, setIntEmpresa] = useState("")
-  const [intDescripcion, setIntDescripcion] = useState("") 
-  
+  const [intDescripcion, setIntDescripcion] = useState("")
+
+  console.log()
 
 
 
-  useEffect(() => { 
+  //Estado que se encarga de traer los Tipos de servicios de la API 
+  useEffect(() => {
     const obtenerDatos = async () => {
       const getDatos = await Get("/post/") //llama a la API para obtener los tipos de servicios de la base de datos
       setIntTipoServicio(getDatos) //actualiza el estado con los datos de los servicios obtenidos
       console.log(getDatos);
+      
     }
     obtenerDatos()
   }, [])
@@ -38,24 +41,23 @@ function GenerarTickets() {
   const enviarTickets = async (e) => {
     e.preventDefault()
     let datos = {
-      Nombre: intNombre,
+      Nombre: intNombre,             
       Apellido: intApellido,
       Correo: intCorreo,
-      ServicioSeleccionado:intServicioSelecionado, //Muestra el servicio seleccionado
       Numero_de_telefono: intTelefono,
       Empresa: intEmpresa,
       Descripcion: intDescripcion,
-      Servicio: intServicioSelecionado // Guardar el servicio seleccionado
+      ID_tipo_servicio_id: intServicioSelecionado,// Guarda el servicio seleccionado
     }
 
-    await Post(datos,"/postTicket") //se encarga de enviar los datos a la API para crear un nuevo ticket
+    await Post(datos, "/postTicket") //se encarga de enviar los datos a la API para crear un nuevo ticket
   }
 
 
   return (
 
 
-    <body>
+    <div>
 
       <Navbar />
 
@@ -96,13 +98,23 @@ function GenerarTickets() {
       <div className='cont-tipo-servicio' >
         <p>Tipo de servicio</p>
 
-        <select className='select-servicio' id="servicios"  value={intServicioSelecionado} onChange={(e) => setIntServicioSeleccionado(e.target.value)}> { /*Actualizamos solo el valor seleccionado*/}
-          <option value="" >Seleccione una opción</option>
+        <select className='select-servicio' value={intServicioSelecionado} onChange={(e) => setIntServicioSeleccionado(e.target.value)}> { /*Actualizamos solo el valor seleccionado*/}
+          <option>Seleccione una opción</option>
+
+          {/* {Array.isArray(intTipoServicio) && intTipoServicio.map((tipo) => (
+            <option key={tipo.id} value={tipo.id}>
+              {tipo.Nombre}
+            </option>
+          ))} */}
+
           {intTipoServicio.map((tipo) => (
-            <option key={tipo.id} value={tipo.id}>  {/* Aquí asignamos el id como value */}
+            <option key={tipo.id} value={tipo.id} >   {/* Aquí asignamos el id como value */}
               {tipo.Nombre}
             </option>
           ))}
+
+
+
         </select>
 
       </div>
@@ -111,7 +123,7 @@ function GenerarTickets() {
 
       <div className='cont-telefono'>
         <p>Numero de telefono</p>
-        <input className='int-numero-telefono' type="num" value={intTelefono} onChange={(e) => setIntTeleno(e.target.value)} />
+        <input className='int-numero-telefono' type="num" value={intTelefono} onChange={(e) => setIntTelefono(e.target.value)} />
       </div>
 
       <div className='cont-empresa'>
@@ -136,7 +148,7 @@ function GenerarTickets() {
       </div>
 
 
-    </body>
+    </div>
   )
 }
 

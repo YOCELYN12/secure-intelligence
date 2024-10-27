@@ -24,6 +24,8 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
                         id="collapseOne"
                         className="accordion-collapse collapse show"
                         data-bs-parent="#accordionExample"
+
+                        
                     >
                         <div className="accordion-body">
                             <div className='cont-Hijo-ticket'>

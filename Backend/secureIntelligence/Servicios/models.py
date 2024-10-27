@@ -16,7 +16,7 @@ class Servicios_disponibles (models.Model):
     ID_servicio = models.AutoField(primary_key=True)
     ID_tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)
     Descripcion = models.TextField()   
-    # ID_empleado = models.ForeignKey('Usuarios.Empleados',on_delete=models.CASCADE, null=True, blank=True)
+   
     
 
 class Suscripciones (models.Model):
@@ -37,7 +37,7 @@ class Tickets  (models.Model):
     Nombre = models.CharField(max_length=255)
     Apellido = models.CharField(max_length=255)
     Correo = models.CharField(max_length=255)
-    ID_Tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)    
+    ID_tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)    
     Numero_de_telefono = models.CharField(max_length=255)
     Empresa = models.CharField(max_length=255)
     Descripcion = models.CharField(max_length=255)  
