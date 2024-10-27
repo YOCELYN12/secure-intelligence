@@ -80,8 +80,6 @@ function ToDoTickets() {
 
                 </div>
 
-                {/* <hr className='linea-servicios' /> */}
-
 
                 <div className='cont-tickets' >
 

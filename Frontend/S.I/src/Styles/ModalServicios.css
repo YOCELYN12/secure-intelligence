@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     justify-content: center;
     z-index: 100; 
@@ -22,13 +22,13 @@
 }
 
 
-.cont-nombre-tipo-servicio{
+/* .cont-nombre-tipo-servicio{
   position: absolute;
   left: 6%;
   top: 19%;
-}
+} */
 
-.int-nombre-servicio{
+/* .int-nombre-servicio{
    position: absolute;
    left: 0%;
    width:500px;
@@ -37,19 +37,55 @@
    border-style: solid; 
    border-width: 1px; 
    border-color: rgb(159, 137, 137);
-}
+} */
 
-.letras-servicios{
+/* .letras-servicios{
     color: black;
+    display: flex;
+    
+    margin-bottom: 8%;
 }
 
-.cont-area{
+.inputs{
+    display: flex; 
+    flex-direction: column;
+    border-color: rgb(159, 137, 137);
+} */
+
+
+.letras-servicios {
+    color: black;
+    display: flex; 
+}
+
+.inputs {
+    display: flex; 
+    flex-direction: column; 
+    border-color: rgb(159, 137, 137);
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+}
+
+.centrar-contenedor{
+   position: absolute;
+   top: 20%;
+   width: 90%;
+   padding: auto;
+}
+
+/* .cont-area{
     position: absolute;
     top: 35%;
     left: 6%;
-}
+} */
 
-.int-area{
+/* .int-area{
     position: absolute;
     left: 0%;
     width: 500px;
@@ -58,16 +94,16 @@
     border-style: solid; 
     border-width: 1px; 
     border-color: rgb(159, 137, 137);
-}
+} */
 
-.cont-descripcion{
+/* .cont-descripcion{
     position: absolute;
     top: 52%;
     left: -5%;
     width: 50%;
-}
+} */
 
-.int-descripcion-servicios{
+/* .int-descripcion-servicios{
     position: absolute;
     left: 22%;
     width: 500px;
@@ -76,7 +112,9 @@
     border-style: solid; 
     border-width: 1px; 
     border-color: rgb(159, 137, 137);
-}
+} */
+
+
 
 
 .btn-servicios{
@@ -85,8 +123,6 @@
     left: 0%;
     display: flex;
     justify-content: space-evenly;
-   
-    
 }
 
 .btn-enviar-tipo-servicio{
@@ -96,6 +132,8 @@
     color: aliceblue;
     border: none;
 }
+
+
 
 
 .btn-cancelar-tipo-servicio{

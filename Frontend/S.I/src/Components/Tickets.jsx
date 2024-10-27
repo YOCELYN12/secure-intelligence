@@ -9,7 +9,7 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
             <div className="accordion" id="accordionExample" style={{ maxWidth:"100%" }}>
                 <div className="accordion-item" >
                     <h2 className="accordion-header" >
-                        <button  
+                        <button   style={{backgroundColor:"rgba(38, 35, 30, 0.758)"}}
                             className="accordion-button"
                             type="button"
                             data-bs-toggle="collapse"
@@ -24,25 +24,26 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
                         id="collapseOne"
                         className="accordion-collapse collapse show"
                         data-bs-parent="#accordionExample"
-
                         
                     >
-                        <div className="accordion-body">
+                        <div className="accordion-body" style={{backgroundColor:"rgba(28, 30, 30, 0.758)"}}>
+
                             <div className='cont-Hijo-ticket'>
-                                <p> <strong>Nombre:</strong> {Nombre}</p>
-                                <p> <strong>Apellido:</strong> {Apellido}</p>
-                                <p> <strong>Correo:</strong> {Correo}</p>
+                                <p> Nombre: {Nombre}</p>
+                                <p> Apellido: {Apellido}</p>
+                                <p> Correo: {Correo}</p>
 
                             </div>
+
                             <div className='cont-Hijo-ticket'>
 
-                                <p> <strong> Servicio</strong>: {ServicioSeleccionado}</p>
-                                <p> <strong>Telefono: </strong> {Numero_de_telefono}</p>
-                                <p> <strong>Empresa:</strong> {Empresa}</p>
+                                <p> Servicio: {ServicioSeleccionado}</p>
+                                <p> Telefono: {Numero_de_telefono}</p>
+                                <p> Empresa:{Empresa}</p>
                             </div>
 
                             <div className='cont-ticket-descripcion'>
-                                <p> <strong>Descripcion:</strong> {Descripcion}</p>
+                                <p> Descripcion: {Descripcion}</p>
                             </div>
 
                             <div className='btn-tickets'>
