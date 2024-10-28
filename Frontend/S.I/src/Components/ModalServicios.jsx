@@ -27,7 +27,7 @@ function ModalServicios({ isOpen, onClose }) {
     return (
         <div className='modal-overlay' onClick={onClose}>
             <div className='cont-tipo-servicios' onClick={e => e.stopPropagation()}>
-                <div >
+                <div>
 
                     <h5 className='h5'>Agregar nuevos servicios</h5>
 
@@ -35,19 +35,13 @@ function ModalServicios({ isOpen, onClose }) {
 
                         <div className='inputs'>
 
-
-
-                            <p className='letras-servicios'>Nombre</p>
+                            <p className='letras-servicio'>Nombre</p>
                             <input className='int-nombre-servicio' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
 
-
-
-                            <p className='letras-servicios'>Area</p>
+                            <p className='letras-servicio'>Area</p>
                             <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
 
-
-
-                            <p className='letras-servicios'>Descripcion del servicio</p>
+                            <p className='letras-servicio'>Descripcion del servicio</p>
                             <input className='int-descripcion-servicios' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
 
                         </div>

@@ -40,42 +40,29 @@ function ToDoTickets() {
 
 
     return (
-
         <div className='fondo-tickets'>
+
             <div>
-                {/* <div>
-                    <button className='menu-tickets' ><BiMenuAltRight /></button>
-
-                    <div className='prueba-b4arra'>
-
-                        <hr className='barra' />
-                        <h3 className='h3'>Tickets</h3>
-
-                    </div>
-
-                    <div className='container-logo'>
-
-                        <div>
-                            <input className="search-container-tickets" type="text" placeholder="Buscar ticket..." />
-                        </div>
 
 
-                        <div className='btn-buscar-tickets'>
-                            <button className='icon-buscar-tickets'><FaMagnifyingGlass /> </button>
-                        </div>
+
+                <div className='container-logo'>
+                    <div className='container-logo2'>
+
+                        {/* <button className='icon-buscar-tickets'><FaMagnifyingGlass /> </button> */}
 
                     </div>
+                </div>
 
-                    <button className='btn-crear-ticket' >Crear Ticket</button>
-                </div> */}
 
+                <button className='btn-crear-ticket' >Crear Ticket</button>
 
                 <div className='contenedor-menu-tickets'>
                     <div className='opciones-menu'>
-                        <button onClick={abrirModal} className='menu'><h6 style={{ fontSize: "120%" }}> ▪️ Agregar servicios</h6>
+                        <button onClick={abrirModal} className='menu'><h6 style={{ fontSize: "120%" }}> ➕ Agregar servicios</h6>
                             <ModalServicios isOpen={isModalOpen} onClose={cerrarModal} />
                         </button>
-                        
+
                     </div>
 
                 </div>

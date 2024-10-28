@@ -1,11 +1,10 @@
-
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.855); 
     display: flex;
     justify-content: center;
     z-index: 100; 
@@ -14,55 +13,27 @@
 .cont-tipo-servicios {
     width: 40%;
     height: 80%;
-    background-color: rgb(254, 254, 254);
+    background-image: url(https://i.imgur.com/fXWr5Hp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 8px; 
     padding: 20px; 
     position: absolute;
     top: 10%;
 }
 
-
-/* .cont-nombre-tipo-servicio{
-  position: absolute;
-  left: 6%;
-  top: 19%;
-} */
-
-/* .int-nombre-servicio{
-   position: absolute;
-   left: 0%;
-   width:500px;
-   height: 40px;
-   background-color: transparent;
-   border-style: solid; 
-   border-width: 1px; 
-   border-color: rgb(159, 137, 137);
-} */
-
-/* .letras-servicios{
-    color: black;
-    display: flex;
-    
-    margin-bottom: 8%;
-}
-
-.inputs{
+.letras-servicio {
+    color: rgb(251, 251, 251);
     display: flex; 
-    flex-direction: column;
-    border-color: rgb(159, 137, 137);
-} */
-
-
-.letras-servicios {
-    color: black;
-    display: flex; 
+    font-size: 18px;
 }
 
 .inputs {
     display: flex; 
     flex-direction: column; 
-    border-color: rgb(159, 137, 137);
 }
+
 
 
 input[type="text"] {
@@ -70,7 +41,10 @@ input[type="text"] {
     border: 1px solid #ccc; 
     border-radius: 5px; 
     margin-top: 10px; 
+    background: transparent;
+    backdrop-filter: blur(10px);
 }
+
 
 .centrar-contenedor{
    position: absolute;
@@ -78,44 +52,6 @@ input[type="text"] {
    width: 90%;
    padding: auto;
 }
-
-/* .cont-area{
-    position: absolute;
-    top: 35%;
-    left: 6%;
-} */
-
-/* .int-area{
-    position: absolute;
-    left: 0%;
-    width: 500px;
-    height: 40px;
-    background-color: transparent;
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: rgb(159, 137, 137);
-} */
-
-/* .cont-descripcion{
-    position: absolute;
-    top: 52%;
-    left: -5%;
-    width: 50%;
-} */
-
-/* .int-descripcion-servicios{
-    position: absolute;
-    left: 22%;
-    width: 500px;
-    height: 40px;
-    background-color: transparent;
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: rgb(159, 137, 137);
-} */
-
-
-
 
 .btn-servicios{
     position: relative;
@@ -128,18 +64,18 @@ input[type="text"] {
 .btn-enviar-tipo-servicio{
     width: 200px;
     height: 50px;
-    background-color: darkblue;
-    color: aliceblue;
+    background-color: rgba(6, 3, 80, 0.542);
+    backdrop-filter: blur(10px);
+    color: white;
     border: none;
 }
-
-
-
 
 .btn-cancelar-tipo-servicio{
     width: 200px;
     height: 50px;
-    background-color: rgb(255, 7, 7);
+    background-color: rgba(255, 7, 7, 0.488);
+   
+    
     color: aliceblue;
     border: none;
 }
@@ -148,4 +84,5 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    color: white;
 }

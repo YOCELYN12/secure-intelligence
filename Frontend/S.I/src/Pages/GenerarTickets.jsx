@@ -47,9 +47,9 @@ function GenerarTickets() {
       Numero_de_telefono: intTelefono,
       Empresa: intEmpresa,
       Descripcion: intDescripcion,
-      ID_tipo_servicio_id: intServicioSelecionado,// Guarda el servicio seleccionado
+      ID_tipo_servicio: intServicioSelecionado,// Guarda el servicio seleccionado
     }
-
+    console.log(datos);
     await Post(datos, "/postTicket") //se encarga de enviar los datos a la API para crear un nuevo ticket
   }
 
@@ -100,20 +100,10 @@ function GenerarTickets() {
 
         <select className='select-servicio' value={intServicioSelecionado} onChange={(e) => setIntServicioSeleccionado(e.target.value)}> { /*Actualizamos solo el valor seleccionado*/}
           <option>Seleccione una opción</option>
-
-          {/* {Array.isArray(intTipoServicio) && intTipoServicio.map((tipo) => (
-            <option key={tipo.id} value={tipo.id}>
-              {tipo.Nombre}
-            </option>
-          ))} */}
-
+          
           {intTipoServicio.map((tipo) => (
-            <option key={tipo.id} value={tipo.id} >   {/* Aquí asignamos el id como value */}
-              {tipo.Nombre}
-            </option>
+            <option key={tipo.id} value={tipo.ID_tipo_servicio}>{tipo.Nombre}</option>
           ))}
-
-
 
         </select>
 

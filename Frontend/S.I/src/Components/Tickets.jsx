@@ -9,7 +9,7 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
             <div className="accordion" id="accordionExample" style={{ maxWidth:"100%" }}>
                 <div className="accordion-item" >
                     <h2 className="accordion-header" >
-                        <button   style={{backgroundColor:"rgba(38, 35, 30, 0.758)"}}
+                        <button   style={{backgroundColor:"rgba(30, 30, 30, 0.758)", color:"white"}}
                             className="accordion-button"
                             type="button"
                             data-bs-toggle="collapse"
@@ -45,6 +45,7 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
                             <div className='cont-ticket-descripcion'>
                                 <p> Descripcion: {Descripcion}</p>
                             </div>
+
 
                             <div className='btn-tickets'>
                                 <button style={{ border: "none", backgroundColor: "transparent" }} onClick={Eliminar}>🗑️</button>

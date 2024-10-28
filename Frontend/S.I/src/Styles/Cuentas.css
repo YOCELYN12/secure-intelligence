@@ -1,4 +1,4 @@
-.bodys{
+.bodys {
     background-image: url('../IMG/Fondo_cuenta.png');
     background-size: cover; 
     background-position: center; 
@@ -9,76 +9,116 @@
     justify-content: space-around;
     position: relative;
     overflow: hidden; 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-
-.capa1{
-    width:800px;
+.capa1 {
+    width: 800px;
     height: 100%;
-    background-color:rgba(5, 10, 36, 1);
+    background-color: rgba(5, 10, 36, 1);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-   
     display: flex;
     align-items: center;
     justify-content: center;
-   
 }
 
-.capa2{
-    width:100%;
+.capa2 {
+    width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(2, 5, 200, 0.616) 10%, rgba(3, 3, 69, 0.445) 50%, rgba(0, 0, 0, 0.399) 100%)
+    background: linear-gradient(to top, rgba(2, 5, 200, 0.616) 10%, rgba(3, 3, 69, 0.445) 50%, rgba(0, 0, 0, 0.399) 100%);
 }
 
-.h1{
+.h1 {
     color: white;
-    margin: 0 auto;          
-    padding: 20px;           
-    position: relative;       
-    right: 0;                
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    right: 0;
     font-size: 50px;
-    text-align:start;
+    text-align: start;
     line-height: 50px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.h1{
-    position: absolute;       
-    left: -20%;              
-    top: 30%;                
-    transform: translateY(50%); 
-}
-
-
-.btn-capas{
-   position: absolute;
-   top: 90%;
-   left:23%;
-   display: flex;
-   justify-content: space-between;
-   font-size: 200%;
-   
-}
-
-
-.btn2{
+.h1 {
     position: absolute;
-    left: 200px;  
+    left: -20%;
+    top: 30%;
+    transform: translateY(50%);
 }
 
-
-.capa1.active{
-   background-color:black;
-   left: 50%;
+.btn-capas {
+    position: absolute;
+    top: 90%;
+    left: 23%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 200%;
 }
 
-.capa1.actives{
-    left:0%;
+.btn2 {
+    position: absolute;
+    left: 200px;
 }
 
+.capa1.active {
+    background-color: black;
+    left: 50%;
+}
+
+.capa1.actives {
+    left: 0%;
+}
+
+/* Media Query para pantallas medianas (por ejemplo, tabletas) */
+@media (max-width: 992px) {
+    .bodys {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .capa1 {
+        width: 600px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        left: -10%;
+    }
+
+    .btn-capas {
+        left: 20%;
+    }
+}
+
+/* Media Query para pantallas pequeñas (por ejemplo, móviles) */
+@media (max-width: 768px) {
+    .bodys {
+        height: auto;
+        padding: 20px;
+    }
+
+    .capa1 {
+        width: 100%;
+        position: relative;
+    }
+
+    .h1 {
+        font-size: 30px;
+        left: 0;
+        top: 10%;
+        transform: translateY(0);
+        text-align: center;
+    }
+
+    .btn-capas {
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 150%;
+    }
+}
