@@ -63,3 +63,25 @@
     cursor: pointer;
 }
 
+/* .card-ticket{
+    width: 40%;
+    height:170%;
+    background-color: rgba(0, 0, 0, 0.525);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.621);
+} */
+
+.cont-cart-ticket {
+    display: flex;            
+    flex-wrap: wrap;        
+    gap: 16px;             
+    justify-content: flex-start;
+    padding: 16px;          
+}
+.card-ticket {
+    background-color: rgba(0, 0, 0, 0.525); 
+    border: 1px solid #ccc; 
+    border-radius: 8px;     
+    padding: 16px;          
+    width: 80%;           
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}

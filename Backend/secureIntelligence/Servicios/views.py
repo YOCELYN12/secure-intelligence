@@ -25,12 +25,12 @@ class TicketsView(generics.ListCreateAPIView):
     queryset = Tickets.objects.all()
     serializer_class = TicketsSerializer
     
+    
 class DeleteTicket(DestroyAPIView):
     queryset = Tickets.objects.all()
     serializer_class = TicketsSerializer
     lookup_field = 'ID_Tickets'
     
-  
        
     
 class UpdateTicket(UpdateAPIView):

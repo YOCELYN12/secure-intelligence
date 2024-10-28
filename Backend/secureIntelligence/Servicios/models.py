@@ -41,3 +41,4 @@ class Tickets  (models.Model):
     Numero_de_telefono = models.CharField(max_length=255)
     Empresa = models.CharField(max_length=255)
     Descripcion = models.CharField(max_length=255)  
+    estado = models.BooleanField(default=True)
