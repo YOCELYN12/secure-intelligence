@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../Styles/ToDoTickets.css'
 import Footer from './Footer'
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { Get } from '../Fetch/Fetch';
+import { Get, getBusqueda } from '../Fetch/Fetch';
 import ListaTickets from './ListaTickets';
 import { BiMenuAltRight } from "react-icons/bi";
 import ModalServicios from './ModalServicios';
@@ -15,8 +15,12 @@ function ToDoTickets() {
     const [TicketsTerminados, setTicketsTerminados] = useState([])
     const [OpenCerrados, setOpenCerrados] = useState(false)
     const [open, setOpen] = useState(true);
-    // const [abrirServicio, setAbrirServicio] = useState(false)
+     const [ticksBusqueda,setTicksBusqueda] = useState([])
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const [encontrado,setEncontrado] = useState(false)
+
+    const [intBarra, setIntBarra] = useState()
+    
 
 
     const abrirModal = () => {
@@ -29,6 +33,8 @@ function ToDoTickets() {
 
     const TicketsCerrados = () => {
         setOpenCerrados(true)
+        setOpen(false)
+        setEncontrado(false)
     }
 
     const TicketsAbiertos = () => {
@@ -50,7 +56,7 @@ function ToDoTickets() {
 
         }
         obtenerTicketAbiertos()
-
+        
         // CREAR LA LOGICA PARA LOS FALSOS
         const obtenerTicketTerminados = async () => {
             const ticketsAtendidos = tick.filter((estadoTicket => estadoTicket.estado === false));
@@ -58,11 +64,29 @@ function ToDoTickets() {
         }
         obtenerTicketTerminados()
 
-        console.log(TicketsTerminados);
-
-        
-
+        // CREAR LA LOGICA PARA LOS FALSOS
     }, [tick])
+
+    useEffect(()=>{
+        traerDatosBarra()
+    },[intBarra])
+
+    
+    const traerDatosBarra = async()=>{
+        const ticketsBusqueda = await getBusqueda(intBarra)
+        setTicksBusqueda(ticketsBusqueda)
+        if(ticketsBusqueda.length > 0){
+            setEncontrado(true)
+            console.log(`estado del true ${encontrado}`);
+            
+        }
+        else{
+            setEncontrado(false)
+            console.log(`estado del false ${encontrado}`);
+            
+        }
+        console.log(ticksBusqueda);
+    }
 
     return (
         <div className='fondo-tickets'>
@@ -73,7 +97,8 @@ function ToDoTickets() {
 
                     <div className='container-logo2'>
 
-                        {/* <button className='icon-buscar-tickets'><FaMagnifyingGlass /> </button> */}
+                        <button onClick={traerDatosBarra} className='icon-buscar-tickets'><FaMagnifyingGlass /></button>
+                        <input className='int-barra' type="text" value={intBarra} onChange={(e)=>setIntBarra(e.target.value)} />
 
                     </div>
 
@@ -104,29 +129,22 @@ function ToDoTickets() {
 
                 <div className='cont-tickets' >
 
-
-
                     {/* Mostrar el renderizado */}
 
-
-
-
-                    {open && OpenCerrados == false &&
+                    {open && OpenCerrados == false  && encontrado === false &&
                         <ListaTickets ticketsAPI={tickAbiertos} />
                     }
 
-                    {OpenCerrados &&
+                    {OpenCerrados && encontrado === false &&
                         <ListaTickets ticketsAPI={TicketsTerminados} />
                     }
-
-
-
+                    {encontrado && 
+                    <ListaTickets ticketsAPI={ticksBusqueda}/>
+                    }
                 </div>
 
 
-
-
-                {/* */}
+                
             </div>
 
 

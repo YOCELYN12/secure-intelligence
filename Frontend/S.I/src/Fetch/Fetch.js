@@ -96,3 +96,15 @@ const Delete = async(ID_Ticket,endpoint) => {
 }
 
 export {Delete}
+
+const getBusqueda = async(busqueda)=>{
+    try {
+        const peticion = await fetch(`http://localhost:8000/api/postTicket/?search=${busqueda}`)
+        const respuesta = await peticion.json()
+        console.log(respuesta);
+        return respuesta
+    } catch (error) {
+        console.log(error);
+    }
+}
+export {getBusqueda}
