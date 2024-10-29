@@ -40,8 +40,6 @@ function EmailJS() {
             });
     };
 
-
-
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -64,7 +62,9 @@ function EmailJS() {
                     Empresa:
                     <input type="text" name="company" value={formData.company} onChange={handleChange} required />
                 </label>
+                
                 <br />
+
                 <label>
                     Mensaje:
                     <textarea name="message" value={formData.message} onChange={handleChange} required />
