@@ -39,7 +39,7 @@ function ToDoTickets() {
 
     useEffect(() => {
         const obtenerTicket = async () => {
-            const GetTickets = await Get("/postTicket")
+            const GetTickets = await Get("/postTicket/")
             setTick(GetTickets)
         }
         obtenerTicket()
@@ -59,6 +59,8 @@ function ToDoTickets() {
         obtenerTicketTerminados()
 
         console.log(TicketsTerminados);
+
+        
 
     }, [tick])
 

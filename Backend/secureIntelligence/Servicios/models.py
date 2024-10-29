@@ -42,3 +42,8 @@ class Tickets  (models.Model):
     Empresa = models.CharField(max_length=255)
     Descripcion = models.CharField(max_length=255)  
     estado = models.BooleanField(default=True)
+    
+    # def __str__(self):
+    #     return self.Nombre
+    
+    

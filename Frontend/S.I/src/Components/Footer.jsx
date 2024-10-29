@@ -18,7 +18,7 @@ function Footer() {
           <a className='letras_footer' href="/GenerarTickets">Soporte</a>
           <a className='letras_footer' href="/QuienesSomos">Quienes somos</a>
           <a className='letras_footer' href="/Cuentas">Centro de cuentas</a>
-          <a className='letras_footer' href="/Cuentas">Servicio al cliente</a>
+          <a className='letras_footer' href="/ServicioalCliente">Servicio al cliente</a>
 
         </div> 
       </div>

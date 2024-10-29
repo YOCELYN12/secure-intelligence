@@ -27,3 +27,11 @@
     display: flex;
     
 }
+
+
+.cont-publicidad2{
+    width: 18rem;
+    background-color: rgba(1, 1, 1, 0.4);
+    margin-top:300px;
+    padding:50px
+}
