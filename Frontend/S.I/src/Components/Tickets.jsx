@@ -76,19 +76,23 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
 
 
             <div className='cont-cart-ticket'>
-                
+
                 <div className='card-ticket'>
 
                     <div className='cont-Hijo-ticket'>
                         <p> Nombre: {Nombre}</p>
                         <p> Apellido: {Apellido}</p>
-                        <p> Correo: {Correo}</p>
+
 
                     </div>
 
                     <div className='cont-Hijo-ticket'>
-
+                        <p> Correo: {Correo}</p>
                         <p> Servicio: {ServicioSeleccionado}</p>
+
+                    </div>
+
+                    <div className='cont-Hijo-ticket'>
                         <p> Telefono: {Numero_de_telefono}</p>
                         <p> Empresa:{Empresa}</p>
                     </div>

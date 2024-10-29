@@ -2,7 +2,7 @@
    background-color: rgba(0, 0, 0, 0.296);
 }
 
-.prueba{
+.contenedor-fundadoras{
     display: flex;
     justify-content: flex-end;
     margin-top: -700px;

@@ -89,8 +89,8 @@ function ToDoTickets() {
                         <button onClick={TicketsCerrados} className='menu'>
                             <h6 style={{ fontSize: "120%" }}> ❌ Tickets cerrados</h6>
                         </button>
-                        
-                         <button onClick={TicketsAbiertos} className='menu'>
+
+                        <button onClick={TicketsAbiertos} className='menu'>
                             <h6 style={{ fontSize: "120%" }}> ➕ Tickets Abiertos</h6>
                         </button>
 
@@ -108,15 +108,15 @@ function ToDoTickets() {
 
 
 
-                    <div className='cont-nuevos'>
-                        {open && OpenCerrados == false &&
-                            <ListaTickets ticketsAPI={tickAbiertos} />
-                        }
 
-                        {OpenCerrados &&
-                            <ListaTickets ticketsAPI={TicketsTerminados} />
-                        }
-                    </div>
+                    {open && OpenCerrados == false &&
+                        <ListaTickets ticketsAPI={tickAbiertos} />
+                    }
+
+                    {OpenCerrados &&
+                        <ListaTickets ticketsAPI={TicketsTerminados} />
+                    }
+
 
 
                 </div>

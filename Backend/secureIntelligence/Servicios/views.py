@@ -11,10 +11,11 @@ from .serializers import TicketsSerializer
 from rest_framework.generics import DestroyAPIView
 from rest_framework.generics import UpdateAPIView
 from rest_framework.permissions import IsAuthenticated
-
-
+# from rest_framework.filters import SearchFilter
 
 # Create your views here.
+
+
 class ServicioView(generics.ListCreateAPIView):
     queryset = Tipo_servicio.objects.all()
     serializer_class = ListarCrearSerializer
@@ -38,15 +39,28 @@ class UpdateTicket(UpdateAPIView):
     serializer_class = TicketsSerializer
     lookup_field = 'ID_Tickets'
 
-# class BarraBusquedaView(generics.ListCreateAPIView):
-#     serializer_class = ListarCrearSerializer
+class BarraBusquedaView(generics.ListCreateAPIView):
+    # serializer_class = ListarCrearSerializer
     
-#     def get_queryset(self):
-#         nombre = self.kwargs.get('nombre', None)
-#         if nombre:
-#             return Tipo_servicio.objects.filter(Nombre__iexact=nombre)
-#         return Tipo_servicio.objects.all()
+    # def get_queryset(self):
+    #     nombre = self.kwargs.get('nombre', None)
+    #     if nombre:
+    #         return Tipo_servicio.objects.filter(Nombre__iexact=nombre)
+    #     return Tipo_servicio.objects.all()
 
+
+# class PersonListView(generics.ListAPIView):
+#     queryset = Person.objects.all()
+#     serializer_class = PersonSerializer
+#     filter_backends = [SearchFilter]
+#     search_fields = ['name']  # Specify the fields you want to search
+
+
+# class PersonListView(generics.ListAPIView):
+#     queryset = Person.objects.all()
+#     serializer_class = PersonSerializer
+#     filter_backends = [SearchFilter]
+#     search_fields = ['name', 'email', 'age']  # Add any field you want to search by
 
     
     
