@@ -2,13 +2,14 @@ import React from 'react'
 import '../Styles/ServicioalCliente.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import EmailJS from '../Components/EmailJS'
 
 function ServicioalCliente() {
     return (
         <div>
 
             <Navbar />
-            <div>
+            {/* <div>
                 <img className='img-servicio' src="https://i.imgur.com/w4vMyPo.png" alt="" />
             </div>
 
@@ -22,30 +23,10 @@ function ServicioalCliente() {
             </div>
 
             
-            <div className='conte-area'>
-                <p>Area en que mejorar</p>
+            <div className='conten-correo'>
+                <p>Correo</p>
                 <input className='inp-area' type="text"  />
             </div>
-
-
-            
-            <div className='conte-queja'>
-                <p>Queja</p>
-                <input className='inp-queja' type="text"  />
-            </div>
-
-            
-            <div className='conte-select' >
-                <p>Desea ser contactado</p>
-
-                <select className='select-siono' >
-                    <option value="" >Seleccione una opción</option>
-                    <option value="opcion1">Si</option>
-                    <option value="opcion2">No</option>
-                </select>
-
-            </div>
-
 
              
             <div className='calificanos'>
@@ -57,21 +38,10 @@ function ServicioalCliente() {
             <div className='conte-btn'>
                 <button className='bton-cancelar'> Cancelar</button>
                 <button className='bton-enviar'>Enviar</button>
-            </div>
+            </div> */}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+            <EmailJS/>
 
 
 
