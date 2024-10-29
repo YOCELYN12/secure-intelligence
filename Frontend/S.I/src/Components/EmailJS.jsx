@@ -9,7 +9,6 @@ function EmailJS() {
         email: '',
         phone: '',
         company: '',
-        subject: '',
         message: '',
     });
 
