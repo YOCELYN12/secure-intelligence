@@ -101,7 +101,7 @@ function ToDoTickets() {
                 <div className='container-logo2'>
 
                     <button onClick={traerDatosBarra} className='icon-buscar-tickets'><FaMagnifyingGlass /></button>
-                    <input className='int-barra' type="text" value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
+                    <input className='into-barra' type="text" value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
 
                 </div>
 

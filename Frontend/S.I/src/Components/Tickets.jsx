@@ -79,26 +79,28 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
 
                 <div className='card-ticket'>
 
-
-                    <p> Nombre: {Nombre}</p>
-                    <p> Apellido: {Apellido}</p>
-
-
-
-                    <p> Correo: {Correo}</p>
-                    <p> Servicio: {ServicioSeleccionado}</p>
+                    <div className='cont-Hijo-ticket' >
+                        <p> Nombre: {Nombre}</p>
+                        <p> Apellido: {Apellido}</p>
+                    </div>
 
 
+                    <div className='cont-Hijo-ticket'>
+                        <p> Correo: {Correo}</p>
+                        <p> Servicio: {ServicioSeleccionado}</p>
+                    </div>
 
 
-                    <p> Telefono: {Numero_de_telefono}</p>
-                    <p> Empresa:{Empresa}</p>
 
+                    <div className='cont-Hijo-ticket' >
+                        <p> Telefono: {Numero_de_telefono}</p>
+                        <p> Empresa:{Empresa}</p>
+                    </div>
 
                     <p> Descripcion: {Descripcion}</p>
 
 
-                    {/* <div className='btn-tickets'>
+                    <div className='btn-tickets'>
                         <button style={{ border: "none", backgroundColor: "transparent" }} onClick={Eliminar}>🗑️</button>
 
                         <button style={{ border: "none", backgroundColor: "transparent" }} onClick={onEdit}>✏️</button>
@@ -110,52 +112,13 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
                         <button style={{ border: "none", backgroundColor: "transparent" }}> ✅</button>
 
                         <button style={{ border: "none", backgroundColor: "transparent" }} >❌</button>
-                    </div> */}
+                    </div>
                 </div>
 
             </div>
 
 
-            {/* <div className='cont-cart-ticket'>
 
-                <div className='card-ticket'>
-
-                    <div className='cont-Hijo-ticket'>
-                        <p> Nombre: {Nombre}</p>
-                        <p> Apellido: {Apellido}</p>
-                    </div>
-
-                    <div className='cont-Hijo-ticket'>
-                        <p> Correo: {Correo}</p>
-                        <p> Servicio: {ServicioSeleccionado}</p>
-
-                    </div>
-
-                    <div className='cont-Hijo-ticket'>
-                        <p> Telefono: {Numero_de_telefono}</p>
-                        <p> Empresa:{Empresa}</p>
-                    </div>
-
-                    <div className='cont-ticket-descripcion'>
-                        <p> Descripcion: {Descripcion}</p>
-                    </div>
-
-                    <div className='btn-tickets'>
-                        <button style={{ border: "none", backgroundColor: "transparent" }} onClick={Eliminar}>🗑️</button>
-
-                        <button style={{ border: "none", backgroundColor: "transparent" }} onClick={onEdit}>✏️</button>
-
-                    </div>
-
-                    <div className='btn-tickets'>
-
-                        <button style={{ border: "none", backgroundColor: "transparent" }}> ✅</button>
-
-                        <button style={{ border: "none", backgroundColor: "transparent" }} >❌</button>
-                    </div>
-                </div>
-
-            </div> */}
 
 
 
