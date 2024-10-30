@@ -79,11 +79,50 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
 
                 <div className='card-ticket'>
 
+
+                    <p> Nombre: {Nombre}</p>
+                    <p> Apellido: {Apellido}</p>
+
+
+
+                    <p> Correo: {Correo}</p>
+                    <p> Servicio: {ServicioSeleccionado}</p>
+
+
+
+
+                    <p> Telefono: {Numero_de_telefono}</p>
+                    <p> Empresa:{Empresa}</p>
+
+
+                    <p> Descripcion: {Descripcion}</p>
+
+
+                    {/* <div className='btn-tickets'>
+                        <button style={{ border: "none", backgroundColor: "transparent" }} onClick={Eliminar}>🗑️</button>
+
+                        <button style={{ border: "none", backgroundColor: "transparent" }} onClick={onEdit}>✏️</button>
+
+                    </div>
+
+                    <div className='btn-tickets'>
+
+                        <button style={{ border: "none", backgroundColor: "transparent" }}> ✅</button>
+
+                        <button style={{ border: "none", backgroundColor: "transparent" }} >❌</button>
+                    </div> */}
+                </div>
+
+            </div>
+
+
+            {/* <div className='cont-cart-ticket'>
+
+                <div className='card-ticket'>
+
                     <div className='cont-Hijo-ticket'>
                         <p> Nombre: {Nombre}</p>
                         <p> Apellido: {Apellido}</p>
-
-
                     </div>
 
                     <div className='cont-Hijo-ticket'>
@@ -101,7 +140,6 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
                         <p> Descripcion: {Descripcion}</p>
                     </div>
 
-
                     <div className='btn-tickets'>
                         <button style={{ border: "none", backgroundColor: "transparent" }} onClick={Eliminar}>🗑️</button>
 
@@ -117,7 +155,7 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
 
 

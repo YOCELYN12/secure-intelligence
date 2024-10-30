@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Tickets from './Tickets';
 import { Delete } from '../Fetch/Fetch';
 import ModalEditarTicket from './ModalTicket';
-
+import '../Styles/ToDoTickets.css'
 const ListaTickets = ({ ticketsAPI }) => {
     
     const [modalVisible, setModalVisible] = useState(false);
@@ -24,7 +24,7 @@ const ListaTickets = ({ ticketsAPI }) => {
     
 
     return (
-        <div>
+        <div className='cont-lista-tickets'>
             {ticketsAPI.map((tick) => (
                 <Tickets 
                     key={tick.ID_Tickets}

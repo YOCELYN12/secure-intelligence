@@ -29,7 +29,7 @@ function GenerarTickets() {
       const getDatos = await Get("/post/") //llama a la API para obtener los tipos de servicios de la base de datos
       setIntTipoServicio(getDatos) //actualiza el estado con los datos de los servicios obtenidos
       console.log(getDatos);
-      
+
     }
     obtenerDatos()
   }, [])
@@ -41,7 +41,7 @@ function GenerarTickets() {
   const enviarTickets = async (e) => {
     e.preventDefault()
     let datos = {
-      Nombre: intNombre,             
+      Nombre: intNombre,
       Apellido: intApellido,
       Correo: intCorreo,
       Numero_de_telefono: intTelefono,
@@ -100,7 +100,7 @@ function GenerarTickets() {
 
         <select className='select-servicio' value={intServicioSelecionado} onChange={(e) => setIntServicioSeleccionado(e.target.value)}> { /*Actualizamos solo el valor seleccionado*/}
           <option>Seleccione una opción</option>
-          
+
           {intTipoServicio.map((tipo) => (
             <option key={tipo.id} value={tipo.ID_tipo_servicio}>{tipo.Nombre}</option>
           ))}
@@ -133,9 +133,10 @@ function GenerarTickets() {
 
       </div>
 
-      <div className='footeer'>
+      <footer>
         <Footer />
-      </div>
+      </footer>
+
 
 
     </div>

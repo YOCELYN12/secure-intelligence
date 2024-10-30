@@ -28,12 +28,7 @@ function Navbar() {
       </div>
 
      
-        {/* <a  className='menu-Nav' href="/">Servicios</a>
-        <a  className='menu-Nav'href="/GenerarTickets">Soporte</a>
-        <a  className='menu-Nav' href="/QuienesSomos">Quienes somos</a>
-        <a  className='menu-Nav' href="/Cuentas">Centro de cuentas</a>
-        <a  className='menu-Nav' href="/Cuentas">Servicio al cliente</a>
-      */}
+   
 
 
       <div className='container-logo-search'>

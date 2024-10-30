@@ -64,43 +64,13 @@
    align-items: center;
 }
 
-.menu-Nav{
-   position: relative;
-   right: 30%;
-   margin-right: ;
-}
-
-
 
 @media (max-width: 768px) {
-   .navbar {
-      flex-direction: column; /* Cambia a una columna para más espacio */
-      padding: 10px; /* Ajusta el padding */
+   .container-logo-search{
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: -70px;
+    width: calc(50% - 40px);
    }
-
-   .logo {
-      width: 100%; /* Asegúrate de que el logo ocupe todo el ancho */
-      text-align: center; /* Centra el logo */
-   }
-
-   .search-container {
-      width: 100%; /* Ajusta el ancho de la búsqueda */
-      margin-top: 10px; /* Añade espacio arriba */
-   }
-
-   .btn-buscar {
-      left: auto; /* Reestablece la posición */
-      right: 10px; /* Coloca el botón a la derecha */
-      margin-top: 10px; /* Añade espacio superior */
-   }
-
-   .account {
-      margin-left: 0; /* Elimina el margen a la izquierda */
-      margin-top: 10px; /* Añade espacio arriba */
-      justify-content: center; /* Centra los elementos de cuenta */
-   }
-
-   .btn-account {
-      padding: 8px 10px; /* Ajusta el padding para ser más compacto */
-   }
-}
+ }
+ 

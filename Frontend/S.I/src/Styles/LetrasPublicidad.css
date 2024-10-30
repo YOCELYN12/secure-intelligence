@@ -15,8 +15,18 @@
     
 }   
 
+
 .letras-publicidad{
     transform: rotate(-20deg); 
     color: azure;
 }
 
+@media (max-with: 1268px){
+    .cont1{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100% - 40px);
+    }
+
+    
+}
