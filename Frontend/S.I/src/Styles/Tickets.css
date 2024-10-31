@@ -36,14 +36,9 @@
 }
 
 .btn-tickets{
-    display: flex;
-    justify-content: space-evenly;
-    width: 10%;
-    height: 30px;
-    position: relative;
-    left: 90%;
-    top: -100px;
-    border-radius: 20%;
+   background-color: transparent !important;
+   color: white;
+   
 }
 
 /* .modal {

@@ -46,7 +46,7 @@ const Get = async(endpoint)=>{
 
 export {Get}
 
-const Patch = async (endpoint,obj,ID_Ticket) => {
+const Patch = async (endpoint,obj,ID_Ticket="") => {
     try {
         const respuesta = await fetch(`${API_URL}${endpoint}${ID_Ticket}`,{
             method: "PATCH",

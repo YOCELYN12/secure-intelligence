@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import Tickets from './Tickets';
-import { Delete } from '../Fetch/Fetch';
+import { Delete, Patch } from '../Fetch/Fetch';
 import ModalEditarTicket from './ModalTicket';
 import '../Styles/ToDoTickets.css'
+
+
 const ListaTickets = ({ ticketsAPI }) => {
     
     const [modalVisible, setModalVisible] = useState(false);
     const [ticketSeleccionado, setTicketSeleccionado] = useState(null);
+    const [ticketCerrado, setTicketCerrado] = useState(false)
+    const [ticketsClose, setTicketsClose] = useState([])
+    
+
 
     const DeleteTickets = async (id) => {
         await Delete(id, "/DeleteTicket/");
@@ -21,6 +27,18 @@ const ListaTickets = ({ ticketsAPI }) => {
         setModalVisible(false);
         setTicketSeleccionado(null);
     };
+
+    const CloseTicket = async(ticket) => {
+        const ticketActualizar = {
+            estado: !ticket.estado
+        }
+
+        const peticion = await Patch(`/UpdateTicket/${ticket.ID_Tickets}`,ticketActualizar)
+        console.log(peticion);
+        
+    }
+    
+
     
 
     return (
@@ -37,11 +55,16 @@ const ListaTickets = ({ ticketsAPI }) => {
                     Descripcion={tick.Descripcion}
                     Eliminar={() => DeleteTickets(tick.ID_Tickets)}
                     onEdit={() => abrirModal(tick)}
+                    cerrarTicket={() => CloseTicket(tick)}
                 />
             ))}
             {modalVisible && (
                 <ModalEditarTicket ticket={ticketSeleccionado} onClose={cerrarModal} />
             )}
+
+            {/* {ticketCerrado && (
+               
+            )} */}
         </div>
     );
 };

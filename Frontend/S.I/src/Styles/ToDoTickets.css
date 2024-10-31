@@ -33,13 +33,24 @@
 
 .btn-crear-ticket{
    position: absolute;
-   left: 86%;
-   top: 37px;
+   left: 35%;
+   z-index: 100;
+   top: 48px;
    width: 180px;
    height: 50px;
-   background-color: red;
+   background-color: rgba(0, 0, 0, 0.466);
    color: aliceblue;
+   border-radius: 20vh;
+   border: none;
 }   
+
+.btn-crear-ticket:hover{
+    width: 15%;
+    height: 6%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.742),  /* Sombra negra */
+    0 0 20px rgb(6, 2, 60); 
+}
 
 .menu{
     background: transparent;
@@ -81,17 +92,26 @@
 }
 
 .container-logo{
-    background-color: rgb(16, 15, 15);
+   background-color: rgb(16, 15, 15);
    height: 9%;
    width: 50%;
    position: absolute;
    left: 30%;
-   top: 2%;
+   top: 5%;
    border-radius:50px;
    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.621);
 }
 
 
+.int-barra-ticket{
+    background-color: rgba(0, 0, 0, 0.466) !important; 
+    position: relative;
+    left: 45%;
+    top: 5%;
+    width: 40%;
+    border: none !important;
+
+}
 
 .btn-buscar-tickets{
     display: flex;
@@ -106,6 +126,10 @@
 .icon-buscar-tickets{
     background-color: transparent;
     border:none;
+    position: relative;
+    left: 83%;
+    z-index: 100;
+    color: rgba(255, 255, 255, 0.688);
 }
 
 .card-tick{

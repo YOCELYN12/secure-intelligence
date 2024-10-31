@@ -14,8 +14,8 @@ function ToDoTickets() {
     const [tickAbiertos, setTickAbiertos] = useState([]) //constante que guarda los tickets abiertos  de la API 
 
     const [TicketsTerminados, setTicketsTerminados] = useState([])//constante que trae de la API los tickets cerrados, los que ya se atendieron
-
     const [OpenCerrados, setOpenCerrados] = useState(false)
+    
     const [open, setOpen] = useState(true);
     const [ticksBusqueda, setTicksBusqueda] = useState([])
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -81,12 +81,10 @@ function ToDoTickets() {
         if (ticketsBusqueda.length > 0) {
             setEncontrado(true)
             console.log(`estado del true ${encontrado}`);
-
         }
         else {
             setEncontrado(false)
             console.log(`estado del false ${encontrado}`);
-
         }
         console.log(ticksBusqueda);
     }
@@ -95,20 +93,16 @@ function ToDoTickets() {
         <div className='fondo-tickets'>
 
 
+            <button className='btn-crear-ticket' >Crear Ticket</button>
 
             <div className='container-logo'>
 
-                <div className='container-logo2'>
-
-                    <button onClick={traerDatosBarra} className='icon-buscar-tickets'><FaMagnifyingGlass /></button>
-                    <input className='into-barra' type="text" value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
-
-                </div>
-
+                <button onClick={traerDatosBarra} className='icon-buscar-tickets' ><FaMagnifyingGlass /></button>
+                <input className='int-barra-ticket' type="text" placeholder='Buscar Ticket' value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
             </div>
 
 
-            <button className='btn-crear-ticket' >Crear Ticket</button>
+
 
             <div className='contenedor-menu-tickets'>
                 <div className='opciones-menu'>

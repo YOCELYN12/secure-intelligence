@@ -19,6 +19,7 @@ function GenerarTickets() {
   const [intEmpresa, setIntEmpresa] = useState("")
   const [intDescripcion, setIntDescripcion] = useState("")
 
+
   console.log()
 
 
@@ -125,12 +126,12 @@ function GenerarTickets() {
         <p>Decripcion</p>
         <input className='int-descripcion' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
       </div>
+       
 
 
       <div className='cont-btn'>
         <button className='btn-cancelar'>Cancelar</button>
         <button onClick={enviarTickets} className='btn-enviar' >Enviar</button>
-
       </div>
 
       <footer>
