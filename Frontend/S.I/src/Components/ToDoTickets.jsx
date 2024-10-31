@@ -101,9 +101,6 @@ function ToDoTickets() {
                 <input className='int-barra-ticket' type="text" placeholder='Buscar Ticket' value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
             </div>
 
-
-
-
             <div className='contenedor-menu-tickets'>
                 <div className='opciones-menu'>
                     <button onClick={abrirModal} className='menu'><h6 style={{ fontSize: "120%" }}> ➕ Agregar servicios</h6>

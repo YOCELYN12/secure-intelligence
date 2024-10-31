@@ -38,9 +38,11 @@ function ModalServicios({ isOpen, onClose }) {
                             <p className='letras-servicio'>Nombre</p>
                             <input className='int-nombre-servicio' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
 
+                            <br />
                             <p className='letras-servicio'>Area</p>
                             <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
 
+                            <br />
                             <p className='letras-servicio'>Descripcion del servicio</p>
                             <input className='int-descripcion-servicios' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
 
@@ -48,6 +50,8 @@ function ModalServicios({ isOpen, onClose }) {
                     </div>
 
                     <div className='btn-servicios'>
+
+                        
                         <button style={{ cursor: "pointer", zIndex: "100" }} onClick={enviarServicio} className='btn-enviar-tipo-servicio'>Enviar</button>
                         <button className='btn-cancelar-tipo-servicio' onClick={onClose}>Cancelar</button>
                     </div>

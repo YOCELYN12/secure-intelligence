@@ -13,10 +13,8 @@
 .cont-tipo-servicios {
     width: 40%;
     height: 80%;
-    background-image: url(https://i.imgur.com/fXWr5Hp.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    
     border-radius: 8px; 
     padding: 20px; 
     position: absolute;
@@ -32,6 +30,8 @@
 .inputs {
     display: flex; 
     flex-direction: column; 
+    text-shadow: 2px 2px 4px blue;
+   
 }
 
 
@@ -43,6 +43,10 @@ input[type="text"] {
     margin-top: 10px; 
     background: transparent;
     backdrop-filter: blur(10px);
+    background-color: white;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.742),  /* Sombra negra */
+    0 0 20px rgb(6, 2, 60);
+    
 }
 
 
@@ -55,7 +59,7 @@ input[type="text"] {
 
 .btn-servicios{
     position: relative;
-    top: 399px;
+    top: 59vh;
     left: 0%;
     display: flex;
     justify-content: space-evenly;
@@ -64,7 +68,7 @@ input[type="text"] {
 .btn-enviar-tipo-servicio{
     width: 200px;
     height: 50px;
-    background-color: rgba(6, 3, 80, 0.542);
+    background-color: rgb(9, 4, 142);
     backdrop-filter: blur(10px);
     color: white;
     border: none;
@@ -73,10 +77,8 @@ input[type="text"] {
 .btn-cancelar-tipo-servicio{
     width: 200px;
     height: 50px;
-    background-color: rgba(255, 7, 7, 0.488);
-   
-    
-    color: aliceblue;
+    background-color: rgb(255, 8, 8);
+    color: white;
     border: none;
 }
 
@@ -85,4 +87,5 @@ input[type="text"] {
     justify-content: center;
     margin-top: 5%;
     color: white;
+    text-shadow: 2px 2px 4px blue;
 }
