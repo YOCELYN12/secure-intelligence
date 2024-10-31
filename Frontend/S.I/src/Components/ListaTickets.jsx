@@ -6,19 +6,20 @@ import '../Styles/ToDoTickets.css'
 
 
 const ListaTickets = ({ ticketsAPI }) => {
-    
+
     const [modalVisible, setModalVisible] = useState(false);
     const [ticketSeleccionado, setTicketSeleccionado] = useState(null);
     const [ticketCerrado, setTicketCerrado] = useState(false)
     const [ticketsClose, setTicketsClose] = useState([])
-    
+
 
 
     const DeleteTickets = async (id) => {
         await Delete(id, "/DeleteTicket/");
     };
 
-    const abrirModal = (ticket) => {
+
+    const abrirModal = ( ticket) => {
         setTicketSeleccionado(ticket);
         setModalVisible(true);
     };
@@ -28,23 +29,22 @@ const ListaTickets = ({ ticketsAPI }) => {
         setTicketSeleccionado(null);
     };
 
-    const CloseTicket = async(ticket) => {
+    const CloseTicket = async (ticket) => {
         const ticketActualizar = {
             estado: !ticket.estado
         }
-
-        const peticion = await Patch(`/UpdateTicket/${ticket.ID_Tickets}`,ticketActualizar)
+        const peticion = await Patch(`/UpdateTicket/${ticket.ID_Tickets}`, ticketActualizar)
         console.log(peticion);
-        
-    }
-    
 
-    
+    }
+
+
+
 
     return (
         <div className='cont-lista-tickets'>
             {ticketsAPI.map((tick) => (
-                <Tickets 
+                <Tickets
                     key={tick.ID_Tickets}
                     Nombre={tick.Nombre}
                     Apellido={tick.Apellido}

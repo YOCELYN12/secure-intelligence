@@ -36,18 +36,13 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
 
 
                     <div >
-                        <button className='btn-tickets'  onClick={Eliminar}>Elimiar</button>
-
-                        <button style={{ border: "none", backgroundColor: "transparent" }} onClick={onEdit}>✏️</button>
+                        <button className='btn-tickets' onClick={Eliminar}>🗑️</button>
+                        <button className='btn-tickets' onClick={onEdit}>✏️</button>
+                        <button className='btn-tickets'  onClick={cerrarTicket}>❌</button>
 
                     </div>
 
-                    <div className='btn-tickets'>
-
-                        <button style={{ border: "none", backgroundColor: "transparent" }} > ✅</button>
-
-                        <button style={{ border: "none", backgroundColor: "transparent" }}  onClick={cerrarTicket}>❌</button>
-                    </div>
+    
                 </div>
 
             </div>
