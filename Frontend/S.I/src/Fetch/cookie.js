@@ -26,7 +26,7 @@ export { traerCookie } // Exporta la función para su uso en otros módulos
 
 
 
-
+// Los estoy usando de la libreria de JWT que es los json web token, estos hacen un union con django apra que en mi vista cadavez que inicio secion me genere un token de acceso y de refresco, el token de acceso es el que yo tengo cuando estoy registro en mi pagina, enseno mi token, 
 
 
 

@@ -15,24 +15,18 @@ import CardServicios4 from '../Components/CardServicios4'
 
 
 function PaginaPrincipal() {
-    const [showModal, setShowModal] = useState(false);
-
-    const handleOpenModal = () => setShowModal(true);
-    const handleCloseModal = () => setShowModal(false);
-
-
+    const [abrirModal, setAbrirModal] = useState(false);
+    const verModal = () => setAbrirModal(true);
+    const cerrarModal = () => setAbrirModal(false);
 
     return (
-
-        <div>
-
-
+        <div style={{ backgroundColor: "black" }}>
             <div className="app">
                 <div className='fondo'>
 
                     <div className='fondo2'>
                         <br />
-                        <nav> 
+                        <nav>
                             <Navbar />
                         </nav>
                         <LetrasPublicidad />
@@ -40,16 +34,35 @@ function PaginaPrincipal() {
                         <CardFundadoras />
                     </div>
 
+                </div>
+
+                <div className='fondo2-prueba'>
+
+                    <div className='container-desarrollo'>
+                        <h1>Desarrollo web </h1>
+                        <h4>Crea una página web impactante y funcional que refleje la esencia de tu marca. ¡Lleva tu negocio al siguiente nivel y destaca en el mundo digital!</h4>
+                    </div>
+
+                    <img src="https://i.imgur.com/PqSbEUj.png" className='img-posicion' alt="" />
+                </div>
+
+
+                {/* <button className='bton' onClick={verModal}> <p className='letras-nosotros'> Por que nosotros?</p></button>
+
+                <Modal show={abrirModal} onClose={cerrarModal} /> */}
+
+
+                <div className='conte-cards-fondo'>
+                    <div className='centrar-cards'>
+                        <CardServicios4 />
+                        <CardServicios3 />
+
+                    </div>
 
                 </div>
 
-                <button className='bton' onClick={handleOpenModal}> <p className='letras-nosotros'> Por que nosotros?</p></button>
-
-                {/* <Modal show={showModal} onClose={handleCloseModal} />
-                <CardServicios2 />
-                <CardServicios3 />
-                <CardServicios4 />
-                <CardsOfertas />
+                {/* <CardsOfertas />
+                
                 <Cards />
                 <Modal /> */}
 

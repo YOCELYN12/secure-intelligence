@@ -1,16 +1,16 @@
-// import { traerCookie } from "./cookie";
+import { traerCookie } from "./cookie";
 
 const API_URL = "http://localhost:8000/api"
 
 //Post
-// const token = traerCookie('token')
+const token = traerCookie('token')
 const Post = async(datos,endpoint) => {
     try {
         const respuesta = await fetch(`${API_URL}${endpoint}`,{
             method:"POST",
             headers: {
                 'Content-type': 'application/json',
-                // 'Authorization': `Bearer ${token}`
+                'Authorization': `Bearer ${token}`
             },
 
             body:JSON.stringify(datos)
@@ -30,6 +30,33 @@ const Post = async(datos,endpoint) => {
     }
 }
 export{Post}
+
+const PostUsuario = async(datos,endpoint) => {
+    try {
+        const respuesta = await fetch(`${API_URL}${endpoint}`,{
+            method:"POST",
+            headers: {
+                'Content-type': 'application/json',
+               
+            },
+
+            body:JSON.stringify(datos)
+        })
+        const data = await respuesta.json();
+
+        if (!respuesta.ok) {
+            console.log (data.error)
+        } else{
+            console.log(data.success)
+        }
+        console.log(data);
+        return data 
+        
+    } catch (error) {
+        console.log(error)
+    }
+}
+export{PostUsuario}
 
 
 // Get
@@ -51,7 +78,8 @@ const Patch = async (endpoint,obj,ID_Ticket="") => {
         const respuesta = await fetch(`${API_URL}${endpoint}${ID_Ticket}`,{
             method: "PATCH",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(obj)
         });
@@ -80,6 +108,10 @@ const Delete = async(ID_Ticket,endpoint) => {
    try {
         const eliminar = await fetch (`${API_URL}${endpoint}${ID_Ticket}`, {
             method:"DELETE",
+            headers: {
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${token}`
+            },
         }) 
         const salida = await eliminar.json()
 

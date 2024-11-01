@@ -2,13 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: white;
+}
+
+.conte-publicidad{
+    position: relative;
+    left: 40%;
+    width: 18rem;
+    background-color: rgba(1, 1, 1, 0.4);
+    margin-top:-5%;
+    padding:30px;
+    color: white;
 }
 
 .letras{
     color: rgb(235, 191, 14); 
 }
-
 
 .iconos{
     display: flex;
@@ -16,7 +25,7 @@
 }
 .texto{
     margin-left: 20px;
-    color: white;
+    color: white !important;
 }
 
 .color-iconos{
@@ -25,13 +34,6 @@
 
 .mover-card{
     display: flex;
-    
 }
 
 
-.cont-publicidad2{
-    width: 18rem;
-    background-color: rgba(1, 1, 1, 0.4);
-    margin-top:300px;
-    padding:50px
-}

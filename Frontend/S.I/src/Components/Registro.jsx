@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../Styles/Registro.css"
 import { useNavigate } from 'react-router-dom'
-import { Post } from '../Fetch/Fetch'
+import { PostUsuario } from '../Fetch/Fetch'
 import Swal from 'sweetalert2'
 
 
@@ -37,7 +37,7 @@ function Registro() {
     }
 
 
-    const peticion = await Post(datos, '/registro')
+    const peticion = await PostUsuario(datos, '/registro')
     console.log(peticion);
     
     if (peticion) {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../Styles/Login.css"
 import { useNavigate } from 'react-router-dom'
-import {Post} from "../Fetch/Fetch"
+import {PostUsuario} from "../Fetch/Fetch"
 import Swal from 'sweetalert2'
 import { crearCookie } from '../Fetch/cookie'
 
@@ -36,7 +36,7 @@ function Login() {
         return;
       }
       
-      const respuestaPost = await Post(usuario,'/login')
+      const respuestaPost = await PostUsuario(usuario,'/login')
       
       console.log(respuestaPost.super);
       console.log(respuestaPost.token);

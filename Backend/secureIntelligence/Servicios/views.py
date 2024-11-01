@@ -19,7 +19,7 @@ from rest_framework.filters import SearchFilter
 class ServicioView(generics.ListCreateAPIView):
     queryset = Tipo_servicio.objects.all()  #Consulta para obtener los tipos de servicios 
     serializer_class = ListarCrearSerializer  #Serializa los datos
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     
     
 # Vista encargada de listar y crear los tickets generados

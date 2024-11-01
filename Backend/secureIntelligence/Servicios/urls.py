@@ -8,5 +8,4 @@ urlpatterns = [
     path('postTicket/',TicketsView.as_view(), name="Tickets"),  #URL para los  tickets
     path('DeleteTicket/<int:ID_Tickets>',DeleteTicket.as_view(), name="Tickets"), #URL para eliminar los tickets
     path('UpdateTicket/<int:ID_Tickets>',UpdateTicket.as_view(), name="Tickets"), #URL para actualizar los tickets 
-    # path('servicio/busqueda/<str:Nombre>',BarraBusquedaView.as_view(), name="Busqueda"),
     ]

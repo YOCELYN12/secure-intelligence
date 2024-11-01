@@ -10,3 +10,5 @@ router_post.register(
     prefix='servicios', basename='servicios', viewset=ServicioView,
     prefix='tickets', basename='tickets', viewset=TicketsView
 )
+
+#Router es mas de frame, url es de django 
