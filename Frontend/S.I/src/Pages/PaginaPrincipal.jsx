@@ -25,32 +25,33 @@ function PaginaPrincipal() {
     return (
 
         <div>
-            <Navbar />
+
 
             <div className="app">
-
                 <div className='fondo'>
 
                     <div className='fondo2'>
+                        <br />
+                        <nav> 
+                            <Navbar />
+                        </nav>
+
                         <LetrasPublicidad />
                         <CardPublicidad />
                         <CardFundadoras />
                     </div>
 
-                    <Cards />
-
-                    <button className='bton' onClick={handleOpenModal}> <p className='letras-nosotros'> Por que nosotros?</p></button>
-
-                    <Modal show={showModal} onClose={handleCloseModal} />
-
-                    <CardServicios2 />
-                    <CardServicios3 />
-                    <CardServicios4 />
-
-                    <CardsOfertas />
 
                 </div>
 
+                <button className='bton' onClick={handleOpenModal}> <p className='letras-nosotros'> Por que nosotros?</p></button>
+
+                <Modal show={showModal} onClose={handleCloseModal} />
+                <CardServicios2 />
+                <CardServicios3 />
+                <CardServicios4 />
+                <CardsOfertas />
+                <Cards />
                 <Modal />
 
             </div>

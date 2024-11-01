@@ -21,33 +21,27 @@ function Navbar() {
   return (
     <nav className='navbar'>
 
-
-
       <div>
         <img className='logo' src="https://i.imgur.com/OzhReRY.png" alt="mmmm" />
       </div>
 
-     
-   
+      <div className='div-nav' >
 
+        <a className='letras_nav' href="/">Servicios</a>
+        <a className='letras_nav' href="/GenerarTickets">Soporte</a>
+        <a className='letras_nav' href="/QuienesSomos">Quienes somos</a>
+        <a className='letras_nav' href="/ServicioalCliente">Servicio al cliente</a>
 
-      <div className='container-logo-search'>
-
-        <div className='cont-barra'>
-          <input className="search-container" type="text" placeholder="Buscar..." />
-        </div>
-
-
-        <div className='btn-buscar' >
-          <button className='icon-buscar'><FaMagnifyingGlass /> </button>
-        </div>
       </div>
 
+
       <div className='account'>
+
         <button className='btn-account' onClick={irpaginacuentas} >
-          <IoPersonAdd className=' icon-account' />
-          <p >Account</p>
+          <IoPersonAdd className='icon-account' />
+          <p className='accot'>Account</p>
         </button>
+
       </div>
 
 
