@@ -7,7 +7,7 @@ function LetrasPublicidad() {
         <div className='cont1'> 
             <div className='contenedor'>
 
-                <h3 className='letras-publicidad'>Porque la seguiridad es pimero </h3>
+                <h3 className='letras-publicidad'>Porque la seguridad es primero </h3>
 
             </div>
         </div>

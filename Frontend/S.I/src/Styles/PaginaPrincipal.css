@@ -21,8 +21,8 @@ main {
 
 .fondo2{
     background-color: rgba(10, 9, 9, 0.696);
-    width: 200vh;
-    height: 110vh;
+    width: 201vh;
+    height: 100vh;
 }
 
 
@@ -53,4 +53,33 @@ main {
 }
 
 
-/* @media (max-whi) */
+@media (max-width:1268px){
+    .fondo{
+       width: 100%;
+    }
+    .fondo2{
+        width: 100%;
+    }
+ 
+   
+}
+
+@media (max-width:1068px){
+    .fondo{
+        width: 100%;
+     }
+     .fondo2{
+        
+        width: 100%;
+     }
+}
+
+ 
+@media (max-width: 768px) {
+    .fondo{
+        width: 100%;
+    }
+    .fondo2{
+        width: 100%;
+     }
+}

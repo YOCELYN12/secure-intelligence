@@ -35,7 +35,6 @@ function PaginaPrincipal() {
                         <nav> 
                             <Navbar />
                         </nav>
-
                         <LetrasPublicidad />
                         <CardPublicidad />
                         <CardFundadoras />
@@ -46,13 +45,13 @@ function PaginaPrincipal() {
 
                 <button className='bton' onClick={handleOpenModal}> <p className='letras-nosotros'> Por que nosotros?</p></button>
 
-                <Modal show={showModal} onClose={handleCloseModal} />
+                {/* <Modal show={showModal} onClose={handleCloseModal} />
                 <CardServicios2 />
                 <CardServicios3 />
                 <CardServicios4 />
                 <CardsOfertas />
                 <Cards />
-                <Modal />
+                <Modal /> */}
 
             </div>
 
