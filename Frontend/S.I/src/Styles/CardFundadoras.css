@@ -37,3 +37,35 @@
     margin-right: 30px;
     color: white;
 }
+
+
+@media (max-width:1268px){
+    .contenedor-fundadoras{
+       margin-left:60%;
+       margin-top: -40%;
+       width: 20%;
+    }
+ 
+   
+}
+
+@media (max-width:1068px){
+    .contenedor-fundadoras{
+        margin-left:48%;
+        margin-top: -40%;
+        width: 20%;
+        
+    }
+  
+ 
+   
+}
+
+ 
+@media (max-width: 768px) {
+    .contenedor-fundadoras{
+        margin-left:28%;
+        margin-top: -40%;
+        width: 20%;
+    }
+}

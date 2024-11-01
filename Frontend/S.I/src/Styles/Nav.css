@@ -43,7 +43,7 @@
    .navbar{
       margin-left:20px;
       margin-top: -10px;
-      width: calc(67% - 30px);
+      width: calc(80% - 30px);
       height: calc(150px - 40px);
    }
 
@@ -56,6 +56,18 @@
       margin-left: 100px;
    }
 }
+
+@media (max-width:1068px){
+   .navbar{
+      margin-left:10px;
+      margin-top: -10px;
+      width: calc(70% - 30px);
+      height: calc(150px - 40px);
+   }
+
+  
+}
+
 
 @media (max-width: 768px) {
    .navbar{
@@ -94,7 +106,7 @@
 }
 
 
-@media (max-width:120px){
+/* @media (max-width:120px){
    .navbar{
       margin-left:20px;
       margin-right: 20px;
@@ -129,6 +141,6 @@
         margin-right:-50px;
      }
 }
-
+ */
 
 
