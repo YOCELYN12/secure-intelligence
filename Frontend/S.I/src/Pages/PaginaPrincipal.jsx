@@ -15,9 +15,9 @@ import CardServicios4 from '../Components/CardServicios4'
 
 
 function PaginaPrincipal() {
-    const [abrirModal, setAbrirModal] = useState(false);
-    const verModal = () => setAbrirModal(true);
-    const cerrarModal = () => setAbrirModal(false);
+    // const [abrirModal, setAbrirModal] = useState(false);
+    // const verModal = () => setAbrirModal(true);
+    // const cerrarModal = () => setAbrirModal(false);
 
     return (
         <div style={{ backgroundColor: "black" }}>
@@ -56,15 +56,15 @@ function PaginaPrincipal() {
                     <div className='centrar-cards'>
                         <CardServicios4 />
                         <CardServicios3 />
-
+                        <Cards />
                     </div>
 
                 </div>
 
-                {/* <CardsOfertas />
+                {/* <CardsOfertas />*/}
                 
-                <Cards />
-                <Modal /> */}
+                
+                {/* <Modal />  */}
 
             </div>
 
