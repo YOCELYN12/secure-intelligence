@@ -14,29 +14,29 @@ from django.db import models
 #     Fecha_finalizacion = models.DateTimeField(blank=True)
 
     
-class Administradores (models.Model):
-    ID_administrador = models.AutoField(primary_key=True)
-    user_name = models.CharField(max_length=255)
+# class Administradores (models.Model):
+#     ID_administrador = models.AutoField(primary_key=True)
+#     user_name = models.CharField(max_length=255)
     
-class Clientes (models.Model):
-    Id_cliente = models.AutoField(primary_key=True)
-    Name_company = models.CharField(max_length=250)
-    contacto = models.CharField(max_length=80)
-    nombre_responsable = models.CharField(max_length=25)
-    numero_telefono = models.CharField(max_length=50)
+# class Clientes (models.Model):
+#     Id_cliente = models.AutoField(primary_key=True)
+#     Name_company = models.CharField(max_length=250)
+#     contacto = models.CharField(max_length=80)
+#     nombre_responsable = models.CharField(max_length=25)
+#     numero_telefono = models.CharField(max_length=50)
 
-class Tipo_usuario (models.Model):
-    ID_tipo_usuario = models.AutoField(primary_key=True)
-    ID_administrador = models.ForeignKey(Administradores, on_delete=models.CASCADE)
-    Id_cliente = models.ForeignKey(Clientes,on_delete=models.CASCADE)
+# class Tipo_usuario (models.Model):
+#     ID_tipo_usuario = models.AutoField(primary_key=True)
+#     ID_administrador = models.ForeignKey(Administradores, on_delete=models.CASCADE)
+#     Id_cliente = models.ForeignKey(Clientes,on_delete=models.CASCADE)
 
-class Usuario(models.Model):
-   id = models.AutoField(primary_key=True)
-   username = models.CharField(max_length=255)
-   password = models.CharField(max_length=255)
-   email = models.EmailField(max_length=255)
-   ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE)
-   ID_servicios = models.ForeignKey('Servicios.Servicios_disponibles', on_delete=models.CASCADE)
-   SuperUsuario = models.BooleanField(default= False)
+# class Usuario(models.Model):
+#    id = models.AutoField(primary_key=True)
+#    username = models.CharField(max_length=255)
+#    password = models.CharField(max_length=255)
+#    email = models.EmailField(max_length=255)
+#    ID_tipo_usuario = models.ForeignKey(Tipo_usuario, on_delete=models.CASCADE)
+#    ID_servicios = models.ForeignKey('Servicios.Servicios_disponibles', on_delete=models.CASCADE)
+#    SuperUsuario = models.BooleanField(default= False)
 
    

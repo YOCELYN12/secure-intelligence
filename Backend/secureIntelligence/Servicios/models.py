@@ -1,49 +1,49 @@
 from django.db import models
 
-# Create your models here.
-
+#Modelo Tipo de servicio se encarga de guardar los datos requeridos
 class Tipo_servicio (models.Model):
-    ID_tipo_servicio = models.AutoField(primary_key = True)
-    Area = models.CharField(max_length=255)
-    Nombre = models.CharField(max_length=50)
-    Descripcion_servicio = models.TextField()
+    ID_tipo_servicio = models.AutoField(primary_key = True) #Llave primaria que se encargara de diferenciar y relacionar el modelo
+    Area = models.CharField(max_length=255)  #Area en la que entra el tipo de servicio
+    Nombre = models.CharField(max_length=50)  #Nombre de servicio
+    Descripcion_servicio = models.TextField()  #Descripcion del servicio 
     
     def __str__(self):
-        return self.Nombre
+        return self.Nombre  #Retorno el nombre para que se muestre en vez del ID
     
   
-class Servicios_disponibles (models.Model):
-    ID_servicio = models.AutoField(primary_key=True)
-    ID_tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)
-    Descripcion = models.TextField()   
+# class Servicios_disponibles (models.Model):
+#     ID_servicio = models.AutoField(primary_key=True)
+#     ID_tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)
+#     Descripcion = models.TextField()   
    
     
 
-class Suscripciones (models.Model):
-    ID_suscripcion = models.AutoField(primary_key=True)
-    ID_usuario = models.ForeignKey('Usuarios.Usuario',on_delete=models.CASCADE)
-    ID_servicio = models.ForeignKey(Servicios_disponibles,on_delete=models.CASCADE)
+# class Suscripciones (models.Model):
+#     ID_suscripcion = models.AutoField(primary_key=True)
+#     ID_usuario = models.ForeignKey('Usuarios.Usuario',on_delete=models.CASCADE)
+#     ID_servicio = models.ForeignKey(Servicios_disponibles,on_delete=models.CASCADE)
     
 
-class Factura (models.Model):
-    ID_factura = models.AutoField(primary_key=True)
-    ID_suscripcion = models.ForeignKey(Suscripciones,on_delete=models.CASCADE)
-    Fecha_suscripcion = models.DateTimeField(blank=True)
-    Fecha_finalizacion = models.DateTimeField(blank=True)
-    Estado = models.BooleanField(default=False)
+# class Factura (models.Model):
+#     ID_factura = models.AutoField(primary_key=True)
+#     ID_suscripcion = models.ForeignKey(Suscripciones,on_delete=models.CASCADE)
+#     Fecha_suscripcion = models.DateTimeField(blank=True)
+#     Fecha_finalizacion = models.DateTimeField(blank=True)
+#     Estado = models.BooleanField(default=False)
+
+
+#Modelo para los tickets
     
 class Tickets  (models.Model):
-    ID_Tickets = models.AutoField(primary_key=True)
-    Nombre = models.CharField(max_length=255)
-    Apellido = models.CharField(max_length=255)
-    Correo = models.CharField(max_length=255)
-    ID_tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)    
-    Numero_de_telefono = models.CharField(max_length=255)
-    Empresa = models.CharField(max_length=255)
-    Descripcion = models.CharField(max_length=255)  
-    estado = models.BooleanField(default=True)
+    ID_Tickets = models.AutoField(primary_key=True)  #Lave primaria para los tickets
+    Nombre = models.CharField(max_length=255)  #Nombre de la persona que genera el ticket
+    Apellido = models.CharField(max_length=255) #Apellido de la persona que genera el ticket
+    Correo = models.CharField(max_length=255)  #Correo de la persona que genera el ticket
+    ID_tipo_servicio = models.ForeignKey(Tipo_servicio,on_delete=models.CASCADE)   #Servicio que la persona solicita para el ticket 
+    Numero_de_telefono = models.CharField(max_length=255)  #Numero de telefono de la persona que genera el ticket
+    Empresa = models.CharField(max_length=255)  #Empresa a la que se le estara dando el servicio
+    Descripcion = models.CharField(max_length=255)   #Descripcion sobre el ticket y la informacion del mismo
+    estado = models.BooleanField(default=True)    #Estado del ticket para que se indique si el mismo ya se trabajo o esta activo
     
-    # def __str__(self):
-    #     return self.Nombre
-    
+
     
