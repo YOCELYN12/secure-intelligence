@@ -1,0 +1,35 @@
+.from-correo-nombre{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.from-fondo{
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    height: 800px;
+    border: 1px solid rgb(104, 103, 103);
+    background-color: rgb(19, 19, 19);
+    /* background: linear-gradient(to top, rgb(5, 6, 85) 10%, rgba(3, 3, 69, 0.991) 50%, rgb(0, 0, 0) 100%); */
+}
+
+
+.from{
+    color: white;
+    margin-left: 18%;
+    margin-top: 15%;
+    
+}
+
+.int{
+    width: 250%;
+    height: 50px;
+}
+
+
+
+.from-mensaje{
+   color: white;
+   margin-left: 18%;
+}

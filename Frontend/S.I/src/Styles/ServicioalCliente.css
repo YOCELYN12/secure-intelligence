@@ -1,87 +1,42 @@
-.img-servicio{
-    position: relative;
-    left: 30%;
-    min-width: 50%;
+.img-servicio-cliente{
+    background-image: url('https://i.imgur.com/4BmYxjI.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    width: 1512px;
 }
 
-.letras-cliente{
+.div-servicio-cliente{
+    width: 1150px;
+    height: 330px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    margin-left: 10px;
+    position: absolute;
+    top:55%;
+    left: 10%;
+    border-radius: 30px;
+}
+
+.img-ser{
+    max-width: 20%;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.calificacion{
+    color: rgb(16, 44, 255);
     display: flex;
-    justify-content: center;
-}
-
-.conte-nombre{
-  margin-left: 10%;
-  margin-top: 6%;
+    justify-self: center;
+    margin-top: -12%;
+    margin-left: 20%;
 }
 
 
-.inp-nombre{
-   width: 40%;
-}
-
-.conten-correo{
-   margin-left: 60%;
-   margin-top: -5%;
-}
-
-.inp-area{
-   width: 80%;
-}
-
-.conte-queja{
-    margin-left: 10%;
-    margin-top: 6%;
-}
-
-.inp-queja{
-    width: 40%;
-}
-
-.conte-select{
-    margin-left: 60%;
-    margin-top: -4.8%;
+.fondo-serviciocliente{
+    background-color: black;
 }
 
 
 
-.select-siono{
-  width: 80%;
-}
-
-.calificanos{
-    margin-left: 10%;
-    margin-top: 6%;
-}
-
-.inp-calificanos{
-   width: 92%;
-   height: 10vw;
-}
-
-
-.fotter{
-    margin-top: -60%;
-}
- 
-
-.conte-btn{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
-}
-.bton-cancelar{
-    width: 300px;
-  height: 50px;
-  background-color: rgb(93, 93, 96);
-  color: aliceblue;
-  border: none;
-}
-
-
-.bton-enviar{
-    width: 300px;
-    height: 50px;
-    background-color: darkblue;
-    color: aliceblue;
-    border: none;
-}

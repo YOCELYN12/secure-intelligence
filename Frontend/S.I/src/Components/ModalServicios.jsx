@@ -36,15 +36,15 @@ function ModalServicios({ isOpen, onClose }) {
                         <div className='inputs'>
 
                             <p className='letras-servicio'>Nombre</p>
-                            <input className='int-nombre-servicio' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
+                            <input className='input' type="text" value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
 
                             <br />
                             <p className='letras-servicio'>Area</p>
-                            <input className='int-area' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
+                            <input className='input' type="text" value={intArea} onChange={(e) => setIntArea(e.target.value)} />
 
                             <br />
                             <p className='letras-servicio'>Descripcion del servicio</p>
-                            <input className='int-descripcion-servicios' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
+                            <input className='input' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
 
                         </div>
                     </div>

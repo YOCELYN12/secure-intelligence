@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-
 import emailjs from 'emailjs-com';
+import "../Styles/EmailJS.css"
+
 
 function EmailJS() {
 
@@ -43,34 +44,61 @@ function EmailJS() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Nombre:
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-                </label>
-                <br />
-                <label>
-                    Email:
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-                </label>
-                <br />
-                <label>
-                    Teléfono:
-                    <input type="text" name="phone" value={formData.phone} onChange={handleChange} required />
-                </label>
-                <br />
-                <label>
-                    Empresa:
-                    <input type="text" name="company" value={formData.company} onChange={handleChange} required />
-                </label>
-                
-                <br />
 
-                <label>
-                    Mensaje:
-                    <textarea name="message" value={formData.message} onChange={handleChange} required />
-                </label>
-                <br />
-                <button type="submit">Enviar</button>
+                <div className='from-fondo'>
+                    <div className='from'>
+                        <label >
+                            <p>Nombre:</p>
+                            <input className='int' type="text" name="name" value={formData.name} onChange={handleChange} required />
+                        </label>
+                        <br />
+                        <br />
+
+
+                        <label>
+
+                            <p> Email: </p>
+
+                            <input  className='int' type="email" name="email" value={formData.email} onChange={handleChange} required />
+                        </label>
+
+
+                        <br />
+                        <br />
+
+
+                        <label>
+                            <p>Teléfono:  </p>
+
+                            <input className='int' type="text" name="phone" value={formData.phone} onChange={handleChange} required />
+                        </label>
+                        <br />
+                        <br />
+                        <label>
+                            <p>Empresa:  </p>
+
+                            <input className='int' type="text" name="company" value={formData.company} onChange={handleChange} required />
+                        </label>
+
+                    </div>
+
+                    
+                    <br />
+                    
+
+                    <label className='from-mensaje'>
+                        <p> Mensaje:</p>
+                        <textarea className='int' name="message" value={formData.message} onChange={handleChange} required />
+                    </label>
+
+
+                    <br />
+                    <button type="submit">Enviar</button>
+
+
+
+                </div>
+
             </form>
 
         </div>

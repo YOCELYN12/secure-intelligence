@@ -6,48 +6,29 @@ import EmailJS from '../Components/EmailJS'
 
 function ServicioalCliente() {
     return (
-        <div>
+        <div className='fondo-serviciocliente'>
 
-            <Navbar />
-            {/* <div>
-                <img className='img-servicio' src="https://i.imgur.com/w4vMyPo.png" alt="" />
-            </div>
+            <div className='img-servicio-cliente'>
+                <br />
+                <Navbar />
 
-            <div>
-                <h1 className='letras-cliente'>Servicio al cliente</h1>
-            </div>
+                <div className='div-servicio-cliente'>
+                    <img className='img-ser' src="https://i.imgur.com/qoQjmbt.png" alt="" />
+                    <h1  className='calificacion' >Cuentanos tu experiencia</h1>
 
-            <div className='conte-nombre'>
-                <p>Nombre</p>
-                <input type="text" className='inp-nombre' />
-            </div>
-
-            
-            <div className='conten-correo'>
-                <p>Correo</p>
-                <input className='inp-area' type="text"  />
-            </div>
-
-             
-            <div className='calificanos'>
-                <p>Calificanos</p>
-                <input className='inp-calificanos' type="text"  />
+                </div>
             </div>
 
 
-            <div className='conte-btn'>
-                <button className='bton-cancelar'> Cancelar</button>
-                <button className='bton-enviar'>Enviar</button>
-            </div> */}
 
-
-            <EmailJS/>
+            <EmailJS />
 
 
 
-           <div className='fotter'>
-            <Footer />
-            </div>
+            <footer>
+                <Footer />
+            </footer>
+
 
 
         </div>

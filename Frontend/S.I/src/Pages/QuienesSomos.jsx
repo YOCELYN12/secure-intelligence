@@ -42,7 +42,8 @@ function QuienesSomos() {
             <p className='Ubicacion '> Encuentranos en: <br /> Pozos Santa Ana, escuela republica de Francia, 200 metros este <br />
                 Nuestro horario: <br />Lunes - Viernes de 9am - 5pm 
             </p>
-            
+            <br />
+            <br />
             <footer>
                 <Footer />
             </footer>
