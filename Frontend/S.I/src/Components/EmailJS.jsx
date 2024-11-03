@@ -47,6 +47,14 @@ function EmailJS() {
 
                 <div className='from-fondo'>
                     <div className='from'>
+                        <div>
+                            <h1>Envianos un correo con tu opinion</h1>
+                        </div>
+
+                        <br />
+
+
+
                         <label >
                             <p>Nombre:</p>
                             <input className='int' type="text" name="name" value={formData.name} onChange={handleChange} required />

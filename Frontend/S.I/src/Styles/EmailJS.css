@@ -25,6 +25,7 @@
 .int{
     width: 250%;
     height: 50px;
+    border-radius: 20px;
 }
 
 
@@ -32,4 +33,5 @@
 .from-mensaje{
    color: white;
    margin-left: 18%;
+   width: 25%;
 }
