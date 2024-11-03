@@ -19,25 +19,17 @@ function GenerarTickets() {
   const [intEmpresa, setIntEmpresa] = useState("")
   const [intDescripcion, setIntDescripcion] = useState("")
 
-
-  console.log()
-
-
-
   //Estado que se encarga de traer los Tipos de servicios de la API 
   useEffect(() => {
     const obtenerDatos = async () => {
-      const getDatos = await Get("/post/") //llama a la API para obtener los tipos de servicios de la base de datos
+      const getDatos = await Get("/postServicio/") //llama a la API para obtener los tipos de servicios de la base de datos
       setIntTipoServicio(getDatos) //actualiza el estado con los datos de los servicios obtenidos
       console.log(getDatos);
 
     }
     obtenerDatos()
   }, [])
-
-
-
-
+  console.log(intTipoServicio)
 
   const enviarTickets = async (e) => {
     e.preventDefault()
@@ -58,80 +50,85 @@ function GenerarTickets() {
   return (
 
 
-    <div>
+    <div className='fondo-page-ticket'>
 
-      <Navbar />
 
       <div className='img'>
+        <Navbar />
 
         <div className='div-contenedor'>
-          <img className='img-animado' src="https://i.imgur.com/7sU8PnC.png" alt="" />
+          <img className='img-animado' src="https://i.imgur.com/Ty9fxlF.png" alt="" />
           <p className='texto-apartado'>Apartado de Tickets</p>
         </div>
 
       </div>
 
-      <div>
-        <h1 className='letras-bienvenido'>Como podemos ayudarte?</h1>
-      </div>
+      <div className='contenedor-from' >
+
+        <div>
+          <h1 className='letras-bienvenido'>Como podemos ayudarte?</h1>
+        </div>
 
 
-      <div className='cont-nombre'>
-        <p>Nombre</p>
-        <input type="text" className='int-nombre' value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
-      </div>
+        <div className='cont-nombre'>
+          <p>Nombre</p>
+          <input type="text" className='int-nombre' value={intNombre} onChange={(e) => setIntNombre(e.target.value)} />
+        </div>
 
 
-      <div className='cont-apellido'>
-        <p>Apellido</p>
-        <input className='int-apellido' type="text" value={intApellido} onChange={(e) => setIntApellido(e.target.value)} />
-      </div>
-
-
-
-      <div className='cont-correo'>
-        <p>Correo</p>
-        <input className='int-correo' type="text" value={intCorreo} onChange={(e) => setIntCorreo(e.target.value)} />
-      </div>
+        <div className='cont-apellido'>
+          <p>Apellido</p>
+          <input  type="text"  className='int-apellido' value={intApellido} onChange={(e) => setIntApellido(e.target.value)} />
+        </div>
 
 
 
-      <div className='cont-tipo-servicio' >
-        <p>Tipo de servicio</p>
-
-        <select className='select-servicio' value={intServicioSelecionado} onChange={(e) => setIntServicioSeleccionado(e.target.value)}> { /*Actualizamos solo el valor seleccionado*/}
-          <option>Seleccione una opción</option>
-
-          {intTipoServicio.map((tipo) => (
-            <option key={tipo.id} value={tipo.ID_tipo_servicio}>{tipo.Nombre}</option>
-          ))}
-
-        </select>
-
-      </div>
+        <div className='cont-correo'>
+          <p>Correo</p>
+          <input className='int-correo' type="text" value={intCorreo} onChange={(e) => setIntCorreo(e.target.value)} />
+        </div>
 
 
 
-      <div className='cont-telefono'>
-        <p>Numero de telefono</p>
-        <input className='int-numero-telefono' type="num" value={intTelefono} onChange={(e) => setIntTelefono(e.target.value)} />
-      </div>
+        <div className='cont-tipo-servicio' >
+          <p>Tipo de servicio</p>
 
-      <div className='cont-empresa'>
-        <p>Empresa</p>
-        <input className='int-empresa' type="text" value={intEmpresa} onChange={(e) => setIntEmpresa(e.target.value)} />
-      </div>
+          <select className='select-servicio' value={intServicioSelecionado} onChange={(e) => setIntServicioSeleccionado(e.target.value)}>  {/* Actualizamos solo el valor seleccionado  */}
+           
+            <option>Seleccione una opción</option>
 
-      <div className='conte-descripcion'>
-        <p>Decripcion</p>
-        <input className='int-descripcion' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
-      </div>
-       
+            {intTipoServicio.map((tipo) => (
+              <option key={tipo.id} value={tipo.ID_tipo_servicio}>{tipo.Nombre}</option>
+            ))}
+
+          </select>
+
+        </div>
 
 
-      <div className='cont-btn'>
-        <button className='btn-cancelar'>Cancelar</button>
-        <button onClick={enviarTickets} className='btn-enviar' >Enviar</button>
+
+        <div className='cont-telefono'>
+          <p>Numero de telefono</p>
+          <input className='int-numero-telefono' type="num" value={intTelefono} onChange={(e) => setIntTelefono(e.target.value)} />
+        </div>
+
+        <div className='cont-empresa'>
+          <p>Empresa</p>
+          <input className='int-empresa' type="text" value={intEmpresa} onChange={(e) => setIntEmpresa(e.target.value)} />
+        </div>
+
+        <div className='conte-descripcion'>
+          <p>Decripcion</p>
+          <input className='int-descripcion' type="text" value={intDescripcion} onChange={(e) => setIntDescripcion(e.target.value)} />
+        </div> 
+
+
+
+        <div className='cont-btn'>
+          <button className='btn-cancelar'>Cancelar</button>
+          <button onClick={enviarTickets} className='btn-enviar' >Enviar</button>
+        </div>
+
       </div>
 
       <footer>

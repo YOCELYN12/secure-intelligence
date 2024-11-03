@@ -13,13 +13,13 @@ from rest_framework.generics import UpdateAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.filters import SearchFilter
 
-# Create your views here.
+# Create your views here.b 
 
 # Vista encargada de crear y agregar los tipos de servicios 
 class ServicioView(generics.ListCreateAPIView):
     queryset = Tipo_servicio.objects.all()  #Consulta para obtener los tipos de servicios 
     serializer_class = ListarCrearSerializer  #Serializa los datos
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     
     
 # Vista encargada de listar y crear los tickets generados

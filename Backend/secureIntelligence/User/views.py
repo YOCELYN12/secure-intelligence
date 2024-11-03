@@ -12,7 +12,7 @@ from django.contrib.auth.hashers import check_password
 
 #Vista para registrar los usuarios 
 class RegistroView(APIView):
-    permission_classes=[AllowAny]
+    # permission_classes=[AllowAny]
     
     #Se utiliza el metodo post para poder enviar los datos a los modelos
     def post (self,request):
@@ -34,7 +34,7 @@ class RegistroView(APIView):
 # Vista para poder registrar los usuarios que son solo administradores
 class RegistroAdminView(APIView):
     
-    permission_classes=[AllowAny]
+    # permission_classes=[AllowAny]
     def post (self,request):
         username = request.data.get('username')
         email = request.data.get('email')
@@ -53,7 +53,7 @@ class RegistroAdminView(APIView):
         
 #Vista para que los usuarios puedan logearse 
 class LoginView(APIView):
-    permission_classes=[AllowAny]
+    # permission_classes=[AllowAny]
     
     def post(self,request):
         #Obtine el username y la password de la solicitud
@@ -67,15 +67,15 @@ class LoginView(APIView):
         if usuario and check_password(password,usuario.password):
             
             #Sistema de autenticacion que le da un token al usurio ingresado
-            refresh = RefreshToken.for_user(usuario)
+            # refresh = RefreshToken.for_user(usuario)
             
             return Response({
                 'success': 'Usuario autenticado',
                 'idUsuario':usuario.id,
-                'super':{usuario.is_superuser},
-                'token':str(refresh.access_token), 
-                "refresco":str(refresh)},
-                status=status.HTTP_200_OK)
+                'super':{usuario.is_superuser}}, status=status.HTTP_200_OK)
+                # 'token':str(refresh.access_token), 
+                # "refresco":str(refresh)},
+                # status=status.HTTP_200_OK)
         else:   
             return Response({'error': f'Credenciales inválidas {usuario}'}, status=status.HTTP_400_BAD_REQUEST)
-            
+             

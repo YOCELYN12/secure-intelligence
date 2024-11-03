@@ -4,22 +4,28 @@
     background-position: center; 
     background-repeat: no-repeat; 
     width: 1513px;
-    height: 600px; 
+    height: 800px; 
+}
+
+.fondo-page-ticket{
+    background-color: black;
 }
 
 .div-contenedor{
     width: 1150px;
     height: 400px;
-    background-color: white;
+    background:transparent;
+    backdrop-filter: blur(20px);
     margin-left: 10px;
     position: absolute;
-    top:45%;
+    top:52%;
     left: 10%;
-   
+    border-radius: 30px;
 }
 
 .img-animado{
-    width: 400px;
+    width: 300px;
+    margin-top: 5%;
 }
 
 .texto-apartado{
@@ -28,102 +34,118 @@
     top: 50%;
     left: 40%;
     text-transform: uppercase;
-    color: black;
+    color: white;
     letter-spacing: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .letras-bienvenido{
-    margin-top: 200px;
-    margin-left: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
 }
 
-
-.int-nombre{
-    width: 600px;
+.contenedor-from{
+    margin-top: -10%;
+    color: white;
+    width: 80%;
+    height: 50%;
+    background: linear-gradient(to top, rgb(2, 5, 200) 10%, rgba(3, 3, 69, 0.991) 50%, rgb(0, 0, 0) 100%);
+    margin-left: 10%;
+    
 }
 
 .cont-nombre{
-    margin-top: 80px;
-    margin-left: 80px;
+    position: absolute;
+    left: 18%;
+    top: 132%;
 }
 
-.int-apellido{
-    width: 600px;
+.int-nombre{
+    width: 215%;
 }
 
 .cont-apellido{
-    margin-left: 800px;
-    margin-top: -70px;
+    position: absolute;
+    left: 55%;
+    top: 131.5%;
 }
 
+.int-apellido{
+    width: 212%;
+}
+
+
+ 
+.cont-correo{
+    position: absolute;
+    top:150%;
+    left: 18%;
+    
+}
 
 .int-correo{
-    width: 600px;
+    width: 212%;
 }
 
-.cont-correo{
-    margin-top: 60px;
-    margin-left: 80px;
+
+
+.cont-tipo-servicio{
+    margin-left: 56%;
+    margin-top: 17%;
 }
 
 .select-servicio{
-    width: 600px;
-}
-
-.cont-tipo-servicio{
-    margin-left: 800px;
-    margin-top: -70px;
-}
-
-
-.int-numero-telefono{
-    width: 600px;
+    width: 82%;
+    height: 50px;
+    border-radius: 10px;
 }
 
 .cont-telefono{
-    margin-top: 60px;
-    margin-left: 80px;
+    position: relative;
+    top: 58px;
+    left: 120px;
 }
-
-
-.int-empresa{
-    width: 600px;
+.int-numero-telefono{
+    width: 36%;
+    height: 48px;
+    border-radius: 8px;
 }
-
 
 .cont-empresa{
-    margin-left: 800px;
-    margin-top: -70px;
+    margin-left: 56%;
+    margin-top: -40px;
 }
 
-.int-descripcion{
-  width: 700%;
-  height: 18vh;
+.int-empresa{
+    width: 82%;
 }
 
 .conte-descripcion{
-    position: absolute;
-    top: 190%;
-    left: 5.5%;
-}
+    position: relative;
+    top: 60px;
+    left: 120px;
+} 
 
-.footeer{
-    margin-top: -820px;
+.int-descripcion{
+  width: 82%;
+  height: 18vh;
 }
+ 
+
 
 
 .cont-btn{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 250px;
+    margin-top: 120px;
 }
 
 
 .btn-cancelar{
   width: 300px;
   height: 50px;
-  background-color: rgb(93, 93, 96);
+  background-color: rgba(204, 6, 6, 0.932);
   color: aliceblue;
   border: none;
 }
@@ -131,7 +153,38 @@
 .btn-enviar{
     width: 300px;
     height: 50px;
-    background-color: darkblue;
+    background-color: rgb(60, 222, 16);
     color: aliceblue;
     border: none;
+}
+
+
+
+@media (max-width:1268px){
+    .img{
+       width: 100%;
+    }
+    .fondo2{
+        width: 100%;
+    }
+}
+
+@media (max-width:1068px){
+    .img{
+        width: 100%;
+    }
+
+    .fondo2{ 
+        width: 100%;
+    }
+}
+
+ 
+@media (max-width: 768px) {
+    .img{
+        width: 100%;
+    }
+    .fondo2{
+        width: 100%;
+     }
 }
