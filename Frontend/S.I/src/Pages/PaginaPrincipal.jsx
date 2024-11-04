@@ -21,7 +21,7 @@ function PaginaPrincipal() {
 
     return (
         <div style={{ backgroundColor: "black" }}>
-            <div className="app">
+            <div >
                 <div className='fondo'>
 
                     <div className='fondo2'>
@@ -36,7 +36,7 @@ function PaginaPrincipal() {
 
                 </div>
 
-                <div className='fondo2-prueba'>
+                <div className='fondo2-publicidad'>
 
                     <div className='container-desarrollo'>
                         <h1>Desarrollo web </h1>
@@ -56,14 +56,16 @@ function PaginaPrincipal() {
                     <div className='centrar-cards'>
                         <CardServicios4 />
                         <CardServicios3 />
-                        <Cards />
+                        <div className='clase-mediaquery'>
+                            <Cards />
+                        </div>
                     </div>
 
                 </div>
 
                 {/* <CardsOfertas />*/}
-                
-                
+
+
                 {/* <Modal />  */}
 
             </div>

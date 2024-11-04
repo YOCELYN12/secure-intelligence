@@ -38,5 +38,34 @@
     background-color: black;
 }
 
+@media (max-width:1268px){
+    .img-servicio-cliente{
+       width: 100%;
+    }
+    .div-servicio-cliente{
+        width: 100%;
+    }
+}
+
+@media (max-width:1068px){
+    .img-servicio-cliente{
+        width: 100%;
+    }
+
+    .div-servicio-cliente{ 
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-servicio-cliente{
+        width: 100%;
+    }
+    .div-servicio-cliente{
+        width: 100%;
+    }
+}
+
+
 
 

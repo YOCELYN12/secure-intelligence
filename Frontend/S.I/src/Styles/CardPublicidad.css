@@ -36,4 +36,35 @@
     display: flex;
 }
 
+@media (max-width:1268px){
+    .conte-publicidad{
+       width: 30%;
+    }
+    .fondo2{
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px){
+    .conte-publicidad{
+       margin-left: -280px;
+       margin-top: 30%;
+       width: 50%;
+    }
+
+    .fondo2{ 
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .conte-publicidad{
+        margin-top: 45%;
+    }
+    .fondo2{
+        width: 100%;
+     }
+}
+
+
 

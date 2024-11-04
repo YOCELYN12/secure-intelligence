@@ -42,17 +42,17 @@
 @media (max-width:1268px){
     .contenedor-fundadoras{
        margin-left:65%;
-       margin-top: -50%;
+       margin-top: -30%;
        width: 30%;
     }
  
    
 }
 
-@media (max-width:1068px){
+@media (max-width:1024px){
     .contenedor-fundadoras{
         margin-left:55%;
-        margin-top: -38%;
+        margin-top: -68%;
         width: 40%;
     }
 }
@@ -61,7 +61,7 @@
 @media (max-width: 768px) {
     .contenedor-fundadoras{
         margin-left:47%;
-        margin-top: -40%;
+        margin-top: -60%;
         width: 50%;
     }
 }

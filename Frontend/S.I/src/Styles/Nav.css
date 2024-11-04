@@ -49,6 +49,7 @@
 
    .account{
       margin-top: -110px;
+      margin-left: 82%;
    }
 
    .div-nav{
@@ -57,7 +58,7 @@
    }
 }
 
-@media (max-width:1068px){
+@media (max-width:1024px){
    .navbar{
       margin-left:10px;
       margin-top: -10px;
@@ -92,7 +93,7 @@
 
    .btn-account{
       margin-top: 2px;
-      margin-left:50%;
+      margin-left:20%;
       border: none;
    }
 
@@ -105,11 +106,10 @@
    }
 
    .div-nav{
-      display: flex; /* Activa Flexbox */
-      flex-direction: row; /* Alinea en una fila */
+      display: flex;
+      flex-direction: row; 
       margin-top: -110px;
       margin-left: 100px;
-      
    }
 
    .letras_nav{
