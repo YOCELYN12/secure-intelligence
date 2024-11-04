@@ -6,14 +6,19 @@ import Swal from 'sweetalert2'
 
 
 function Registro() {
-  const navegar = useNavigate()
 
+  // Hook para la navegación
+  const navegar = useNavigate()
+  
+    // Estados para almacenar los valores de entrada
   const [intName, setIntName] = useState("")
   const [intPassword, setIntPassword] = useState("")
   const [intEmail, setIntEmail] = useState("")
 
   const registrarse = async (e) => {
     e.preventDefault()
+
+    // Objeto con los datos del usuario
     let datos = {
       username: intName,
       password: intPassword,
@@ -22,11 +27,11 @@ function Registro() {
    
 
     
-
+    // Validación de espacios en blanco
     const validarEspacios = intName.trim() === "" || intPassword.trim() === "" || intEmail.trim() === "";
 
 
-
+    // Si hay campos vacíos, se muestra un mensaje de error
     if (validarEspacios) {
       Swal.fire({
         title: "Ups!",
@@ -36,9 +41,10 @@ function Registro() {
       return;
     }
 
-
+    // Realiza la petición para registrar el usuario
     const peticion = await PostUsuario(datos, '/registro')
-    
+     
+    // Manejo de la respuesta
     if (peticion) {
       Swal.fire({
         title: "Happy",
@@ -47,12 +53,6 @@ function Registro() {
       });
      
 
-    } else if (peticion.error) {
-      Swal.fire({
-        title: "Incorrect",
-        text: "Datos ingresados incorrectos",
-        icon: "error"
-      });
     }
   }
 
