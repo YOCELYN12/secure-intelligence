@@ -6,7 +6,7 @@ const ModalEditarTicket = ({ ticket, onClose }) => {
     const [nombre, setNombre] = useState(ticket.Nombre);
     const [descripcion, setDescripcion] = useState(ticket.Descripcion);
 
-    // console.log(ticket)
+    
 
     const editarTicket = async () => {
         const updatedTicket = {
@@ -14,7 +14,7 @@ const ModalEditarTicket = ({ ticket, onClose }) => {
             Descripcion: descripcion
         };
         const response = await Patch('/UpdateTicket/', updatedTicket, ticket.ID_Tickets);
-        console.log(response);
+       
         onClose();
     };
 

@@ -38,8 +38,7 @@ function Login() {
       
       const respuestaPost = await PostUsuario(usuario,'/login')
       
-      console.log(respuestaPost.super);
-      console.log(respuestaPost.token);
+
       
 
       crearCookie("cookie", respuestaPost.token,1)// nombre valor tiempo en Expirar
@@ -60,11 +59,11 @@ function Login() {
         });
       }
 
-      console.log("tatata")
+  
      
 
     } catch (error) {
-      console.log(error)
+     
     }
   }
 

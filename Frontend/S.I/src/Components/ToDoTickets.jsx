@@ -80,13 +80,13 @@ function ToDoTickets() {
         setTicksBusqueda(ticketsBusqueda)
         if (ticketsBusqueda.length > 0) {
             setEncontrado(true)
-            console.log(`estado del true ${encontrado}`);
+            
         }
         else {
             setEncontrado(false)
-            console.log(`estado del false ${encontrado}`);
+           
         }
-        console.log(ticksBusqueda);
+        
     }
 
     return (

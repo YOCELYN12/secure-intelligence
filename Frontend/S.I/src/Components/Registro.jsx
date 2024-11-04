@@ -19,7 +19,7 @@ function Registro() {
       password: intPassword,
       email: intEmail
     }
-    console.log(datos);
+   
 
     
 

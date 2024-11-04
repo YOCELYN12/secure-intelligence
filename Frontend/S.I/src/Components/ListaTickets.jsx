@@ -34,7 +34,7 @@ const ListaTickets = ({ ticketsAPI }) => {
             estado: !ticket.estado
         }
         const peticion = await Patch(`/UpdateTicket/${ticket.ID_Tickets}`, ticketActualizar)
-        console.log(peticion);
+       
 
     }
 
