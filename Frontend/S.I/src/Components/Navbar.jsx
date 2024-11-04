@@ -8,9 +8,10 @@ import { traerCookie } from '../Fetch/cookie';
 
 
 function Navbar() {
-
+  // Hook para la navegación
   const navegar = useNavigate()
-
+  
+  // Función para navegar a la página de cuentas
   const irpaginacuentas = async (e) => {
     e.preventDefault(
       navegar("/Cuentas")
@@ -18,30 +19,30 @@ function Navbar() {
   }
 
   return (
-    <nav className='navbar'>
+    <nav className='navbar'> {/* Contenedor principal de la barra de navegación */}
 
       <div>
-        <img className='logo' src="https://i.imgur.com/OzhReRY.png" alt="mmmm" />
+        <img className='logo' src="https://i.imgur.com/OzhReRY.png" alt="ups" /> {/* Logo de la aplicación */}
       </div>
 
-      <div className='div-nav' >
+      <div className='div-nav' > {/* Contenedor de los enlaces de navegación */}
 
         <a className='letras_nav' href="/">Servicios</a>
         <a className='letras_nav' href="/GenerarTickets">Soporte</a>
         <a className='letras_nav' href="/QuienesSomos">Quienes somos</a>
         <a className='letras_nav' href="/ServicioalCliente">Servicio al cliente</a>
-        {traerCookie('super') === 'true' && 
+        {traerCookie('super') === 'true' &&  // Verifica si el usuario tiene permisos de administrador
           <a className='letras_nav' href="/PaginaAdmin">Admin</a>
         }
 
       </div>
 
 
-      <div className='account'>
+      <div className='account'>  {/* Contenedor para la sección de cuenta */}
 
-        <button className='btn-account' onClick={irpaginacuentas} >
-          <IoPersonAdd className='icon-account' />
-          <p className='accot'>Account</p>
+        <button className='btn-account' onClick={irpaginacuentas} > {/* Botón para ir a la página de cuentas */}
+          <IoPersonAdd className='icon-account' /> {/* Icono de cuenta */}
+          <p className='accot'>Account</p>  {/* Texto del botón */}
         </button>
 
       </div>
