@@ -93,94 +93,18 @@
 }
 
 
-/* Pantallas pequeñas (hasta 768px) */
-@media (max-width: 768px) {
-    .fondo-page-ticket {
-        background-color: black;
-    }
-
-    .img {
-        width: 100%;
-        height: auto; /* Ajustar altura automáticamente */
-    }
-
-    .div-contenedor {
-        width: 90%; /* Aumentar el ancho en móviles */
-        left: 5%;
-        top: 45%; /* Ajustar la posición vertical */
-        height: auto; /* Ajustar la altura automáticamente */
-    }
-
-    .img-animado {
-        width: 80%; /* Reducir tamaño de imagen animada */
-        margin: 5% auto; /* Centrar horizontalmente */
-    }
-
-    .texto-apartado {
-        font-size: 24px; /* Reducir tamaño de texto */
-        letter-spacing: 5px; /* Ajustar el espaciado */
-        left: 30%; /* Ajustar la posición */
-    }
-
-    .contenedor-from {
-        width: 90%; /* Ampliar el contenedor del formulario */
-        margin-left: 5%;
-    }
-
-    .cont-nombre, .cont-apellido, .cont-correo, .cont-telefono, .cont-empresa, .conte-descripcion {
-        margin-top: 10px; /* Espaciado más pequeño */
-    }
-
-    .int-nombre, .int-apellido, .int-correo, .int-numero-telefono, .int-empresa, .int-descripcion {
-        width: 100%; /* Mantener el ancho completo */
-    }
-
-    .select-servicio {
-        width: 100%; /* Ampliar el select al ancho completo */
-    }
-
-    .cont-btn {
-        flex-direction: column; /* Cambiar a columna */
-        align-items: center; /* Centrar botones */
-        margin-top: 20px; /* Reducir margen superior */
-    }
-
-    .btn-cancelar, .btn-enviar {
-        width: 90%; /* Hacer botones más anchos */
-        margin: 5px 0; /* Espacio entre botones */
-    }
-}
-
-/* Pantallas muy pequeñas (hasta 480px) */
-@media (max-width: 480px) {
-    .texto-apartado {
-        font-size: 20px; /* Reducir aún más el tamaño de texto */
-        letter-spacing: 3px; /* Ajustar espaciado */
-        left: 25%; /* Ajustar la posición */
-    }
-
-    .img-animado {
-        width: 70%; /* Reducir el tamaño de la imagen animada */
-    }
-
-    .div-contenedor {
-        height: auto; /* Ajustar la altura automáticamente */
-        top: 40%; /* Ajustar la posición vertical */
-    }
-
-    .cont-btn {
-        margin-top: 10px; /* Espaciado más pequeño */
-    }
-}
 
 
-/* 
 @media (max-width:1268px){
     .img{
        width: 100%;
     }
     .div-contenedor {
-        width: calc(100% - 40px)
+        width: calc(91.2% - 20px)
+    }
+    .img-animado{
+        width: 30%;
+        margin-top: 10%;
     }
 }
 
@@ -192,6 +116,7 @@
     .fondo2{ 
         width: 100%;
     }
+    
 }
 
  
@@ -202,4 +127,18 @@
     .div-contenedor {
         width: calc(99% - 80px)
     }
-} */
+
+    .img-animado{
+        width: 30%;
+        margin-top: 18%;
+    }
+
+    .btn-cancelar, .btn-enviar {
+        width: 190px;
+        height: 50px;
+        color: aliceblue;
+        border: none;
+    }
+
+  
+}
