@@ -8,7 +8,7 @@ class Tipo_servicio (models.Model):
     Descripcion_servicio = models.TextField()  #Descripcion del servicio 
     
     def __str__(self):
-        return self.Nombre  #Retorno el nombre para que se muestre en vez del ID
+        return self.Nombre  #Retorna el nombre para que se muestre en vez del ID
     
   
 #Modelo para los tickets

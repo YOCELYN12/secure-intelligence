@@ -10,48 +10,48 @@ import ModalServicios from './ModalServicios';
 function ToDoTickets() {
 
     const [tick, setTick] = useState([])  //constante que guarda los tickets guardados en la API 
-
     const [tickAbiertos, setTickAbiertos] = useState([]) //constante que guarda los tickets abiertos  de la API 
-
     const [TicketsTerminados, setTicketsTerminados] = useState([])//constante que trae de la API los tickets cerrados, los que ya se atendieron
-    const [OpenCerrados, setOpenCerrados] = useState(false)
-    
-    const [open, setOpen] = useState(true);
-    const [ticksBusqueda, setTicksBusqueda] = useState([])
-    const [isModalOpen, setIsModalOpen] = useState(false)
-    const [encontrado, setEncontrado] = useState(false)
+    const [TickCerrados, setTickCerrados] = useState(false)  // constante que indica si se deben mostrar los tickets cerrados
+    const [open, setOpen] = useState(true); //constante para mostrar los tickets abiertos
+    const [ticksBusqueda, setTicksBusqueda] = useState([]) //constnte que trae de la API los datos solicitados por la barra de busqueda
+    const [isModalOpen, setIsModalOpen] = useState(false)  //Controla la apertura del modal
+    const [encontrado, setEncontrado] = useState(false) //constante para el renderizado condicional que se activa al dar click
+    const [intBarra, setIntBarra] = useState() //guarda los datos ingresados por el usuario 
 
-    const [intBarra, setIntBarra] = useState()
-
-
+     // Función para abrir el modal
     const abrirModal = () => {
         setIsModalOpen(true);
     };
-
+    
+    // Función para cerrar el modal
     const cerrarModal = () => {
         setIsModalOpen(false);
     };
 
+    // Función para mostrar tickets cerrados
     const TicketsCerrados = () => {
-        setOpenCerrados(true)
+        setTickCerrados(true)
         setOpen(false)
         setEncontrado(false)
     }
-
+    
+    // Función para mostrar tickets abiertos
     const TicketsAbiertos = () => {
-        setOpenCerrados(false)
+        setTickCerrados(false)
         setOpen(true)
     }
 
-
+    // Efecto que se ejecuta al montar el componente o al cambiar el estado de tick
     useEffect(() => {
-
+         // Función asíncrona para obtener tickets de la API
         const obtenerTicket = async () => {
             const GetTickets = await Get("/postTicket/")
             setTick(GetTickets)
         }
         obtenerTicket()
 
+         // Filtra los tickets abiertos y actualiza el estado
         const obtenerTicketAbiertos = async () => {
             const ticketsxAtender = tick.filter((estadoTicket) => estadoTicket.estado === true);
             setTickAbiertos(ticketsxAtender)
@@ -59,21 +59,22 @@ function ToDoTickets() {
         }
         obtenerTicketAbiertos()
 
-        // CREAR LA LOGICA PARA LOS FALSOS
+         // Filtra los tickets cerrados y actualiza el estado
         const obtenerTicketTerminados = async () => {
             const ticketsAtendidos = tick.filter((estadoTicket => estadoTicket.estado === false));
             setTicketsTerminados(ticketsAtendidos)
         }
         obtenerTicketTerminados()
-
-        // CREAR LA LOGICA PARA LOS FALSOS
     }, [tick])
+    
 
+
+    // Efecto que se ejecuta al cambiar el estado de intBarra
     useEffect(() => {
         traerDatosBarra()
     }, [intBarra])
 
-
+    // Función asíncrona que busca tickets basados en el valor de intBarra
     const traerDatosBarra = async () => {
         const ticketsBusqueda = await getBusqueda(intBarra)
         setTicksBusqueda(ticketsBusqueda)
@@ -92,13 +93,16 @@ function ToDoTickets() {
         <div className='fondo-tickets'>
 
 
-            {/* <button className='btn-crear-ticket' >Crear Ticket</button> */}
+             
 
+            {/* Barra de búsqueda de tickets */}
             <div className='container-logo'>
                 <button onClick={traerDatosBarra} className='icon-buscar-tickets' ><FaMagnifyingGlass /></button>
                 <input className='int-barra-ticket' type="text" placeholder='Buscar Ticket' value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
             </div>
+            
 
+            {/* Menú de opciones */}
             <div className='contenedor-menu-tickets'>
                 <div className='opciones-menu'>
                     <button onClick={abrirModal} className='menu'><h6 style={{ fontSize: "120%" }}> ➕ Agregar servicios</h6>
@@ -121,11 +125,11 @@ function ToDoTickets() {
 
 
             <div>
-                {/* Mostrar el renderizado */}
-                {open && OpenCerrados === false && encontrado === false &&
+                 {/* Renderizado de la lista de tickets */}
+                {open && TickCerrados === false && encontrado === false &&
                     <ListaTickets ticketsAPI={tickAbiertos} />
                 }
-                {OpenCerrados && encontrado === false &&
+                {TickCerrados && encontrado === false &&
                     <ListaTickets ticketsAPI={TicketsTerminados} />
 
                 }

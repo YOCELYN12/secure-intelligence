@@ -9,7 +9,7 @@ import PaginaPrincipal from './Pages/PaginaPrincipal.jsx'
 import GenerarTickets from './Pages/GenerarTickets.jsx';
 import QuienesSomos from './Pages/QuienesSomos.jsx';
 import ServicioalCliente from './Pages/ServicioalCliente.jsx';
-// import RutasPrivadas from './RutasPrivadas.jsx';
+import RutasPrivadas from './RutasPrivadas.jsx';
 
 
 
@@ -23,13 +23,9 @@ const router = createBrowserRouter([
     path:"/Cuentas",
     element: <Cuentas/>
   },
-  // {
-  //   path:"/PaginaAdmin",
-  //   element: <RutasPrivadas> <PaginaAdmin/> </RutasPrivadas>
-  // },
   {
     path:"/PaginaAdmin",
-    element:  <PaginaAdmin/> 
+    element: <RutasPrivadas> <PaginaAdmin/> </RutasPrivadas>
   },
   { 
     path:"/GenerarTickets",

@@ -10,7 +10,7 @@ from .models import Tickets
 from .serializers import TicketsSerializer
 from rest_framework.generics import DestroyAPIView
 from rest_framework.generics import UpdateAPIView
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.filters import SearchFilter
 
 # Create your views here.b 
@@ -19,7 +19,6 @@ from rest_framework.filters import SearchFilter
 class ServicioView(generics.ListCreateAPIView):
     queryset = Tipo_servicio.objects.all()  #Consulta para obtener los tipos de servicios 
     serializer_class = ListarCrearSerializer  #Serializa los datos
-    # permission_classes = [IsAuthenticated]
     
     
 # Vista encargada de listar y crear los tickets generados

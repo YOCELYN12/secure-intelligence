@@ -1,7 +1,7 @@
 import { traerCookie } from "./Fetch/cookie"
 
 const administrador=()=>{
-    const valorAdmin = traerCookie('administrador')
+    const valorAdmin = traerCookie('super')
     if(valorAdmin == 'true'){
         return true
     }else{

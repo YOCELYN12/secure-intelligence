@@ -82,7 +82,7 @@ function Registro() {
               <input style={{ backgroundColor: 'transparent', border: '3px solid blue' }} className='input_registro' type="text" value={intEmail} onChange={(e) => setIntEmail(e.target.value)} required />
             </div>
 
-            <p className='letras_footer'>Already have an account? <a href="Login"> </a></p>
+            <p className='letras_footer'>Already have an account?</p>
 
             <button className='button_registro' type="submit" onClick={registrarse}>Registrarse</button>
           </form>

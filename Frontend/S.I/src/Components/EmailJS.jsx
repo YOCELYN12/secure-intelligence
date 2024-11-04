@@ -13,14 +13,7 @@ function EmailJS() {
         message: '',
     });
 
-    const reiniciarfromServicio = () => {
-        formData.name('');
-        formData.email('');
-        formData.phone('');
-        formData.company('');
-        formData.message ('');
-    }
-
+   
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({

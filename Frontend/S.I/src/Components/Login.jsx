@@ -43,6 +43,8 @@ function Login() {
 
       crearCookie("cookie", respuestaPost.token,1)// nombre valor tiempo en Expirar
       
+      crearCookie("super", respuestaPost.super,1)// nombre valor tiempo en Expirar
+      
       if (respuestaPost.success){
         Swal.fire({
           title: "Good job!",
