@@ -19,6 +19,7 @@
     border-radius: 30px;
 }
 
+
 .img-ser{
     max-width: 20%;
     margin-left: 12%;
@@ -43,7 +44,7 @@
        width: 100%;
     }
     .div-servicio-cliente{
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -53,7 +54,11 @@
     }
 
     .div-servicio-cliente{ 
-        width: 100%;
+        width: 75%;
+    }
+
+    .calificacion{
+        margin-left: 50%;
     }
 }
 
@@ -62,7 +67,7 @@
         width: 100%;
     }
     .div-servicio-cliente{
-        width: 100%;
+        width: 70%;
     }
 }
 

@@ -100,28 +100,21 @@
     background-color: rgba(0, 0, 0, 0.466) !important; 
     position: relative;
     left: 45%;
-    top: 5%;
-    width: 40%;
+    top: 20px;
+    width: 45%;
     border: none !important;
-    
-
+    height: 60%;
+    border-radius: 20px;
 }
 
-.btn-buscar-tickets{
-    display: flex;
-    border-radius: 10px;
-    height: 50px;
-    border-radius: none;
-    position: relative;
-    left: 120%;
-    top:20px;
-}
+
  
 .icon-buscar-tickets{
     background-color: transparent;
     border:none;
     position: relative;
-    left: 83%;
+    left: 88%;
+    top: 30%;
     z-index: 100;
     color: rgba(255, 255, 255, 0.688);
 }

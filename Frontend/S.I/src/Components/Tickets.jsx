@@ -7,9 +7,6 @@ const Tickets = ({ Nombre, Apellido, Correo, ServicioSeleccionado, Numero_de_tel
     return (
         <div>
 
-
-
-
             <div className='cont-cart-ticket'>
 
                 <div className='card-ticket'>

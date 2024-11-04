@@ -13,6 +13,14 @@ function EmailJS() {
         message: '',
     });
 
+    const reiniciarfromServicio = () => {
+        formData.name('');
+        formData.email('');
+        formData.phone('');
+        formData.company('');
+        formData.message ('');
+    }
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -24,13 +32,11 @@ function EmailJS() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const templateParams = {
-            from_name: formData.name,
-            from_email: formData.email,
-            phone: formData.phone,
-            company: formData.company,
-            message: formData.message,
-        };
+
+        
+
+       
+
 
         emailjs.send('service_hsyfrc4', 'template_1jou0wk', templateParams, 'aAFEAp-nZ-DPo89L6')
             .then((response) => {
@@ -40,6 +46,9 @@ function EmailJS() {
                 console.error('Error al enviar el correo:', error);
             });
     };
+
+
+   
 
     return (
         <div>
@@ -56,7 +65,7 @@ function EmailJS() {
 
 
                         <label >
-                            <p>Nombre:</p>
+                            <p className='names' >Nombre:</p>
                             <input className='int' type="text" name="name" value={formData.name} onChange={handleChange} required />
                         </label>
                         <br />
@@ -65,9 +74,9 @@ function EmailJS() {
 
                         <label>
 
-                            <p> Email: </p>
+                            <p className='names'> Email: </p>
 
-                            <input  className='int' type="email" name="email" value={formData.email} onChange={handleChange} required />
+                            <input className='int' type="email" name="email" value={formData.email} onChange={handleChange} required />
                         </label>
 
 
@@ -76,33 +85,35 @@ function EmailJS() {
 
 
                         <label>
-                            <p>Teléfono:  </p>
+                            <p className='names'>Teléfono:  </p>
 
                             <input className='int' type="text" name="phone" value={formData.phone} onChange={handleChange} required />
                         </label>
                         <br />
                         <br />
                         <label>
-                            <p>Empresa:  </p>
+                            <p className='names'>Empresa:  </p>
 
                             <input className='int' type="text" name="company" value={formData.company} onChange={handleChange} required />
                         </label>
 
+
+                        <br />
+
+
+                        <label>
+                            <br />
+                            <p className='names'> Mensaje:</p>
+                            <input className='int' name="message" value={formData.message} onChange={handleChange} required />
+                        </label>
                     </div>
 
-                    
-                    <br />
-                    
-
-                    <label className='from-mensaje'>
-                        <p> Mensaje:</p>
-                        <textarea className='int' name="message" value={formData.message} onChange={handleChange} required />
-                    </label>
-
 
                     <br />
-                    <button type="submit">Enviar</button>
-
+                    <div className='btn-servicio-cliente'>
+                        
+                        <button className='btn-enviar-servicio' type="submit">Enviar</button>
+                    </div>
 
 
                 </div>

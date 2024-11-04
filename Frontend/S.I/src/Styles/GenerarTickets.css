@@ -1,5 +1,6 @@
-.fondo-page-ticket {
+ .fondo-page-ticket {
     background-color: black;
+    width: 100%;
 }
 
 .img {
@@ -7,7 +8,7 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    width: 1513px;
+    width: auto;
     height: 800px; 
 }
 
@@ -96,9 +97,7 @@
 
 
 @media (max-width:1268px){
-    .img{
-       width: 100%;
-    }
+    
     .div-contenedor {
         width: calc(91.2% - 20px)
     }
@@ -109,10 +108,6 @@
 }
 
 @media (max-width:1068px){
-    .img{
-        width: 100%;
-    }
-
     .fondo2{ 
         width: 100%;
     }
@@ -121,9 +116,7 @@
 
  
 @media (max-width: 768px) {
-    .img{
-        width: 100%;
-    }
+  
     .div-contenedor {
         width: calc(99% - 80px)
     }
@@ -141,4 +134,17 @@
     }
 
   
+}
+
+@media (max-width:390px) {
+    .div-contenedor {
+        width: calc(200% - 20px);
+        margin-top: -20%;
+       
+    }
+
+    .img-animado{
+        width: 30%;
+        margin-top: 10%;
+    }
 }

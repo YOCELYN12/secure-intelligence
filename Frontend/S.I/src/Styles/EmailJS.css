@@ -1,25 +1,17 @@
-.from-correo-nombre{
-    display: flex;
-    justify-content: center;
-    
-}
-
 .from-fondo{
     margin-left: 25%;
-    margin-top: 10%;
+    margin-top: 6%;
     width: 50%;
-    height: 800px;
+    height: 900px;
     border: 1px solid rgb(104, 103, 103);
     background-color: rgb(19, 19, 19);
-    /* background: linear-gradient(to top, rgb(5, 6, 85) 10%, rgba(3, 3, 69, 0.991) 50%, rgb(0, 0, 0) 100%); */
 }
 
 
 .from{
     color: white;
     margin-left: 18%;
-    margin-top: 15%;
-    
+    margin-top: 10%;
 }
 
 .int{
@@ -28,10 +20,81 @@
     border-radius: 20px;
 }
 
-
-
-.from-mensaje{
-   color: white;
-   margin-left: 18%;
-   width: 25%;
+.btn-servicio-cliente{
+    display: flex;
+    justify-content: center;
 }
+
+.btn-enviar-servicio{
+   background-color: rgb(41, 226, 41);
+   width: 50%;
+   height: 6vh;
+   border-radius: 50PX;
+}
+
+
+
+
+@media (max-width:1268px){
+    
+    .from-fondo{
+        width: calc(70% - 30px)
+    }
+    .int{
+        width: 200%;
+        margin-top: 10%;
+    }
+
+    .btn-servicio-cliente{
+        width: 70%;
+        margin-left: 4%;
+    }
+
+
+}
+
+
+ 
+@media (max-width: 768px) {
+  
+    .from-fondo{
+        width: calc(70% - 30px);
+        
+    }
+    .int{
+        width: 200%;
+        margin-top: 10%;
+        margin-left: -25%;
+    }
+
+    .btn-servicio-cliente{
+        margin-left: 18%;
+    }
+    
+    .names{
+      margin-left: -60px;
+    }
+
+  
+}
+
+@media (max-width:390px) {
+    .from-fondo{
+        width: calc(70% - 30px);
+        background-color: aqua;
+    }
+    .int{
+        width: 200%;
+        margin-top: 10%;
+        margin-left: -15%;
+    }
+
+    .btn-servicio-cliente{
+        margin-left: -10%;
+    }
+    
+    .names{
+      margin-left: -40px;
+    }
+}
+

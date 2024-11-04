@@ -24,7 +24,6 @@ function ToDoTickets() {
     const [intBarra, setIntBarra] = useState()
 
 
-
     const abrirModal = () => {
         setIsModalOpen(true);
     };
@@ -93,10 +92,9 @@ function ToDoTickets() {
         <div className='fondo-tickets'>
 
 
-            <button className='btn-crear-ticket' >Crear Ticket</button>
+            {/* <button className='btn-crear-ticket' >Crear Ticket</button> */}
 
             <div className='container-logo'>
-
                 <button onClick={traerDatosBarra} className='icon-buscar-tickets' ><FaMagnifyingGlass /></button>
                 <input className='int-barra-ticket' type="text" placeholder='Buscar Ticket' value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
             </div>
@@ -122,7 +120,7 @@ function ToDoTickets() {
 
 
 
-            <div className="cont-tickets">
+            <div>
                 {/* Mostrar el renderizado */}
                 {open && OpenCerrados === false && encontrado === false &&
                     <ListaTickets ticketsAPI={tickAbiertos} />

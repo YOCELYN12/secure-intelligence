@@ -1,7 +1,7 @@
-.cont-cart-ticket {
+.cont-cart-ticket{
     position: relative;
     top: -200%;
-    left: 100%;
+    left: 80%;
     border: 20px black;
     background-color: black;
     width: auto;
@@ -41,6 +41,12 @@
    margin-left: 16%;
    
 }
+
+
+    
+   
+
+
 
 
 
