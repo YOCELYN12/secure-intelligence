@@ -1,0 +1,70 @@
+.div-precios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.conte-publicidad{
+    position: relative;
+    left: 40%;
+    width: 18rem;
+    background-color: rgba(1, 1, 1, 0.4);
+    margin-top:-5%;
+    padding:30px;
+    color: white;
+}
+
+.letras{
+    color: rgb(235, 191, 14); 
+}
+
+.iconos{
+    display: flex;
+    margin:15px;
+}
+.texto{
+    margin-left: 20px;
+    color: white !important;
+}
+
+.color-iconos{
+    color:rgb(235, 191, 14) ;
+}
+
+.mover-card{
+    display: flex;
+}
+
+@media (max-width:1268px){
+    .conte-publicidad{
+       width: 30%;
+    }
+    .fondo2{
+        width: 100%;
+    }
+}
+
+@media (max-width:1024px){
+    .conte-publicidad{
+       margin-left: -280px;
+       margin-top: 30%;
+       width: 50%;
+    }
+
+    .fondo2{ 
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .conte-publicidad{
+        margin-top: 45%;
+    }
+    .fondo2{
+        width: 100%;
+     }
+}
+
+
+

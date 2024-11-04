@@ -1,0 +1,124 @@
+.navbar {
+   display: flex;
+   background: transparent;
+   backdrop-filter: blur(20px);
+   border: 1px solid white;
+   left: 18px;
+   border-radius: 50px;
+   margin-top: -10px;
+   width: calc(100% - 40px);
+   font-size: 18px;
+}
+
+.logo {
+   width: 20%;
+}
+
+
+.accot{
+   margin-top: 12px;
+   padding: 10px 20px;
+}
+
+
+.btn-account{
+   display: flex;
+   align-items: center;
+   border-radius: 15px;
+   padding: 8px 20px; 
+   margin-right: 30px;
+   background: transparent;
+   backdrop-filter: blur(20px);
+   border: 1px solid white;
+   color: blue;
+   height: 60px;
+}
+
+.letras_nav{
+   text-decoration: none;
+   padding:10px 30px;
+}
+
+@media (max-width:1268px){
+   .navbar{
+      margin-left:20px;
+      margin-top: -10px;
+      width: calc(100% - 40px);
+      height: calc(150px - 40px);
+   }
+
+   .account{
+      margin-top: -110px;
+      margin-left: 82%;
+   }
+
+   .div-nav{
+      margin-top: -120px;
+      margin-left: 220px;
+   }
+}
+
+@media (max-width:1024px){
+   .navbar{
+      margin-left:10px;
+      margin-top: -10px;
+      width: calc(100% - 30px);
+   }
+   
+   .btn-account{
+      margin-top: 2px;
+      margin-left:8%;
+      border: none;
+   }
+
+   .div-nav{
+      display: flex; /* Activa Flexbox */
+      flex-direction: row; /* Alinea en una fila */
+      margin-top: -110px;
+      margin-left: 120px;
+   }
+
+   .letras_nav{
+      margin-right:-50px;
+   }
+}
+
+@media (max-width: 768px) {
+   .navbar{
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: -10px;
+    width: calc(100% - 30px);
+   }
+
+   .btn-account{
+      margin-top: 2px;
+      margin-left:20%;
+      border: none;
+   }
+
+   .icon-account{
+      font-size: 20px;
+   }
+
+   .accot{
+      color: transparent;
+   }
+
+   .div-nav{
+      display: flex;
+      flex-direction: row; 
+      margin-top: -110px;
+      margin-left: 100px;
+   }
+
+   .letras_nav{
+      margin-right:-50px;
+   }
+
+}
+
+
+
+
+

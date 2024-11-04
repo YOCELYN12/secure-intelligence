@@ -1,0 +1,43 @@
+.cont1{
+    transform: rotate(20deg);    
+    margin-left: 80px;
+    margin-right: 160ic;
+
+}
+.contenedor{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.232) 0%, rgba(2, 2, 53, 0.473) 50%, rgba(0, 0, 0, 0.078) 100%);
+    width:400px ;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}   
+
+
+.letras-publicidad{
+    transform: rotate(-20deg); 
+    color: azure;
+}
+
+
+
+@media (max-width:1068px){
+    .cont1{
+        margin-top: 10%;
+        width: 5%;
+        height: 5%;
+    }
+}
+
+ 
+@media (max-width: 768px) {
+    .cont1{
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 5%;
+        height: 5%;
+    }
+
+    
+}

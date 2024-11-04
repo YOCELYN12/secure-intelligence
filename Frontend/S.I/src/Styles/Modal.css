@@ -1,0 +1,8 @@
+/* Modal.css */
+.modal.show {
+    transform: translateY(100vh);
+}
+
+.modal.hide {
+    transform: translateY(100%);
+}

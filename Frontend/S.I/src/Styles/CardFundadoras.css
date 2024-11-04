@@ -1,0 +1,67 @@
+.card{
+   background-color: rgba(0, 0, 0, 0.296);
+}
+
+.contenedor-fundadoras{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -400px;
+}
+
+.letras-fundadora{
+    color: aliceblue;
+    display: flex;
+    margin-right: 90px;
+    margin-top: 20px;
+}
+
+.img-Yennifer{
+    width: 50px; 
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 180px;
+}
+
+.letras-Yennifer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    color: aliceblue;
+}
+
+.pentester{
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-right: 30px;
+    color: white;
+}
+
+
+@media (max-width:1268px){
+    .contenedor-fundadoras{
+       margin-left:65%;
+       margin-top: -30%;
+       width: 30%;
+    }
+ 
+   
+}
+
+@media (max-width:1024px){
+    .contenedor-fundadoras{
+        margin-left:55%;
+        margin-top: -68%;
+        width: 40%;
+    }
+}
+
+ 
+@media (max-width: 768px) {
+    .contenedor-fundadoras{
+        margin-left:47%;
+        margin-top: -60%;
+        width: 50%;
+    }
+}

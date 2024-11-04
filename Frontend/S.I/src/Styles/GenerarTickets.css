@@ -1,0 +1,150 @@
+.fondo-page-ticket {
+    background-color: black;
+    width: 100%;
+}
+
+.img {
+    background-image: url(../IMG/FondoPaginaTickets.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: auto;
+    height: 800px; 
+}
+
+.div-contenedor {
+    width: 1150px;
+    height: 400px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin-left: 10px;
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    border-radius: 30px;
+}
+
+.img-animado {
+    width: 300px;
+    margin-top: 5%;
+}
+
+.texto-apartado {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 10px;
+    font-family: 'Lucida Sans', sans-serif; /* Simplificado */
+}
+
+.letras-bienvenido {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.contenedor-from {
+    margin-top: -10%;
+    color: white;
+    width: 80%;
+    height: 50%;
+    background: linear-gradient(to top, rgb(3, 3, 48) 10%, rgba(3, 3, 69, 0.991) 50%, rgb(0, 0, 0) 100%);
+    margin-left: 10%;
+    
+}
+
+.centrar-from{
+    margin-left: 20%;
+}
+
+.cont-nombre, .cont-apellido, .cont-correo, .cont-telefono, .cont-empresa, .conte-descripcion {
+    position: relative;
+    margin-top: 15px; /* Espaciado uniforme */
+}
+
+.int-nombre, .int-apellido, .int-correo, .int-numero-telefono, .int-empresa, .int-descripcion, .select-servicio  {
+    width: 80%; /* Usar ancho completo */
+    border-radius: 8px;
+    padding: 10px; /* Espaciado interno */
+}
+
+.cont-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 140px;
+    margin-left: -21%;
+}
+
+.btn-cancelar, .btn-enviar {
+    width: 300px;
+    height: 50px;
+    color: aliceblue;
+    border: none;
+}
+
+.btn-cancelar {
+    background-color: rgba(204, 6, 6, 0.932);
+}
+
+.btn-enviar {
+    background-color: rgb(60, 222, 16);
+}
+
+
+
+
+@media (max-width:1268px){
+    
+    .div-contenedor {
+        width: calc(91.2% - 20px)
+    }
+    .img-animado{
+        width: 30%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:1068px){
+    .fondo2{ 
+        width: 100%;
+    }
+    
+}
+
+ 
+@media (max-width: 768px) {
+  
+    .div-contenedor {
+        width: calc(99% - 80px)
+    }
+
+    .img-animado{
+        width: 30%;
+        margin-top: 18%;
+    }
+
+    .btn-cancelar, .btn-enviar {
+        width: 190px;
+        height: 50px;
+        color: aliceblue;
+        border: none;
+    }
+
+  
+}
+
+@media (max-width:390px) {
+    .div-contenedor {
+        width: calc(200% - 20px);
+        margin-top: -20%;
+       
+    }
+
+    .img-animado{
+        width: 30%;
+        margin-top: 10%;
+    }
+}

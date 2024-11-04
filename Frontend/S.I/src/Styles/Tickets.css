@@ -1,0 +1,52 @@
+.cont-cart-ticket{
+    position: relative;
+    top: -200%;
+    left: 80%;
+    border: 20px black;
+    background-color: black;
+    width: auto;
+    border-radius: 20px;
+} 
+
+.cont-cart-ticket :hover{
+    background-color: rgba(0, 0, 0, 0.784);
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.742),  /* Sombra negra */
+    0 0 20px rgb(6, 2, 60); 
+    
+}
+ 
+.card-ticket {
+    flex-wrap: wrap; 
+    color: white;
+    padding: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.742) 50%;
+} 
+
+.cont-Hijo-ticket{
+    display: flex;
+    justify-items: center;
+    gap: 30px;
+    color: #fefefe;
+}
+
+.cont-ticket-descripcion{
+    color: #fefefe;
+}
+
+.btn-tickets{
+   background-color: transparent !important;
+   color: white;
+   border: none;
+   margin-left: 16%;
+   
+}
+
+
+    
+   
+
+
+
+
+

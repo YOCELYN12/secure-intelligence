@@ -1,0 +1,156 @@
+.fondo-quienes-somos{
+    background-color: black;
+    color: white;
+}
+ 
+.img-fondos{
+    background-image: url(https://i.imgur.com/m6FTePk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1512px;
+    height:800px;
+}
+ 
+.img-grupo-trabajo{
+    margin-top: 130px;
+    margin-left: 50px;
+    max-width: 700px;
+}
+ 
+.cont-palabras{
+    width: 600px;
+    height: 250px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin-left: 490px;
+    position: relative;
+    top: 280px;
+    border-radius: 80px; 
+}
+ 
+.h1{
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+}
+ 
+.palabras-quienesSomos {
+    width: 500px;             
+    margin: 0 auto;          
+    padding: 20px;           
+    position: relative;       
+    right: 0;                
+    font-size: 20px;
+    text-align:center;
+    line-height: 50px;
+}
+ 
+.palabras-quienesSomos {
+    position: absolute;       
+    right: 9%;                 
+    top: 150%;                 
+    transform: translateY(-50%); 
+    background: linear-gradient(to top, rgb(2, 3, 27) 10%, rgba(3, 3, 70, 0.938) 50%, rgb(0, 0, 0) 100%);
+    border-radius: 50px;
+}
+ 
+.imge-clarlas{
+    max-width: 700px;
+    margin-left: 850px;
+    margin-top: 50px;
+}
+ 
+.letras-clarlas{
+    width: 500px;             
+    margin: 0 auto;          
+    padding: 20px;           
+    position: relative;       
+    right: 0;                
+    font-size: 20px;
+    text-align:center;
+    line-height: 50px;
+}
+ 
+.letras-clarlas{
+    position: absolute;       
+    left: -600px;              
+    top: 158%;                 
+    transform: translateY(50%); 
+    background: linear-gradient(to top, rgb(2, 3, 27) 10%, rgba(3, 3, 70, 0.938) 50%, rgb(0, 0, 0) 100%);
+    border-radius: 50px;
+}
+ 
+.mapa{
+    position: relative;
+    top: 80px;
+    margin-left: 5%;
+ 
+}
+ 
+.Ubicacion{
+    width: 500px;             
+    margin: 0 auto;          
+    padding: 20px;           
+    position: relative;       
+    right: 0;                
+    font-size: 20px;
+    text-align:center;
+    line-height: 50px;
+}
+ 
+.Ubicacion{
+    position: absolute;       
+    left: 60%;              
+    top: 250%;                
+    transform: translateY(50%); 
+    background: linear-gradient(to top, rgb(2, 3, 27) 10%, rgba(3, 3, 70, 0.938) 50%, rgb(0, 0, 0) 100%);
+    border-radius: 50px;
+}
+ 
+.cont-footer{
+    margin-top: -40%;
+}
+ 
+.capa-cont{
+    background-color: rgba(0, 0, 0, 0.711);
+    width: 100%;
+    height: 570px;
+}
+ 
+.capa-cont:hover{
+    background-image: url("https://i.imgur.com/m6FTePk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ 
+@media (max-width:1268px){
+    .img-fondos{
+    width: 100%;
+    }
+    .fondo2{
+        width: 100%;
+    }
+}
+ 
+@media (max-width:1068px){
+    .img-fondos{
+        width: 100%;
+    }
+ 
+    .fondo2{ 
+        width: 100%;
+    }
+}
+ 
+@media (max-width: 768px) {
+    .img-fondos{
+        width: 100%;
+    }
+    .fondo2{
+       width: 100%;
+    }
+}
+ 
+ 

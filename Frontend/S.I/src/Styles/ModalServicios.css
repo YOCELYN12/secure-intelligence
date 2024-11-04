@@ -1,0 +1,86 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.855); 
+    display: flex;
+    justify-content: center;
+    z-index: 100; 
+}
+
+.cont-tipo-servicios {
+    width: 40%;
+    height: 80%;
+    background-color: black;
+    border-radius: 8px; 
+    padding: 20px; 
+    position: absolute;
+    top: 10%;
+}
+
+.letras-servicio {
+    color: rgb(251, 251, 251);
+    display: flex; 
+    font-size: 18px;
+}
+
+.inputs{
+    display: flex; 
+    flex-direction: column; 
+    text-shadow: 2px 2px 4px blue;
+}
+
+.input{
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-color: white;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.742),  /* Sombra negra */
+    0 0 20px rgb(6, 2, 60);  
+}
+
+
+.centrar-contenedor{
+   position: absolute;
+   top: 20%;
+   width: 90%;
+   padding: auto;
+}
+
+.btn-servicios{
+    position: relative;
+    top: 59vh;
+    left: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-enviar-tipo-servicio{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(9, 4, 142);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+}
+
+.btn-cancelar-tipo-servicio{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 8, 8);
+    color: white;
+    border: none;
+}
+
+.h5{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: white;
+    text-shadow: 2px 2px 4px blue;
+}
