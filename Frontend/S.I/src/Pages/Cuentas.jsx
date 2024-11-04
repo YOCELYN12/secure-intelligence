@@ -48,12 +48,8 @@ function Cuentas() {
               <button style={{ border: "none", background: "transparent" }} onClick={LoginORegistro}  ><MdKeyboardDoubleArrowRight /></button>
             </div>
           </div>
-
         </div>
       </div>
-
-      
-
     </div>
   )
 }

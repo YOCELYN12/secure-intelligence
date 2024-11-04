@@ -4,19 +4,18 @@ import { IoPersonAdd } from "react-icons/io5";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
+import { traerCookie } from '../Fetch/cookie';
 
 
 function Navbar() {
 
   const navegar = useNavigate()
 
-
   const irpaginacuentas = async (e) => {
     e.preventDefault(
       navegar("/Cuentas")
     )
   }
-
 
   return (
     <nav className='navbar'>
@@ -31,6 +30,9 @@ function Navbar() {
         <a className='letras_nav' href="/GenerarTickets">Soporte</a>
         <a className='letras_nav' href="/QuienesSomos">Quienes somos</a>
         <a className='letras_nav' href="/ServicioalCliente">Servicio al cliente</a>
+        {traerCookie('super') === 'true' && 
+          <a className='letras_nav' href="/PaginaAdmin">Admin</a>
+        }
 
       </div>
 
@@ -43,10 +45,6 @@ function Navbar() {
         </button>
 
       </div>
-
-
-
-
 
     </nav>
   )
