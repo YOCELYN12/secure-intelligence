@@ -80,27 +80,20 @@ function ToDoTickets() {
         setTicksBusqueda(ticketsBusqueda)
         if (ticketsBusqueda.length > 0) {
             setEncontrado(true)
-            
         }
         else {
             setEncontrado(false)
-           
         }
-        
     }
 
     return (
         <div className='fondo-tickets'>
-
-
-             
 
             {/* Barra de búsqueda de tickets */}
             <div className='container-logo'>
                 <button onClick={traerDatosBarra} className='icon-buscar-tickets' ><FaMagnifyingGlass /></button>
                 <input className='int-barra-ticket' type="text" placeholder='Buscar Ticket' value={intBarra} onChange={(e) => setIntBarra(e.target.value)} />
             </div>
-            
 
             {/* Menú de opciones */}
             <div className='contenedor-menu-tickets'>
@@ -116,23 +109,19 @@ function ToDoTickets() {
                     <button onClick={TicketsAbiertos} className='menu'>
                         <h6 style={{ fontSize: "120%" }}> ➕ Tickets Abiertos</h6>
                     </button>
-
-
                 </div>
-
             </div>
 
-
-
             <div>
-                 {/* Renderizado de la lista de tickets */}
+                {/* Renderizado de la lista de tickets */}
                 {open && TickCerrados === false && encontrado === false &&
                     <ListaTickets ticketsAPI={tickAbiertos} />
                 }
+
                 {TickCerrados && encontrado === false &&
                     <ListaTickets ticketsAPI={TicketsTerminados} />
-
                 }
+
                 {encontrado &&
                     <ListaTickets ticketsAPI={ticksBusqueda} />
                 }
