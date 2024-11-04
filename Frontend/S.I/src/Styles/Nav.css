@@ -119,41 +119,6 @@
 }
 
 
-/* @media (max-width: 480px) {
-   .navbar{
-      margin-left:20px;
-      margin-right: 100px;
-      margin-top: -10px;
-      width: calc(100% - 40px);
-      background-color: rgb(231, 239, 0) !important;
-     }
-  
-   .btn-account{
-      margin-top: 2px;
-      margin-left:50%;
-      border: none;
-   }
-  
-   .icon-account{
-      font-size: 20px;
-   }
-  
-   .accot{
-      color: transparent;
-   }
-  
-   .div-nav{
-        display: flex; 
-        flex-direction: row; 
-        margin-top: -110px;
-        margin-left: 100px;
-        
-     }
-  
-     .letras_nav{
-        margin-right:-50px;
-     }
-}
-  */
+
 
 

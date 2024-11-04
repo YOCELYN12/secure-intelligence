@@ -82,20 +82,15 @@
 }
 
 
-.img-posicion{
+.posicion1{
     margin-left: 120%;
     margin-top: -25%;
     width: 70%;
 }
 
-.img-posicion:hover{
+.posicion1:hover{
     width: 80%;
 }
-
-img:hover{
-    width: 120%;
-}
-
 
 
 @media (max-width:1268px){
