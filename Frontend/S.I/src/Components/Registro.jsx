@@ -29,7 +29,7 @@ function Registro() {
 
     if (validarEspacios) {
       Swal.fire({
-        title: "Incorrect",
+        title: "Ups!",
         text: "Por favor ingrese los datos solicitados",
         icon: "error"
       })
@@ -38,15 +38,14 @@ function Registro() {
 
 
     const peticion = await PostUsuario(datos, '/registro')
-    console.log(peticion);
     
     if (peticion) {
       Swal.fire({
-        title: "Good job!",
-        text: "You clicked the button!",
+        title: "Happy",
+        text: "Sus datos fueron registrados!",
         icon: "success"
       });
-      navegar("/")
+     
 
     } else if (peticion.error) {
       Swal.fire({

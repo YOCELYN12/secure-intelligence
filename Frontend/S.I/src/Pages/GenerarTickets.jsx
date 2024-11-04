@@ -5,6 +5,7 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Get } from '../Fetch/Fetch'
 import { Post } from '../Fetch/Fetch'
+import Swal from 'sweetalert2'
 
 
 
@@ -32,6 +33,7 @@ function GenerarTickets() {
   console.log(intTipoServicio)
 
   const enviarTickets = async (e) => {
+
     e.preventDefault()
     let datos = {
       Nombre: intNombre,
@@ -42,8 +44,35 @@ function GenerarTickets() {
       Descripcion: intDescripcion,
       ID_tipo_servicio: intServicioSelecionado,// Guarda el servicio seleccionado
     }
-    console.log(datos);
-    await Post(datos, "/postTicket/") //se encarga de enviar los datos a la API para crear un nuevo ticket
+    const validarInts = intNombre.trim() === "" || intApellido.trim() === "" || intCorreo.trim() === "" ||  intTelefono.trim() === "" || intEmpresa.trim() === "" || intDescripcion.trim() === "" || intServicioSelecionado.trim() === "" 
+    if (validarInts) {
+      alert
+      Swal.fire({
+        title: "Incorrect",
+        text: "Por favor ingrese los datos solicitados",
+        icon: "error"
+      })
+      return;
+    }
+   
+    const traerTicket = await Post(datos, "/postTicket/") //se encarga de enviar los datos a la API para crear un nuevo ticket
+    if (traerTicket) {
+      Swal.fire({
+        title: "Happy",
+        text: "Su ticket fue generado!",
+        icon: "success"
+      });
+    }
+  }
+
+  const reiniciarFrom = () => {
+    setIntNombre('');
+    setIntApellido('');
+    setIntCorreo('');
+    setIntTelefono('');
+    setIntEmpresa('');
+    setIntDescripcion('');
+    setIntServicioSeleccionado(''); // Reiniciar el select también
   }
 
 
@@ -54,6 +83,7 @@ function GenerarTickets() {
 
 
       <div className='img'>
+        <br />
         <Navbar />
 
         <div className='div-contenedor'>
@@ -126,7 +156,7 @@ function GenerarTickets() {
 
 
           <div className='cont-btn'>
-            <button className='btn-cancelar'>Cancelar</button>
+            <button onClick={reiniciarFrom} className='btn-cancelar'>Cancelar</button>
             <button onClick={enviarTickets} className='btn-enviar' >Enviar</button>
           </div>
         </div>
