@@ -4,6 +4,7 @@ import { Post } from '../Fetch/Fetch';
 
 function ModalServicios({ isOpen, onClose }) {
 
+    // Estados para almacenar los valores de entrada
     const [intNombre, setIntNombre] = useState("")
     const [intArea, setIntArea] = useState("")
     const [intDescripcion, setIntDescripcion] = useState("")
@@ -13,20 +14,23 @@ function ModalServicios({ isOpen, onClose }) {
     const enviarServicio = async (e) => {
 
         e.preventDefault()
+        // Objeto con los datos del servicio
         let datos = {
             Nombre: intNombre,
             Area: intArea,
             Descripcion_servicio: intDescripcion
         }
+        // Realiza la petición POST con los datos
         await Post(datos, "/post/")
 
     }
-
+    
+    // Si el modal no está abierto, no se renderiza nada
     if (!isOpen) return null;
 
     return (
-        <div className='modal-overlay' onClick={onClose}>
-            <div className='cont-tipo-servicios' onClick={e => e.stopPropagation()}>
+        <div className='modal-overlay' onClick={onClose}> {/* Capa de fondo que cierra el modal al hacer clic */}
+            <div className='cont-tipo-servicios' onClick={e => e.stopPropagation()}> {/* Contenedor del modal */}
                 <div>
 
                     <h5 className='h5'>Agregar nuevos servicios</h5>
